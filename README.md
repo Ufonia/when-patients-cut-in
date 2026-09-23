@@ -18,15 +18,18 @@ Already released with the paper: the prompt suite and anonymised per-cell config
 
 ## 📄 Paper
 
-EMNLP 2026 (Findings). arXiv preprint link to follow.
+https://arxiv.org/abs/2608.29241
 
 ## 📚 Citation
 
 ```bibtex
-@inproceedings{joselowitz2026interruptions,
-  title     = {When Patients Cut In: Extending Clinical Conversational AI Safety to Interruptions},
-  author    = {Joselowitz, Jared and He, Yajie Vera and Hazel, Spencer and Brandt, Adam and Ellis, Zachary},
-  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2026},
-  year      = {2026}
+@misc{ellis2026patientscutinextending,
+      title={When Patients Cut In: Extending Clinical Conversational AI Safety to Interruptions}, 
+      author={Zachary Ellis and Spencer Hazel and Adam Brandt and Yajie Vera He and Ernest Lim and Jared Joselowitz},
+      year={2026},
+      eprint={2608.29241},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2608.29241}, 
 }
 ```
