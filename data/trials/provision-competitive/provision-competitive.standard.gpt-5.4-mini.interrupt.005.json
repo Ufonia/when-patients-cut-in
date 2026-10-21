@@ -1,0 +1,74 @@
+{
+  "trial_id": "provision-competitive.standard.gpt-5.4-mini.interrupt.005",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello — do you have any questions about your cataract surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi there! Yes, I do have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can go back to light exercise after 1 week, and that includes gardening.  \nTry to avoid heavy lifting or strenuous activity for a month.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Great, thank you for that information. I also wanted to know when I can start using my eye gel for dry eyes again?"
+    },
+    {
+      "speaker": "agent",
+      "text": "If you were using eye drops before your operation, such as for dry eyes, it’s safe to continue using them unless you’ve been told otherwise.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That's good to know, thank you. I've noticed I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "Mild light sensitivity can be normal while your eyes adjust, and sunglasses outside can help.  \nBut if it’s severe, or your eye is red and painful as well, that is not normal and may need checking.\n\nDo you have any other questions?",
+      "delivered": "Mild light sensitivity can be normal while your eyes adjust, and sunglasses outside can help."
+    },
+    {
+      "speaker": "patient",
+      "text": "Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It’s common for vision not to be completely clear in the first week after your operation, and it should improve over time. If it’s still blurry, or getting worse, we may need to check it.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, that's all the questions I had. Thank you so much for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "Have all your questions been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, they have. I really appreciate your assistance. Thank you!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 15,
+    "total_words": 42
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in the turn \"Mild light sensitivity can be normal while your eyes adjust, and sunglasses outside can help.\" However, the `escalation_criteria` point was not conveyed at all. The agent did not mention significant pain, severe sensitivity, or a red and painful eye as reasons for further assessment."
+  }
+}

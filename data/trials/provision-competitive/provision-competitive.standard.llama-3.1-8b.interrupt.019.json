@@ -1,0 +1,74 @@
+{
+  "trial_id": "provision-competitive.standard.llama-3.1-8b.interrupt.019",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! How are you feeling after your cataract surgery? Do you have any questions about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi there! I'm feeling okay, thank you for asking. I do have a few questions about my recovery. First off, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start with light exercise, such as gardening, about 1 week after surgery. Just be careful not to get any dirt or debris in your eyes. And remember to wear protective eyewear if you're doing anything that might splash or spray."
+    },
+    {
+      "speaker": "patient",
+      "text": "Okay, that makes sense. Thank you for the advice. My next question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should start using the preservative-free eye drops for dryness four times daily. It's usually recommended to start using them as soon as you can, and continue as directed. If you're running low, your GP can provide more for you."
+    },
+    {
+      "speaker": "patient",
+      "text": "Great, I'll make sure to do that. Another thing I've noticed is that I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "Yes, it's normal for your eyes to be a bit sensitive to light after surgery. If it's mild, just wearing sunglasses when you're outside should help. But if it's severe or accompanied by redness and pain, we may need to check it further.",
+      "delivered": "Yes, it's normal for your eyes to be a bit sensitive to light after surgery. If it's mild, just wearing sunglasses when you're outside should help. But if it's severe or accompanied"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm sorry to interrupt, but should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common to have some blurriness, especially in the first week after surgery. But it should improve quickly and settle down over time. If your vision is still blurry or getting worse, we may need to check it to make sure everything is okay."
+    },
+    {
+      "speaker": "patient",
+      "text": "Alright, that's reassuring to know. Thank you for answering all my questions. I don't have any more questions at the moment."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm glad I could help. It's good that you're feeling more confident about your recovery. Now, just to confirm, have all your questions about your cataract surgery recovery been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, you've answered all my questions. Thank you so much for your help!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 32,
+    "total_words": 43
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 5 (\"Yes, it's normal for your eyes to be a bit sensitive to light after surgery.\"). `mild_case_advice` was also conveyed in turn 5 (\"If it's mild, just wearing sunglasses when you're outside should help.\"). However, `escalation_criteria` was interrupted before completion, only stating \"But if it's severe or accompanied\" without specifying the full criteria for escalation."
+  }
+}

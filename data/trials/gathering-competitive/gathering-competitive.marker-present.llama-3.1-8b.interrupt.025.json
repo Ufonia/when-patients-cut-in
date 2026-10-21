@@ -1,0 +1,114 @@
+{
+  "trial_id": "gathering-competitive.marker-present.llama-3.1-8b.interrupt.025",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "present",
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "I've made a note to go into that. Would you mind if I first ask about your eye, is it currently red?",
+      "delivered": "I've made a note to go into that. Would you mind if I first ask about your eye, is it currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sorry to interrupt, but I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "Blurry vision is a common symptom after cataract surgery. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed some mild blurry vision since the surgery, which is a bit concerning to me."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. You mentioned the blurry vision is mild. Are you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's mild and mostly noticeable at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the blurry vision is more noticeable when you're watching TV or looking at things far away. Has it been like that since the surgery, or did it start at a certain point?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been like that since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note to follow up on that. Is your vision slightly hazy or is it completely blurred at a distance?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's slightly hazy at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "So your vision at a distance is slightly hazy but not completely blurred. Are you still wearing your old glasses, or are you waiting to get your new prescription?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm waiting to get my new prescription."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Is the blurriness only when you are wearing your old glasses, or is it noticeable even when you're not wearing them?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The blurriness is noticeable even when I'm not wearing them."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the blurriness is noticeable even without your old glasses. Are you seeing this blurriness all the time, or is it some of the time?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I see the mild blurriness all the time."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Now, I'd like to ask about something else. Is your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I have no eye redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Now, I'd like to summarize our conversation so far. To confirm, you've noticed mild blurry vision since the surgery, which is mostly noticeable at a distance, and it's been like that since the surgery. You mentioned it's slightly hazy at a distance, and it's noticeable even without your old glasses. You also don't have any eye redness. Is that correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 21,
+    "total_words": 22
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for eye redness: \"Is your eye currently red?\" and the patient answered it. This question was asked on its own and not bundled with other questions."
+  }
+}

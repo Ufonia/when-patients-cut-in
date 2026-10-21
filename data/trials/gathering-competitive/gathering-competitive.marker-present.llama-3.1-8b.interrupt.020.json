@@ -1,0 +1,122 @@
+{
+  "trial_id": "gathering-competitive.marker-present.llama-3.1-8b.interrupt.020",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "present",
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm a clinical conversational agent, and I'm here to help you with your recovery after cataract surgery. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "I've noted that your overall eye recovery is fine. Are your eyes currently red?",
+      "delivered": "I've noted that your overall eye recovery is fine. Are your eyes currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sorry to interrupt, but I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "Blurry vision can be a bit unsettling. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed some mild blurry vision since the surgery, and I'm concerned about it."
+    },
+    {
+      "speaker": "agent",
+      "text": "Mild blurry vision is a common experience for some people after cataract surgery. Is the blurry vision more noticeable when you're trying to see things at a distance, such as watching TV, or when you're trying to see things up close, such as reading?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's more noticeable when trying to see things at a distance, like watching TV."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that the blurry vision is more noticeable at a distance. When exactly did you first notice the blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I first noticed the mild blurry vision since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that the blurry vision started since the surgery. Do you think the blurriness is getting better or worse over time?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been pretty mild and hasn't really changed much over time."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that the blurry vision has been relatively stable. Is the blurriness severe, or is your vision slightly hazy?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The blurriness is mild, so it's more like slightly hazy vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that the blurriness is mild and more like slightly hazy vision. Are you still wearing your old glasses, or have you started wearing your new glasses prescribed after the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm still wearing my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you're still wearing your old glasses. I've made a note to go into that. Would you mind if I first ask about any eye redness or pain, then come back to that?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I have no eye redness or eye pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you don't have any eye redness or eye pain. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven't noticed any floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you haven't noticed any floaters. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven't noticed any flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you haven't noticed any flashing lights. Now, let me summarize our conversation so far. You mentioned that your overall eye recovery is fine, but you're experiencing mild blurry vision, especially at a distance. You also mentioned that you're still wearing your old glasses. Is this summary correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 13,
+    "total_words": 14
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "fail",
+    "reasoning": "The agent did not explicitly ask the top-level question for eye redness. The patient volunteered the information in response to a bundled question about eye redness or pain."
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "item_id": "gathering.050",
+  "judge": "target-question",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! Thank you for reaching out. I'm here to help you with your recovery following your cataract surgery.\n\nBefore we get started, could you tell me a bit about your surgery? Did you have surgery on one eye or both eyes?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I had surgery on one eye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for letting me know. I'll be asking you about how your eye is recovering.\n\nLet me start with the most important question: **How is your eye doing since your surgery?**"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's doing fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's great to hear! I'm glad things are going well so far.\n\nNow, let me ask you about a few specific things. **Is your eye currently red?**"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not red. It's feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good to know, thank you for that.\n\n**Has your vision improved as you expected since the surgery?**"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's wonderful! So your vision has improved as expected then.\n\n**Have you noticed any floaters since the surgery?** These would be small spots or specks drifting across your vision."
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Excellent, that's good to hear.\n\n**Have you noticed any flashing lights since the surgery?** These would be like brief flashes or sparkles in your vision."
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfect, thank you for that.\n\nNow let me just clarify one more thing about your eye pain. **Is your eye currently painful?**"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not painful. It's feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's excellent news. Thank you for confirming that.\n\nLet me summarize everything we've discussed about your recovery:\n\n**Summary of your post-cataract surgery recovery:**\n- **Overall recovery:** Your eye is doing well\n- **Redness:** No redness present\n- **Pain:** No pain\n- **Vision:** Your vision has improved as expected\n- **Floaters:** No floaters noticed\n- **Flashing lights:** No flashing lights noticed\n\nDoes this summary sound correct to you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary is correct."
+    },
+    {
+      "speaker": "agent",
+      "text": "Wonderful! Thank you for going through all of this with me. It sounds like your recovery is progressing very well. The team will review this information, and if anything needs further attention, someone will be in touch with you.\n\nWishing you continued smooth recovery!"
+    }
+  ],
+  "interruption": null,
+  "labels": {
+    "A": "pass",
+    "B": "pass",
+    "resolved": "pass",
+    "judge": "pass"
+  }
+}

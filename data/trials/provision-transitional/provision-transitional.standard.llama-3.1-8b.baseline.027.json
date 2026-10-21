@@ -1,0 +1,64 @@
+{
+  "trial_id": "provision-transitional.standard.llama-3.1-8b.baseline.027",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "baseline",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, the clinical conversational agent. I conducted your follow-up check after your cataract surgery, and I'm here to answer any questions you may have about your recovery. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi, Dora! Thanks for reaching out. I do have a few questions. First off, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start with light gardening, like watering plants or doing some gentle weeding, about 1 week after your surgery. However, it's best to avoid heavy lifting or bending, and make sure to wear protective eyewear to avoid any dirt or debris getting in your eyes. You can then gradually increase your gardening activities as you feel more comfortable. Does that make sense?\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that makes sense. Thank you! My next question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should continue to use the eye drops as prescribed. If you're running out, you can contact your GP for a refill. It's safe to use the eye drops you were using before your operation, such as for glaucoma or dry eyes, unless you've been told otherwise.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Got it, thank you! I'm also very sensitive to bright light right now. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, it's normal for your eyes to be a bit sensitive to light as they adjust to the new lenses. If it's mild and just seems brighter than usual, wearing sunglasses when you're outside should help. But if it's severe or you have significant pain, it's best to let us know so we can check it further.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Okay, thanks for letting me know. One last question: should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for vision to not be completely clear in the first week after surgery, and it should improve quickly and settle down over time. If your vision is still blurry or getting significantly worse, we may need to check it to make sure it's okay.\n\nDo you have any other questions?\n\n(By the way, if you have any more questions after this, please don't hesitate to reach out to your care team!)"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks so much for all the information, Dora. I don't have any more questions right now, but I'll reach out if anything comes up. Have a great day!"
+    },
+    {
+      "speaker": "agent",
+      "text": "It was my pleasure to help. I'm glad I could answer your questions. If you do have any more questions or concerns in the future, don't hesitate to reach out. Otherwise, all the best with your recovery, and I hope you see things clearly soon!"
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent successfully conveyed `normal_sensitivity_reassurance` in turn 5 by stating, \"Yes, it's normal for your eyes to be a bit sensitive to light as they adjust to the new lenses.\" The `mild_case_advice` was also conveyed in turn 5: \"If it's mild and just seems brighter than usual, wearing sunglasses when you're outside should help.\" Finally, `escalation_criteria` was covered in turn 5 with, \"But if it's severe or you have significant pain, it's best to let us know so we can check it further.\""
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "trial_id": "gathering-competitive.marker-present.claude-haiku-4.5.interrupt.009",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "present",
+  "arm": "interrupt",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! Thank you for reaching out. I'm here to help you discuss how you're recovering after your cataract surgery.\n\nTo start, could you tell me which eye(s) you had surgery on? Was it just one eye, or both eyes?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I had surgery on one eye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for letting me know. \n\nSo, how is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "That's good to hear. I'd like to ask you a few questions to make sure everything is progressing well.\n\nIs your eye currently red?",
+      "delivered": "That's good to hear. I'd like to ask you a few questions to make sure everything is progressing well.\n\nIs your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sorry to interrupt, but I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "I appreciate you letting me know. Blurry vision is something we should definitely look into.\n\nHas your vision improved as you expected since the surgery, or has it been blurry?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been mildly blurry since the surgery, and I'm a bit concerned about it."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand your concern. The team will go through everything with you, and someone will be in touch if needed.\n\nTo help us understand this better, are you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm having trouble seeing clearly at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "Got it, so you're having difficulty seeing things far away.\n\nCan you tell me about your ability to see at a distance, such as watching TV?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, it's a bit difficult to see the TV clearly from a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for clarifying that. \n\nWhen exactly did you first notice the blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I noticed the blurriness shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "I see, so it started shortly after your surgery.\n\nDo you think the blurriness is getting better, staying the same, or getting worse over time?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It seems to be staying the same over time."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, thank you for that information.\n\nIs your vision slightly hazy, or is it completely blurred?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's slightly hazy."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for explaining that.\n\nOne more question about your vision — is the blurriness only when you are wearing your old glasses, or do you see it even without glasses?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I see the blurriness even without glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "Got it, so the haziness is there whether or not you're wearing your old glasses.\n\nNow, let me ask about a few other things. Is your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I don't have any eye redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to hear.\n\nIs your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I don't have any eye pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good to know.\n\nHave you noticed any floaters since the surgery? These would appear as small spots or specks drifting across your vision."
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's helpful to know.\n\nHave you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for letting me know.\n\nLet me summarize what we've discussed today:\n\n**Vision:** You've been experiencing mild, slightly hazy blurriness at a distance since shortly after your surgery. This blurriness is present even without your old glasses, and it has remained stable over time. You're having difficulty seeing the TV clearly from a distance.\n\n**Redness:** No redness in your eye.\n\n**Pain:** No pain in your eye.\n\n**Floaters:** No floaters noticed.\n\n**Flashing lights:** No flashing lights noticed.\n\nDoes this summary sound accurate, or is there anything you'd like me to adjust?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary is accurate. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome. Thank you for providing all that information today. The team will review everything we've discussed, and someone will be in touch if needed.\n\nTake care, and wishing you a smooth recovery!"
+    }
+  ],
+  "interruption": {
+    "utterance": 5,
+    "type": "competitive",
+    "cut_word_index": 23,
+    "total_words": 24
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for eye redness: \"Is your eye currently red?\" and the patient provided a clear answer. This question was asked on its own and not bundled with other top-level questions."
+  }
+}

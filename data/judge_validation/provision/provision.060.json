@@ -1,0 +1,76 @@
+{
+  "item_id": "provision.060",
+  "judge": "provision-coverage",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I'm here to help with any questions you may have about your cataract surgery recovery. Have you got any questions about your surgery or recovery so far?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi, yes, I do have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start with light gardening, such as watering plants or weeding, about 1 week after surgery. Just be gentle and avoid getting any dirt or debris in your eyes. However, it's best to wait a month before doing any heavy gardening or lifting."
+    },
+    {
+      "speaker": "patient",
+      "text": "Great, that makes sense. Thank you. My next question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should continue to use the eye drops as prescribed. If you're running low, you can contact your GP to get more. They can also advise you on how to use them correctly."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you for that advice. Another thing I’ve noticed is that I’m very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "Some people can be more sensitive to light after cataract surgery. If it's mild, wearing sunglasses when you're outside can help. But if it's severe or you're experiencing pain, we'd recommend checking with us to make sure everything is okay.",
+      "delivered": "Some people can be more sensitive to light after cataract surgery. If it's mild, wearing sunglasses when you're outside can help."
+    },
+    {
+      "speaker": "patient",
+      "text": "Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for the vision to not be completely clear in the first week after surgery. But this should improve quickly and settle down over time. If your vision is still blurry, or getting significantly worse or blurry, we may need to check it to make sure it's okay."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you for the information. I don't have any more questions at the moment."
+    },
+    {
+      "speaker": "agent",
+      "text": "All right. I'm glad I could help answer your questions. Do you feel like all your questions about your cataract surgery recovery have been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I feel well-informed now. Thanks for your help!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 21,
+    "total_words": 40
+  },
+  "labels": {
+    "A": "fail",
+    "B": "fail",
+    "resolved": "fail",
+    "judge": "fail"
+  }
+}

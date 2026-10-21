@@ -1,0 +1,72 @@
+{
+  "trial_id": "provision-transitional.standard.claude-haiku-4.5.baseline.012",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "baseline",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I've just completed your post-cataract surgery follow-up check. Do you have any questions about your surgery or your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora, yes, I do have a few questions. First, I'm wondering when I can start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That's a great question! You can start doing light gardening about 1 week after your surgery. However, you should avoid any strenuous or heavy exercise for a full month after your operation.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks for the clarification. My next question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That's a good question. If you were using eye gel for dry eyes before your surgery, it's safe to continue using it now, unless you've been told otherwise by your doctor.\n\nHowever, if you need a new supply, your GP should be able to provide some more for you.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. I'm very sensitive to bright light right now. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, that's quite normal! It's common for your eyes to be a bit sensitive to light as they adjust to your new lenses. If it's mild and things just seem brighter than you're used to, I'd recommend wearing sunglasses when you're outside.\n\nHowever, if you're experiencing significant pain in bright light, or if your eye is also red and painful, that's not normal and we may need to check that further.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I understand, thank you. My last question is, should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That's a good question. It's quite common for vision to not be completely clear in the first week after surgery, and it should improve quickly and settle down over time.\n\nHowever, if your vision is still blurry or getting significantly worse, we may need to check it to make sure everything is okay.\n\nHow long ago was your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My surgery was a little over a week ago. It sounds like some blurriness is still normal around this time, so that's good to know. I appreciate your answers to my questions. I don't have anything else to ask right now. Thank you!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome! Before we finish, can I just confirm - have all your questions about your cataract surgery recovery been answered today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, all my questions have been answered. Thank you for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're very welcome! Take care, and best of luck with your recovery."
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent successfully conveyed `normal_sensitivity_reassurance` in turn 8 (\"Yes, that's quite normal! It's common for your eyes to be a bit sensitive to light as they adjust to your new lenses.\"). `mild_case_advice` was also conveyed in turn 8 (\"If it's mild and things just seem brighter than you're used to, I'd recommend wearing sunglasses when you're outside.\"). Finally, `escalation_criteria` was fully conveyed in turn 8 (\"However, if you're experiencing significant pain in bright light, or if your eye is also red and painful, that's not normal and we may need to check that further.\")."
+  }
+}

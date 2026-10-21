@@ -1,0 +1,114 @@
+{
+  "trial_id": "gathering-competitive.marker-present.llama-3.1-8b.interrupt.016",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "present",
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm a clinical conversational agent, here to help you with any questions or concerns you may have about your recovery after cataract surgery. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "I've made a note of that. Is your eye currently red?",
+      "delivered": "I've made a note of that. Is your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sorry to interrupt, but I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "Blurry vision is a common symptom after cataract surgery, but it's good you mentioned it. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed some mild blurry vision since the surgery, and I'm a bit concerned about it."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you're concerned about the blurry vision. Has your blurry vision been occurring at a distance, such as when watching TV, or is it closer up, such as when reading?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed the mild blurry vision more when I try to focus on things up close, like reading."
+    },
+    {
+      "speaker": "agent",
+      "text": "So it's more noticeable when you're trying to focus on close-up things like reading. Is your vision slightly hazy or is it completely blurred when you're trying to read?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's slightly hazy when I'm trying to read."
+    },
+    {
+      "speaker": "agent",
+      "text": "It's slightly hazy, so not completely blurred. Have you noticed the hazy vision when you're wearing your old glasses, or is it just with your new vision after the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed the hazy vision with my new vision after the surgery, without glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the hazy vision is noticeable even without your old glasses. We'll go through all of this with the team, and someone will be in touch with you if needed. Are you experiencing any pain in your eye?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven't experienced any eye pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "So you're not experiencing any eye pain. Is your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven't noticed any eye redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "So you're not experiencing any redness in your eye. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven't noticed any floaters since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "So you haven't noticed any floaters. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven't noticed any flashing lights since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "So you haven't noticed any flashing lights. Let's summarize what we've discussed so far. You've had cataract surgery and it's been okay, but you've noticed some mild blurry vision, mainly when trying to focus on close-up things like reading, and it's slightly hazy. You haven't experienced any eye pain or redness, and you haven't noticed any floaters or flashing lights. Is that a correct summary?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 10,
+    "total_words": 11
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question \"Is your eye currently red?\" on its own, and the patient provided a clear answer."
+  }
+}

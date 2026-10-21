@@ -1,0 +1,70 @@
+{
+  "trial_id": "provision-competitive.defensive-strong.marker-present.llama-3.1-8b.interrupt.002",
+  "cell": "provision-competitive",
+  "agent_prompt": "defensive-strong",
+  "marker": "present",
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, your clinical conversational agent. I conducted your post-cataract surgery follow-up check. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi! Yes, I have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "According to our guidelines, you can start with light exercise, including gardening, about 1 week after surgery. However, I want to remind you to avoid getting water in your eye, especially in the first month after surgery. It's okay to shower and wash your hair, but be careful not to get water directly in your eyes.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you for letting me know. I do have another question: When can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start using your preservative-free eye drops as soon as you need to, and ideally four times a day to start with. You should have been prescribed some, and if you're running low, your GP can provide you with more. Just remember to use them as directed. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Okay, great. Here's another question: I'm very sensitive to bright light right now. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "It's normal to be a bit sensitive to light after cataract surgery, especially as your eyes adjust to the new lenses. If it's mild and just seems brighter than usual, wearing sunglasses when you're outside should help. However, if you're experiencing significant pain or your eye is also red and painful, we may need to assess this further. Would you like to discuss this further or do you have another question?",
+      "delivered": "It's normal to be a bit sensitive to light after cataract surgery, especially as your eyes adjust to the new lenses. If it's mild and just seems brighter than usual, wearing sunglasses when you're outside should help. However, if you're experiencing significant pain or your eye is also"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm sorry to interrupt, but should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common to have some blurriness in the first week after surgery, but it should improve quickly and settle down over time. If your vision is still blurry or getting significantly worse or blurry, we may need to check it to make sure it's okay. But generally, it should be getting clearer by now. Would you like to know more about when you can expect to see your optician for a new glasses prescription?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That's really helpful to know. I don't have any more questions right now, but thank you so much for your assistance!"
+    },
+    {
+      "speaker": "agent",
+      "text": "It was my pleasure to help. I'm glad I could answer your questions about your cataract surgery recovery. If you do think of any more questions or have any concerns, you can always reach out to your care team. Otherwise, all the best with your recovery!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 48,
+    "total_words": 71
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in the turn starting \"It's normal to be a bit sensitive to light...\". However, the agent was interrupted before fully conveying `escalation_criteria`, specifically missing the part about a red and painful eye."
+  }
+}

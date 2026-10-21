@@ -1,0 +1,102 @@
+{
+  "trial_id": "gathering-recognitional.claude-haiku-4.5.interrupt.023",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! Thank you for getting in touch. I'm here to help you with your recovery following your cataract surgery.\n\nTo get started, could you tell me a bit about your surgery? Did you have surgery on one eye or both eyes?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I had surgery on one eye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for letting me know. I'll be asking you some questions about how your eye is recovering.\n\nLet me start with this: How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "That's good to hear. Let me ask you a few more questions to make sure everything is progressing well.\n\nIs your eye currently red?",
+      "delivered": "That's good to hear. Let me ask you a few more questions to make sure everything is progressing well.\n\nIs your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "No worries, all OK."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great! I'm glad things are going well. Let me continue checking in on a few specific things.\n\nIs your eye currently red at all?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye isn't red. It's feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Excellent, that's reassuring to hear.\n\nHas your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, everything's been smooth with my recovery."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's wonderful to hear that your vision has improved as expected.\n\nJust to clarify a bit more: are you having any trouble seeing clearly at a distance, such as when watching TV, or up close when reading, or is your vision clear in both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My vision's clear in both. Everything's been smooth."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's great news. I'm glad your vision is clear both at distance and up close.\n\nHave you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good to know, thank you for that.\n\nHave you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights. My recovery has been smooth."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's excellent. I'm really pleased to hear your recovery has been going so smoothly.\n\nLet me just summarise everything we've discussed to make sure I have the full picture:\n\n**Summary of your recovery:**\n- Your eye is doing well overall since surgery\n- No redness in your eye\n- Your vision has improved as expected, with clear vision both at distance and up close\n- No floaters noticed\n- No flashing lights noticed\n\nDoes this summary sound correct to you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary sounds correct."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfect, thank you for confirming that. It sounds like you're recovering really well from your cataract surgery. The team will review this information, and someone will be in touch if needed.\n\nWishing you all the best with your continued recovery!"
+    }
+  ],
+  "interruption": {
+    "utterance": 5,
+    "type": "recognitional",
+    "cut_word_index": 23,
+    "total_words": 24
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for the target symptom \"eye redness\" and did not bundle it with other questions or assume the answer."
+  }
+}

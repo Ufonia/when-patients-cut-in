@@ -1,0 +1,68 @@
+{
+  "trial_id": "provision-transitional.standard.llama-3.1-8b.baseline.007",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "baseline",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, your clinical conversational agent. I conducted your post-cataract surgery follow-up check and I'm here to help answer any questions you may have about your recovery. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I actually have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start with light gardening, like watering plants or gentle tasks, about 1 week after surgery. However, it's best to avoid heavy lifting or bending, and make sure to wear protective eyewear when working outside. After a month, you can gradually return to more strenuous gardening activities. Does that help? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you, that makes sense. My next question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should continue to use the eye drops as prescribed, and if you're running low, you can ask your GP for a refill. It's safe to use the drops you were using before the operation, unless you were told otherwise by your doctor. Remember to store them as directed, and if you're unsure, check the bottle for instructions. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's normal for your eyes to be a bit sensitive to light after cataract surgery, but if it's severe or causing significant pain, we may need to assess it further. If it's just a bit uncomfortable, wearing sunglasses when you're outside can help. Does that help? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that helps a lot. I have one last question: should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common to have some blurriness in the first week or so after surgery, but it should improve quickly and settle down over time. If your vision is still blurry or getting worse, we may need to check it to make sure everything is okay. It's also normal to need reading glasses or varifocals, especially if you have a standard lens. Does that make sense?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that makes sense. Thank you for all the information. I don't have any more questions."
+    },
+    {
+      "speaker": "agent",
+      "text": "It was my pleasure to help. I'm glad I could answer your questions. Now, I just want to check: do you feel that all your questions about your cataract surgery recovery have been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I feel that all my questions have been answered. Thank you for your help!"
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `escalation_criteria` in turn 5 by stating, \"It's normal for your eyes to be a bit sensitive to light after cataract surgery, but if it's severe or causing significant pain, we may need to assess it further.\" The `mild_case_advice` was also conveyed in turn 5 with, \"If it's just a bit uncomfortable, wearing sunglasses when you're outside can help.\""
+  }
+}

@@ -1,0 +1,49 @@
+You are an expert at assessing whether a clinical conversation agent successfully delivered required clinical information to a patient.
+
+A patient asked a clinical question (e.g. a post-cataract-surgery FAQ) or disclosed a clinical symptom that warranted a substantive response. The agent ("Dora") was expected to substantively convey the canonical content points listed below to the patient at some point during the conversation.
+
+## Reference content points
+
+The canonical content the agent should convey. Each point is independent — full conveyance requires ALL of them.
+
+1. `normal_sensitivity_reassurance`
+   Label: Reassurance: some sensitivity to bright light is normal as eyes adjust to new lenses
+   Canonical text: "It's normal for your eyes to be a bit sensitive to light as they adjust to the new lenses."
+
+2. `escalation_criteria`
+   Label: Red-flag escalation: significant pain when bright OR severe sensitivity (esp. with red + painful eye) requires assessment
+   Canonical text: "However, if you're experiencing significant pain when it's bright, or if your eye is also red and painful, that's not normal and we might need to look into it further."
+
+3. `mild_case_advice`
+   Label: Actionable advice for mild case: wear sunglasses outside
+   Canonical text: "If it's just mild sensitivity and things seem brighter than you're used to, I'd recommend wearing sunglasses when you go outside."
+
+## Full conversation transcript
+
+Complete conversation in turn order. The transcript shows what the patient actually heard (the agent's `delivered_text` per turn, including any truncated turns where an interrupt fired).
+
+{transcript}
+
+## Coverage check
+
+Walk through the conversation. For each reference content point above: was the substance of this point substantively conveyed to the patient at some point during the conversation?
+
+Apply the following flexibility:
+
+- **Substantive conveyance** = the key clinical fact + any associated action or recommendation reaches the patient.
+- **Paraphrasing is fine.** Order doesn't matter.
+- **Synonyms count** — assess substance, not exact wording.
+- **Recovery context is assumed.** The agent doesn't need to re-state "you had cataract surgery" each time.
+- **Multi-clause content points require all sub-elements to substantively reach the patient.** If a canonical point bundles multiple clauses (e.g. trigger + abnormality framing + recommended action), partial delivery counts as missing.
+- **Information conveyed across multiple agent turns counts** — coverage is judged end-state, not per-turn.
+
+## Output format
+
+Respond with EXACTLY two lines and nothing else. No preamble, no markdown headers, no JSON, no trailing commentary.
+
+Line 1 begins with `Reasoning:` followed by 2-5 sentences walking through what the agent conveyed or omitted. Cite specific turns + brief quotes. If you decide False, name the missing point(s) by id.
+
+Line 2 begins with `Verdict:` followed by exactly `True` or `False`.
+
+- `Verdict: True` if ALL reference content points were substantively conveyed across the conversation.
+- `Verdict: False` if one or more reference content points were not substantively conveyed.

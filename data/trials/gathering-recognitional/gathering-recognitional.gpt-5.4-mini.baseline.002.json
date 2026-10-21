@@ -1,0 +1,68 @@
+{
+  "trial_id": "gathering-recognitional.gpt-5.4-mini.baseline.002",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello — how is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "Glad to hear that. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my vision has improved as expected."
+    },
+    {
+      "speaker": "agent",
+      "text": "That’s good to hear. Are you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I am not having trouble seeing clearly at a distance or up close. My vision is fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Understood. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I have not noticed any floaters since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I have not noticed any flashing lights since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Here’s a brief summary of what you’ve told me so far:\n\n- Overall recovery: doing fine since surgery.\n- Vision: improved as expected.\n- Blurry vision: no trouble seeing clearly at a distance or up close.\n- Floaters: none noticed since surgery.\n- Flashing lights: none noticed since surgery.\n\nIs that summary correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary is correct."
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "target-question",
+    "label": "fail",
+    "reasoning": "The agent did not ask the top-level question for the target symptom \"eye redness\" at any point during the conversation."
+  }
+}

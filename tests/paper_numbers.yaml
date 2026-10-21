@@ -1,0 +1,160 @@
+# The numbers the paper prints, and where. Percentages and percentage points are plain numbers;
+# `decimals` is the printed precision. `reproduced` is the released data's value where it differs.
+
+total_trials:
+  - {value: 1360, where: [Section 3.5]}
+
+trials_per_arm:
+  - {agent_prompt: null, value: 30, where: [Section 3.5, Figure 2 caption, Figure 4 caption]}
+  - {agent_prompt: defensive-strong, value: 10, where: [Section 3.5, Appendix C, Figure 5 caption, Figure 6 caption, Table 7 caption, Figure 4 caption]}
+  - {agent_prompt: standard, value: 30, where: [Section 4.3, Section 3.5, Appendix C, Figure 5 caption, Figure 3 caption, Table 7 caption]}
+
+fail_counts:
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: Claude Haiku 4.5, arm: baseline, fails: 0, n: 10, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: Claude Haiku 4.5, arm: interrupt, fails: 10, n: 10, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: GPT-5.4 mini, arm: baseline, fails: 0, n: 10, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: GPT-5.4 mini, arm: interrupt, fails: 10, n: 10, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: Gemini 2.5 Flash, arm: baseline, fails: 0, n: 10, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: Gemini 2.5 Flash, arm: interrupt, fails: 9, n: 10, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: Llama 3.1 8B, arm: baseline, fails: 0, n: 10, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: Llama 3.1 8B, arm: interrupt, fails: 10, n: 10, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: Claude Haiku 4.5, arm: baseline, fails: 0, n: 30, where: [Table 7, Abstract, Section 4.1, Section 4.3, Section 5]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: Claude Haiku 4.5, arm: interrupt, fails: 30, n: 30, where: [Table 7, Abstract, Section 4.1]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: GPT-5.4 mini, arm: baseline, fails: 0, n: 30, where: [Table 7, Abstract, Section 4.1, Section 4.3, Section 5]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: GPT-5.4 mini, arm: interrupt, fails: 30, n: 30, where: [Table 7, Abstract, Section 4.1]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: Gemini 2.5 Flash, arm: baseline, fails: 0, n: 30, where: [Table 7, Abstract, Section 4.1, Section 4.3, Section 5]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: Gemini 2.5 Flash, arm: interrupt, fails: 30, n: 30, where: [Table 7, Abstract, Section 4.1]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: Llama 3.1 8B, arm: baseline, fails: 4, n: 30, where: [Table 7, Abstract, Section 4.1, Section 4.3, Section 5]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: Llama 3.1 8B, arm: interrupt, fails: 30, n: 30, where: [Table 7, Abstract, Section 4.1]}
+
+fail_rates:
+  - {cell: gathering-competitive, agent_prompt: null, marker: null, model: Claude Haiku 4.5, arm: interrupt, value: 0, decimals: 0, where: [Section 4.1]}
+  - {cell: gathering-competitive, agent_prompt: null, marker: null, model: Claude Haiku 4.5, arm: interrupt, value: 0.0, decimals: 1, where: [Table 2, Section 4.2]}
+  - {cell: gathering-competitive, agent_prompt: null, marker: null, model: GPT-5.4 mini, arm: interrupt, value: 50.0, decimals: 1, where: [Table 2, Section 4.2]}
+  - {cell: gathering-competitive, agent_prompt: null, marker: null, model: Gemini 2.5 Flash, arm: interrupt, value: 23.3, decimals: 1, where: [Table 2, Section 4.2]}
+  - {cell: gathering-competitive, agent_prompt: null, marker: null, model: Llama 3.1 8B, arm: interrupt, value: 30.0, decimals: 1, where: [Table 2, Section 4.2]}
+  - {cell: gathering-competitive, agent_prompt: null, marker: absent, model: Claude Haiku 4.5, arm: interrupt, value: 0, decimals: 0, where: [Section 4.4]}
+  - {cell: gathering-competitive, agent_prompt: null, marker: absent, model: GPT-5.4 mini, arm: interrupt, value: 60.0, decimals: 1, where: [Section 4.4]}
+  - {cell: gathering-competitive, agent_prompt: null, marker: absent, model: Gemini 2.5 Flash, arm: interrupt, value: 66.7, decimals: 1, where: [Section 4.4]}
+  - {cell: gathering-competitive, agent_prompt: null, marker: absent, model: Llama 3.1 8B, arm: interrupt, value: 23.3, decimals: 1, where: [Section 4.4]}
+  - {cell: gathering-competitive, agent_prompt: null, marker: present, model: GPT-5.4 mini, arm: interrupt, value: 76.7, decimals: 1, where: [Section 4.4]}
+  - {cell: gathering-competitive, agent_prompt: null, marker: present, model: Gemini 2.5 Flash, arm: interrupt, value: 0, decimals: 0, where: [Section 4.4]}
+  - {cell: gathering-competitive, agent_prompt: null, marker: present, model: Llama 3.1 8B, arm: interrupt, value: 20.0, decimals: 1, where: [Section 4.4]}
+  - {cell: gathering-recognitional, agent_prompt: null, marker: null, model: Claude Haiku 4.5, arm: interrupt, value: 40.0, decimals: 1, where: [Table 2, Section 4.2], reproduced: 36.7, note: One miscounted trial in the paper; the released verdicts give 11/30.}
+  - {cell: gathering-recognitional, agent_prompt: null, marker: null, model: GPT-5.4 mini, arm: interrupt, value: 76.7, decimals: 1, where: [Table 2, Section 4.2]}
+  - {cell: gathering-recognitional, agent_prompt: null, marker: null, model: Gemini 2.5 Flash, arm: interrupt, value: 83.3, decimals: 1, where: [Table 2, Section 4.2]}
+  - {cell: gathering-recognitional, agent_prompt: null, marker: null, model: Llama 3.1 8B, arm: interrupt, value: 36.7, decimals: 1, where: [Table 2, Section 4.2]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: Claude Haiku 4.5, arm: baseline, value: 0.0, decimals: 1, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: Claude Haiku 4.5, arm: interrupt, value: 100, decimals: 0, where: [Appendix C, Figure 5 caption, Section 5]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: Claude Haiku 4.5, arm: interrupt, value: 100.0, decimals: 1, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: GPT-5.4 mini, arm: baseline, value: 0.0, decimals: 1, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: GPT-5.4 mini, arm: interrupt, value: 100, decimals: 0, where: [Appendix C, Figure 5 caption, Section 5]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: GPT-5.4 mini, arm: interrupt, value: 100.0, decimals: 1, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: Gemini 2.5 Flash, arm: baseline, value: 0.0, decimals: 1, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: Gemini 2.5 Flash, arm: interrupt, value: 90, decimals: 0, where: [Appendix C, Figure 5 caption, Section 5]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: Gemini 2.5 Flash, arm: interrupt, value: 90.0, decimals: 1, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: Llama 3.1 8B, arm: baseline, value: 0.0, decimals: 1, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: Llama 3.1 8B, arm: interrupt, value: 100, decimals: 0, where: [Appendix C, Figure 5 caption, Section 5]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, marker: null, model: Llama 3.1 8B, arm: interrupt, value: 100.0, decimals: 1, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: Claude Haiku 4.5, arm: baseline, value: 0.0, decimals: 1, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: Claude Haiku 4.5, arm: interrupt, value: 100, decimals: 0, where: [Section 4.1, Section 4.3, Section 5, Figure 5 caption]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: Claude Haiku 4.5, arm: interrupt, value: 100.0, decimals: 1, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: GPT-5.4 mini, arm: baseline, value: 0.0, decimals: 1, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: GPT-5.4 mini, arm: interrupt, value: 100, decimals: 0, where: [Section 4.1, Section 4.3, Section 5, Figure 5 caption]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: GPT-5.4 mini, arm: interrupt, value: 100.0, decimals: 1, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: Gemini 2.5 Flash, arm: baseline, value: 0.0, decimals: 1, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: Gemini 2.5 Flash, arm: interrupt, value: 100, decimals: 0, where: [Section 4.1, Section 4.3, Section 5]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: Gemini 2.5 Flash, arm: interrupt, value: 100.0, decimals: 1, where: [Table 7]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: Llama 3.1 8B, arm: baseline, value: 13.3, decimals: 1, where: [Table 7, Section 4.1, Section 4.3]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: Llama 3.1 8B, arm: interrupt, value: 100, decimals: 0, where: [Section 4.1, Section 4.3, Section 5, Figure 5 caption]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: Llama 3.1 8B, arm: interrupt, value: 100.0, decimals: 1, where: [Table 7]}
+  - {cell: provision-transitional, agent_prompt: standard, marker: null, model: Claude Haiku 4.5, arm: interrupt, value: 23.3, decimals: 1, where: [Section 4.3]}
+  - {cell: provision-transitional, agent_prompt: standard, marker: null, model: GPT-5.4 mini, arm: interrupt, value: 100, decimals: 0, where: [Section 4.3]}
+  - {cell: provision-transitional, agent_prompt: standard, marker: null, model: Gemini 2.5 Flash, arm: interrupt, value: 73.3, decimals: 1, where: [Section 4.3]}
+  - {cell: provision-transitional, agent_prompt: standard, marker: null, model: Llama 3.1 8B, arm: interrupt, value: 83.3, decimals: 1, where: [Section 4.3]}
+
+wilson_cis:
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: Claude Haiku 4.5, arm: interrupt, low: 88.6, high: 100.0, decimals: 1, where: [Abstract, Section 4.1, Section 4.3]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: GPT-5.4 mini, arm: interrupt, low: 88.6, high: 100.0, decimals: 1, where: [Abstract, Section 4.1, Section 4.3]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: Gemini 2.5 Flash, arm: interrupt, low: 88.6, high: 100.0, decimals: 1, where: [Abstract, Section 4.1, Section 4.3]}
+  - {cell: provision-competitive, agent_prompt: standard, marker: null, model: Llama 3.1 8B, arm: interrupt, low: 88.6, high: 100.0, decimals: 1, where: [Abstract, Section 4.1, Section 4.3]}
+
+arm_deltas:
+  # Interrupt minus baseline.
+  - {cell: provision-competitive, agent_prompt: defensive-strong, model: Claude Haiku 4.5, value: 100, decimals: 0, where: [Table 7, Figure 5 label, Figure 6 label, Figure 6 caption]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, model: GPT-5.4 mini, value: 100, decimals: 0, where: [Table 7, Figure 5 label, Figure 6 label, Figure 6 caption]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, model: Gemini 2.5 Flash, value: 90, decimals: 0, where: [Table 7, Figure 5 label, Figure 6 label, Figure 6 caption]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, model: Llama 3.1 8B, value: 100, decimals: 0, where: [Table 7, Figure 5 label, Figure 6 label, Figure 6 caption]}
+  - {cell: provision-competitive, agent_prompt: standard, model: Claude Haiku 4.5, value: 100, decimals: 0, where: [Table 2, Table 7, Figure 3 label, Figure 5 label, Section 4.1, Section 4.3]}
+  - {cell: provision-competitive, agent_prompt: standard, model: GPT-5.4 mini, value: 100, decimals: 0, where: [Table 2, Table 7, Figure 3 label, Figure 5 label, Section 4.1, Section 4.3]}
+  - {cell: provision-competitive, agent_prompt: standard, model: Gemini 2.5 Flash, value: 100, decimals: 0, where: [Table 2, Table 7, Figure 3 label, Figure 5 label, Section 4.1, Section 4.3]}
+  - {cell: provision-competitive, agent_prompt: standard, model: Llama 3.1 8B, value: 87, decimals: 0, where: [Figure 3 label, Figure 5 label]}
+  - {cell: provision-competitive, agent_prompt: standard, model: Llama 3.1 8B, value: 86.7, decimals: 1, where: [Table 2, Table 7, Section 4.1, Section 4.3]}
+  - {cell: provision-transitional, agent_prompt: standard, model: Claude Haiku 4.5, value: 23, decimals: 0, where: [Table 2, Figure 3 label]}
+  - {cell: provision-transitional, agent_prompt: standard, model: GPT-5.4 mini, value: 100, decimals: 0, where: [Table 2, Figure 3 label]}
+  - {cell: provision-transitional, agent_prompt: standard, model: Gemini 2.5 Flash, value: 73, decimals: 0, where: [Table 2, Figure 3 label]}
+  - {cell: provision-transitional, agent_prompt: standard, model: Llama 3.1 8B, value: 73, decimals: 0, where: [Table 2, Figure 3 label]}
+
+marker_deltas:
+  # Marker present minus marker absent.
+  - {cell: gathering-competitive, agent_prompt: null, model: Claude Haiku 4.5, value: 0, decimals: 0, where: [Figure 4 label]}
+  - {cell: gathering-competitive, agent_prompt: null, model: GPT-5.4 mini, value: 17, decimals: 0, where: [Figure 4 label, Section 4.4]}
+  - {cell: gathering-competitive, agent_prompt: null, model: Gemini 2.5 Flash, value: -67, decimals: 0, where: [Figure 4 label, Section 4.4]}
+  - {cell: gathering-competitive, agent_prompt: null, model: Llama 3.1 8B, value: -3, decimals: 0, where: [Figure 4 label]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, model: Claude Haiku 4.5, value: -60, decimals: 0, where: [Figure 4 label, Figure 6 label, Section 4.4, Figure 6 caption]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, model: GPT-5.4 mini, value: -10, decimals: 0, where: [Figure 4 label, Figure 6 label, Figure 6 caption]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, model: Gemini 2.5 Flash, value: -50, decimals: 0, where: [Figure 4 label, Figure 6 label, Section 4.4, Figure 6 caption]}
+  - {cell: provision-competitive, agent_prompt: defensive-strong, model: Llama 3.1 8B, value: 0, decimals: 0, where: [Figure 4 label, Figure 6 label, Figure 6 caption]}
+
+gathering_changes:
+  # gathering-competitive minus gathering-recognitional, interrupt arms.
+  - {model: GPT-5.4 mini, value: -27, decimals: 0, where: [Section 4.2]}
+  - {model: Gemini 2.5 Flash, value: -60, decimals: 0, where: [Section 4.2]}
+  - {model: Llama 3.1 8B, value: -7, decimals: 0, where: [Section 4.2]}
+
+kappas:
+  - {pack: gathering, comparison: [A, B], value: 1.0, decimals: 3, where: [Table 5, Appendix B.2]}
+  - {pack: gathering, comparison: [judge, resolved], value: 0.942, decimals: 3, where: [Table 5, Section 3.4, Appendix B.2, Ethics Statement]}
+  - {pack: provision, comparison: [A, B], value: 0.831, decimals: 3, where: [Table 6, Appendix B.2]}
+  - {pack: provision, comparison: [A, judge], value: 0.966, decimals: 3, where: [Table 6]}
+  - {pack: provision, comparison: [B, judge], value: 0.865, decimals: 3, where: [Table 6]}
+  - {pack: provision, comparison: [judge, resolved], value: 0.933, decimals: 3, where: [Table 6, Section 3.4, Appendix B.2, Ethics Statement]}
+
+kappa_cis:
+  - {pack: gathering, comparison: [A, B], low: 1.0, high: 1.0, decimals: 3, where: [Table 5]}
+  - {pack: gathering, comparison: [judge, resolved], low: 0.795, high: 1.0, decimals: 3, where: [Table 5, Appendix B.2]}
+  - {pack: provision, comparison: [A, B], low: 0.667, high: 0.966, decimals: 3, where: [Table 6, Appendix B.2]}
+  - {pack: provision, comparison: [A, judge], low: 0.883, high: 1.0, decimals: 3, where: [Table 6]}
+  - {pack: provision, comparison: [B, judge], low: 0.73, high: 0.967, decimals: 3, where: [Table 6]}
+  - {pack: provision, comparison: [judge, resolved], low: 0.831, high: 1.0, decimals: 3, where: [Table 6, Appendix B.2]}
+
+agreement_counts:
+  - {pack: gathering, comparison: [A, B], agree: 60, n: 60, where: [Table 5, Appendix B.2, Table 5 caption]}
+  - {pack: gathering, comparison: [judge, resolved], agree: 59, n: 60, where: [Table 5, Appendix B.2]}
+  - {pack: provision, comparison: [A, B], agree: 55, n: 60, where: [Appendix B.2]}
+  - {pack: provision, comparison: [judge, resolved], agree: 58, n: 60, where: [Appendix B.2]}
+
+agreement_rates:
+  - {pack: gathering, comparison: [A, B], value: 100, decimals: 0, where: [Table 5, Appendix B.2]}
+  - {pack: gathering, comparison: [judge, resolved], value: 98.3, decimals: 1, where: [Table 5, Appendix B.2]}
+  - {pack: provision, comparison: [A, B], value: 91.7, decimals: 1, where: [Appendix B.2]}
+  - {pack: provision, comparison: [judge, resolved], value: 96.7, decimals: 1, where: [Table 6, Appendix B.2]}
+
+validation_pack_rows:
+  - {pack: gathering, cell: gathering-competitive, variant: marker variant, value: 8, where: [Table 4]}
+  - {pack: gathering, cell: gathering-competitive, variant: strict topic-change, value: 22, where: [Table 4]}
+  - {pack: gathering, cell: gathering-recognitional, variant: dismissive overlap, value: 30, where: [Table 4]}
+  - {pack: provision, cell: provision-competitive, variant: defensive-strong prompt, value: 11, where: [Table 4]}
+  - {pack: provision, cell: provision-competitive, variant: marker variant, value: 12, where: [Table 4]}
+  - {pack: provision, cell: provision-competitive, variant: standard prompt, value: 9, where: [Table 4]}
+  - {pack: provision, cell: provision-transitional, variant: strict cooperative ack, value: 28, where: [Table 4]}
+
+validation_pack_arms:
+  - {pack: gathering, arm: baseline, value: 30, where: [Table 4]}
+  - {pack: gathering, arm: interrupt, value: 30, where: [Table 4, Section 3.3]}
+  - {pack: provision, arm: baseline, value: 16, where: [Table 4]}
+  - {pack: provision, arm: interrupt, value: 44, where: [Table 4, Section 3.3]}
+
+validation_pack_sizes:
+  - {pack: gathering, value: 60, where: [Table 4, Section 3.3, Appendix B.1, Section 3.4, Ethics Statement, Appendix B.2, Table 5 caption]}
+  - {pack: provision, value: 60, where: [Table 4, Section 3.3, Appendix B.1, Section 3.4, Ethics Statement, Appendix B.2, Table 6 caption]}

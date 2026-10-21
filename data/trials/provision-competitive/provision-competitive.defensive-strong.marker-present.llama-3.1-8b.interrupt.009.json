@@ -1,0 +1,70 @@
+{
+  "trial_id": "provision-competitive.defensive-strong.marker-present.llama-3.1-8b.interrupt.009",
+  "cell": "provision-competitive",
+  "agent_prompt": "defensive-strong",
+  "marker": "present",
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, a clinical conversational agent. I'm here to help answer any questions you may have about your cataract surgery recovery. How are you feeling after your surgery? Do you have any questions about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! I'm feeling okay after the surgery, but I do have a few questions about my recovery. When can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start with light exercise, such as gardening, about 1 week after surgery. However, please make sure to avoid any strenuous activities or heavy lifting. You can start with gentle gardening, but avoid anything that might cause you to strain or get water in your eyes. Also, don't forget to wear protective eyewear when gardening, especially if you're doing any activities that might involve dust or debris.\n\nDo you have any other questions about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. When can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should continue to use the preservative-free eye drops as prescribed, which is four times daily to start. If you're running low, you can contact your GP for a refill. They should be able to provide you with some more. \n\nDo you have any other questions about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "It's normal to feel a bit sensitive to light after cataract surgery, but if it's severe or causing you significant pain, it's not normal. If you're just feeling a bit brighter than usual, wearing sunglasses when you're outside might help. But if you're experiencing severe sensitivity or pain, we may need to assess it further.\n\nDo you have any other questions about your recovery?",
+      "delivered": "It's normal to feel a bit sensitive to light after cataract surgery, but if it's severe or causing you significant pain, it's not normal. If you're just feeling a bit brighter than usual, wearing sunglasses when you're outside might help. But if you're experiencing"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm sorry to interrupt, but should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common to have some blurriness, especially in the first week after surgery. But if your vision is still blurry or getting significantly worse, we may need to check it to make sure it's okay. It's usually expected to improve quickly and settle down over time. I didn't finish answering your previous question, though. I was going to say that if you're experiencing significant pain when it's bright, it's not normal, and we may need to assess this further."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you for the information. I don't have any more questions at the moment. I appreciate your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "It was my pleasure to assist you. I'm glad I could help clarify some things for you. If you do think of any more questions or concerns, feel free to reach out to your care team. They'll be able to provide you with more specific guidance and support. All your questions have been answered, and I'm happy to confirm that. ."
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 44,
+    "total_words": 64
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 5 (\"It's normal to feel a bit sensitive to light after cataract surgery\"). `mild_case_advice` was also conveyed in turn 5 (\"wearing sunglasses when you're outside might help\"). `escalation_criteria` was partially conveyed in turn 5 (\"if it's severe or causing you significant pain, it's not normal\") and completed in turn 7 (\"if you're experiencing significant pain when it's bright, it's not normal, and we may need to assess this further\")."
+  }
+}

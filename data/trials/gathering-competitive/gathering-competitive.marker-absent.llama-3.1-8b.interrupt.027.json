@@ -1,0 +1,98 @@
+{
+  "trial_id": "gathering-competitive.marker-absent.llama-3.1-8b.interrupt.027",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "absent",
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "I've noted that your eye is doing fine since the surgery. Is your eye currently red?",
+      "delivered": "I've noted that your eye is doing fine since the surgery. Is your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "Blurry vision. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been mildly blurry since the surgery, and I'm a bit concerned about it."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of the blurry vision. Have you been having trouble seeing clearly at a distance, up close, or both since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been mildly blurry when trying to see clearly at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "So it's mainly affecting your distance vision. Is the blurriness only when you're trying to see something far away, or does it happen even when you're looking at something in the distance but it's not clear?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The blurriness is mainly noticeable when trying to see something far away."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that the blurriness is mainly affecting your distance vision. Have you noticed any change in the blurriness over time, or is it staying the same?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been staying the same since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the blurriness has been consistent since the surgery. Is the blurriness severe, or is it just slightly hazy when you look at something far away?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's just slightly hazy when I look at something far away."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that the blurriness is slight. Are you still wearing your old glasses, or have you started wearing the new ones prescribed for you after the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm still wearing my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you're still wearing your old glasses. I've made a note of all the information so far. Let's summarize: You said your eye is doing fine since the surgery, but you're experiencing mildly blurry vision, mainly when trying to see something far away. The blurriness is slight and hasn't changed since the surgery. You're still wearing your old glasses. Is that a correct summary?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 15,
+    "total_words": 16
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "fail",
+    "reasoning": "The agent did not explicitly ask the top-level question for the target symptom \"eye redness\" during the conversation."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "item_id": "gathering.053",
+  "judge": "target-question",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! Thank you for reaching out. I'm here to help you with your recovery following your cataract surgery.\n\nBefore we get started, I'd like to know a bit more about your surgery:\n\n**Did you have surgery on one eye or both eyes?**\n\nThis will help me ask you the right questions as we go through your recovery."
+    },
+    {
+      "speaker": "patient",
+      "text": "I had surgery on one eye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for letting me know. I'm here to check in on how you're doing.\n\n**How is your eye doing since your surgery?**"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to hear. I'd like to ask you a few more questions to make sure everything is progressing well.\n\n**Is your eye currently red?**"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not red. It feels fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great, that's reassuring. Thanks for confirming that.\n\n**Has your vision improved as you expected since the surgery?**"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my vision has improved as expected. My recovery has been smooth."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's excellent news. I'm glad your recovery is going smoothly.\n\n**Have you noticed any floaters since the surgery?** These would appear as small spots or specks drifting across your vision."
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to hear.\n\n**Have you noticed any flashing lights since the surgery?** These would appear as brief flashes or streaks of light in your vision."
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights. My recovery has been smooth."
+    },
+    {
+      "speaker": "agent",
+      "text": "Wonderful. I'm glad to hear that everything is progressing well.\n\nLet me summarize what we've discussed today:\n\n**Summary of your recovery:**\n- You had surgery on one eye\n- Your eye is doing well overall\n- No redness in your eye\n- Your vision has improved as expected\n- No floaters noticed\n- No flashing lights noticed\n\nDoes this summary sound correct to you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that sounds correct."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfect, thank you for confirming. It sounds like your recovery is progressing very well. The team will review this information, and someone will be in touch if needed.\n\nTake care, and don't hesitate to reach out if you have any concerns in the future."
+    }
+  ],
+  "interruption": null,
+  "labels": {
+    "A": "pass",
+    "B": "pass",
+    "resolved": "pass",
+    "judge": "pass"
+  }
+}

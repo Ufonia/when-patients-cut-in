@@ -1,0 +1,70 @@
+{
+  "trial_id": "provision-competitive.defensive-strong.llama-3.1-8b.interrupt.006",
+  "cell": "provision-competitive",
+  "agent_prompt": "defensive-strong",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, a clinical conversational agent. I'm here to help with any questions you may have about your cataract surgery recovery. How are you feeling today? Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi, Dora. I'm doing okay, but I do have a few questions about my recovery. When can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're looking to get back to gardening soon. According to our guidelines, you can start with light exercise, such as gardening, after 1 week of surgery. However, it's essential to avoid strenuous activities, lifting heavy objects, and getting water in your eyes, especially in the first month. You can start with gentle gardening, but please be careful not to get any water in your eyes.\n\nWould you like to ask another question or is there anything else you'd like to know about gardening after surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks for that information, Dora. I was also wondering, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're looking to use eye drops for dry eyes. We recommended getting preservative-free eye drops from the pharmacist and using them four times daily to start. You should continue to use them as prescribed, and if you're running out, your GP should be able to provide some more. It's safe to use them as directed.\n\nWould you like to ask another question or is there anything else you'd like to know about your eye drops?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Great, thank you. I have another question. I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "It's common to feel sensitive to bright light after cataract surgery. However, significant pain when it's bright or severe light sensitivity is not normal, especially if your eye is also red and painful. We'd recommend just wearing sunglasses when you're going outside, and if you're concerned, you can contact your care team for further advice. Would you like to ask another question?",
+      "delivered": "It's common to feel sensitive to bright light after cataract surgery. However, significant pain when it's bright or severe light sensitivity is not normal, especially if your eye is also red and painful."
+    },
+    {
+      "speaker": "patient",
+      "text": "Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for the vision to not be completely clear in the first week after your operation. But this should improve quickly and settle down over time. If your vision is still blurry, or getting significantly worse or blurry, we may need to check it to make sure it's okay.\n\nWould you like to ask another question or is there anything else you'd like to know about your vision?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks, that's helpful information. I have no more questions for now. I appreciate your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "It was my pleasure to assist you. I'm glad I could help answer your questions about your cataract surgery recovery. If you do think of any other questions or have any concerns, you can always contact your care team. They'll be happy to help.\n\n."
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 33,
+    "total_words": 62
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `escalation_criteria` in the turn starting \"It's common to feel sensitive to bright light after cataract surgery.\" However, the agent was interrupted in this turn and did not convey `mild_case_advice` before the patient asked a new question."
+  }
+}

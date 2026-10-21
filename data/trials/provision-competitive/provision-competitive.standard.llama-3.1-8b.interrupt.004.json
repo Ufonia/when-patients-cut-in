@@ -1,0 +1,78 @@
+{
+  "trial_id": "provision-competitive.standard.llama-3.1-8b.interrupt.004",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I'm happy to help with any questions you have about your cataract surgery recovery. How are you feeling today? Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! I'm feeling okay, but I do have a few questions about my recovery. First off, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start with light gardening, such as watering or weeding, about 1 week after surgery. However, it's best to avoid heavy digging or lifting for a month. Just remember to be gentle and avoid getting any dirt or water in your eye."
+    },
+    {
+      "speaker": "patient",
+      "text": "Great, thanks for that. My next question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should have been using preservative-free eye drops four times daily since after your surgery. If you've been using them as directed, you can continue to do so. If you're running out, your GP can provide some more."
+    },
+    {
+      "speaker": "patient",
+      "text": "Got it, thanks for letting me know. I'm also experiencing a lot of sensitivity to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "Some sensitivity to bright light is normal, especially in the first few weeks. Wearing sunglasses can help. If the sensitivity is severe or accompanied by pain, redness, or other symptoms, we may need to assess it further.",
+      "delivered": "Some sensitivity to bright light is normal, especially in the first few weeks. Wearing sunglasses can help. If the sensitivity is severe or accompanied"
+    },
+    {
+      "speaker": "patient",
+      "text": "Oh, okay, but should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common to have some blurriness in the first week after surgery, but it should improve quickly and settle down over time. If your vision is still blurry or getting significantly worse, we may need to check it to make sure it's okay."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you for explaining all of that! I don't have any more questions right now. I appreciate your help."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome, it was my pleasure to help. I'm glad I could answer your questions. Just a quick check: are all your questions about your cataract surgery recovery answered to your satisfaction?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, you've answered everything I was wondering about. Thank you so much for your assistance!"
+    },
+    {
+      "speaker": "agent",
+      "text": "."
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 24,
+    "total_words": 37
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in turn 5 (\"Some sensitivity to bright light is normal, especially in the first few weeks. Wearing sunglasses can help.\"). However, the agent was interrupted before fully conveying `escalation_criteria`, as the turn ended with \"If the sensitivity is severe or accompanied\". The patient's subsequent turn changed the topic, and the agent did not return to complete the escalation criteria."
+  }
+}

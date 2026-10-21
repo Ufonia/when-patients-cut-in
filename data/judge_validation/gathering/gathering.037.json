@@ -1,0 +1,82 @@
+{
+  "item_id": "gathering.037",
+  "judge": "target-question",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "Gemini 2.5 Flash",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! How are your eyes doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "They're fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to hear. Is your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye isn't red. It's feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Glad to hear that. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, it's not painful. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my vision is as expected. My recovery has been smooth."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's excellent news. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to know. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights. My recovery has been smooth."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's great!\n\nTo summarize, you've reported that:\n- Your overall eye recovery is going well.\n- You have not experienced any eye redness.\n- You have not experienced any eye pain.\n- Your vision has improved as expected since the surgery.\n- You have not noticed any floaters.\n- You have not noticed any flashing lights.\n\nDoes this sound correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct. Everything's going fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "Excellent.\n\nTo summarize, you've reported that:\n- Your overall eye recovery is going well.\n- You have not experienced any eye redness.\n- You have not experienced any eye pain.\n- Your vision has improved as expected since the surgery.\n- You have not noticed any floaters.\n- You have not noticed any flashing lights.\n\nDoes this sound correct?"
+    }
+  ],
+  "interruption": null,
+  "labels": {
+    "A": "pass",
+    "B": "pass",
+    "resolved": "pass",
+    "judge": "pass"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "trial_id": "gathering-competitive.marker-absent.llama-3.1-8b.interrupt.004",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "absent",
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! It's nice to speak with you. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "I've noted that your eye is doing okay so far. Is your eye currently red?",
+      "delivered": "I've noted that your eye is doing okay so far. Is your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "Blurry vision can be a bit frustrating. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been mild, but I'm a bit concerned since it hasn't improved as much as I expected."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you're experiencing mild blurry vision that hasn't improved as much as you expected. Are you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's more noticeable at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the blurry vision is more noticeable when you're trying to see things far away. Are you able to see clearly at a distance, such as watching TV, or is it still slightly hazy?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's still slightly hazy when trying to see things far away like the TV."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the blurry vision is still affecting your ability to see things at a distance, such as the TV. When did you first notice the blurriness, was it immediately after the surgery or did it develop over time?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I noticed the blurriness immediately after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the blurriness started right after the surgery. Do you think the blurriness is getting better or worse over time?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It hasn't really changed; it's just been consistent."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the blurriness has been consistent and hasn't really changed much since the surgery. Is the blurriness only when you are wearing your old glasses, or is it still present even when you're not wearing them?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's still present even when I'm not wearing my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the blurriness is still present even when you're not wearing your old glasses. I've noted that you're experiencing blurry vision, which is noticeable at a distance and has been consistent since the surgery. Now, have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven't noticed any floaters since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you haven't noticed any floaters since the surgery. Is your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye isn't red."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that your eye isn't currently red. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye isn't painful."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that your eye isn't currently painful. Now that we've checked on the symptoms, I'd like to summarize what we've discussed so far. Let me do that for you. \n\nTo confirm, you had surgery and your eye is doing okay overall. You're experiencing blurry vision, which is more noticeable at a distance, and it started right after the surgery. The blurriness is still present and hasn't changed much since then. You haven't noticed any floaters or redness, and you don't have any pain.\n\nIs that a correct summary?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 14,
+    "total_words": 15
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question \"Is your eye currently red?\" on its own, and the patient provided a clear answer."
+  }
+}

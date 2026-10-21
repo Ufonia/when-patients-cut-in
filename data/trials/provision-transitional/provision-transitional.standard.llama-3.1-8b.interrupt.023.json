@@ -1,0 +1,78 @@
+{
+  "trial_id": "provision-transitional.standard.llama-3.1-8b.interrupt.023",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, a clinical conversational agent. I conducted your post-cataract surgery follow-up check, and I'm here to answer any questions you may have about your recovery. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do have some questions. When can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start with light gardening, such as gentle watering or pruning, about 1 week after surgery. However, it's best to avoid anything that might cause a lot of bending, lifting, or straining. You can also try gardening with protective eyewear, like sunglasses, to minimize any discomfort. Would you like to ask another question?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should continue to use your preservative-free eye drops four times daily as prescribed. If you're running out, you can contact your GP to get some more. They can also provide you with a prescription if needed. Would you like to ask another question?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "Some sensitivity to light is normal as your eyes adjust to the new lenses. However, if it's severe or you're experiencing significant pain, we may need to assess it further. If it's just mild and things seem brighter than usual, you can try wearing sunglasses when you're outside. Would you like to ask another question?",
+      "delivered": "Some sensitivity to light is normal as your eyes adjust to the new lenses."
+    },
+    {
+      "speaker": "patient",
+      "text": "Right, got it."
+    },
+    {
+      "speaker": "agent",
+      "text": "It's also a good idea to wear sunglasses when you're going outside to help with the brightness. Do you have any other questions about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for vision to not be completely clear in the first week after surgery, but it should improve quickly and settle down over time. If your vision is still blurry or getting significantly worse, we may need to check it to make sure it's okay. Would you like to ask another question?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I don't have any more questions. Thank you for your help."
+    },
+    {
+      "speaker": "agent",
+      "text": "All your questions have been answered. Have a good day and take care of your eyes during recovery."
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "transitional-sub-unit",
+    "cut_word_index": 14,
+    "total_words": 55
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 5 (\"Some sensitivity to light is normal as your eyes adjust to the new lenses.\"). It also conveyed `mild_case_advice` in turn 7 (\"It's also a good idea to wear sunglasses when you're going outside to help with the brightness.\"). However, the `escalation_criteria` point was not conveyed at any point in the conversation."
+  }
+}

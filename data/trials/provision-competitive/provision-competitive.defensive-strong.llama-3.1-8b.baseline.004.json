@@ -1,0 +1,68 @@
+{
+  "trial_id": "provision-competitive.defensive-strong.llama-3.1-8b.baseline.004",
+  "cell": "provision-competitive",
+  "agent_prompt": "defensive-strong",
+  "marker": null,
+  "arm": "baseline",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! It's nice to speak with you. I'm Dora, a clinical conversational agent. I conducted your follow-up check after your cataract surgery. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi there! Yes, I do have a few questions about my recovery. First, I'm wondering when I can start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start with light gardening activities about 1 week after surgery. Just remember to wear protective eyewear, and avoid getting water in your eyes. You can also start with gentle activities like watering plants or weeding, and gradually increase the intensity as your eyes feel more comfortable. Would you like to ask another question about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That sounds good, thank you. My next question is about my eye gel for dry eyes. When can I start using it again?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start using your preservative-free eye drops as soon as you need to, but it's recommended to use them four times daily to start. If you were already using them before your surgery, it's safe to continue using them unless you've been told otherwise by your doctor or care team. Would you like to ask another question about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Great, thanks for the clarification. My eyes seem very sensitive to bright light now. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's normal for your eyes to be a bit sensitive to light as it adjusts to the new lenses. However, if it's significant pain when it's bright or if your eye is also red and painful, we may need to assess this further. If it's just mild and things seem brighter than usual, you can try wearing sunglasses when you're outside. Would you like to ask another question about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Got it, that makes sense. I have one more question: Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for the vision to not be completely clear in the first week after your operation, but it should improve quickly and settle down over time. If your vision is still blurry or getting significantly worse or blurry, we may need to check it to make sure it's okay. So, if you're concerned about your vision, it's always best to contact your care team. Would you like to ask another question about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I think that's everything I needed to know. Thank you so much for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "It was my pleasure to help. I'm glad I could answer your questions about your cataract surgery recovery. Just to confirm, are all your questions about your cataract surgery recovery answered to your satisfaction?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, they were all answered to my satisfaction. Thank you again for your assistance!"
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent successfully conveyed all three content points in a single turn. In turn 5, Dora states, \"It's normal for your eyes to be a bit sensitive to light as it adjusts to the new lenses,\" covering `normal_sensitivity_reassurance`. The agent then immediately follows with, \"However, if it's significant pain when it's bright or if your eye is also red and painful, we may need to assess this further,\" addressing `escalation_criteria`. Finally, Dora concludes with, \"If it's just mild and things seem brighter than usual, you can try wearing sunglasses when you're outside,\" which covers `mild_case_advice`."
+  }
+}

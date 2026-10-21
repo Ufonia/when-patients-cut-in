@@ -1,0 +1,98 @@
+{
+  "trial_id": "gathering-recognitional.llama-3.1-8b.interrupt.017",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to help you with your recovery after cataract surgery. How are your eyes doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "That's great to hear. Is your eye currently red?",
+      "delivered": "That's great to hear. Is your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Nope, nothing like that."
+    },
+    {
+      "speaker": "agent",
+      "text": "You mentioned your eyes are fine. Let's move on to checking for any potential issues. Have you noticed any blurriness in your vision since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my vision has been clear. No blurriness."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to hear. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, everything has been progressing smoothly as expected."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's wonderful to hear. Are your eyes red at all?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, there hasn't been any redness in my eyes."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note to go into that. Would you mind if I first ask about your pain - is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye isn't painful at all. It's feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's great to hear. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, there haven't been any floaters. Everything's been clear."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note to go into that. Would you mind if I first ask about your vision at a distance and close up - have you been able to see clearly while watching TV or reading?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I've been able to see clearly both at a distance and close up, while watching TV and reading."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note that your vision at a distance and close up has been clear. Let's summarize what you've told me so far: your overall eyes are fine, there's no redness, no pain, no floaters, and your vision has been clear both at a distance and close up. Is that all correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's all correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "recognitional",
+    "cut_word_index": 8,
+    "total_words": 9
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent asked the top-level question \"Are your eyes red at all?\" on its own, and the patient provided a clear answer."
+  }
+}

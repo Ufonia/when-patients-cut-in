@@ -1,0 +1,80 @@
+{
+  "trial_id": "gathering-recognitional.gemini-2.5-flash.baseline.023",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "Gemini 2.5 Flash",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to ask you a few questions about your recovery after cataract surgery.\n\nHow are your eyes doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "They're doing fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to hear.\n\nAre your eyes red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, the recovery has been smooth and my eyes are not red."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to know.\n\nAre your eyes painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eyes are feeling fine and there's no pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good.\n\nHas your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my vision has improved as expected. Everything is going smoothly."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's excellent.\n\nHave you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. My recovery has been smooth."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to hear.\n\nHave you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "It's good to hear your eye is feeling fine overall.\n\nTo summarize, you've reported that:\n- Your eyes are doing fine since the surgery.\n- You have no redness in your eyes.\n- You have no pain in your eyes.\n- Your vision has improved as expected.\n- You have not noticed any floaters.\n- You have not noticed any flashing lights.\n\nIs that an accurate summary of our conversation?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's an accurate summary. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome."
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for eye redness (\"Are your eyes red?\") and did not bundle it with other questions or assume the answer."
+  }
+}

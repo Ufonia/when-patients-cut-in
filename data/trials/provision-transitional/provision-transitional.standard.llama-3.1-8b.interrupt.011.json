@@ -1,0 +1,78 @@
+{
+  "trial_id": "provision-transitional.standard.llama-3.1-8b.interrupt.011",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, a clinical conversational agent. I conducted your post-cataract surgery follow-up check. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi, yes, I do have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "After surgery, it's recommended to avoid strenuous exercise, lifting heavy objects, and activities that might get water in your eyes, including gardening, for about a month. However, you can start with light exercise like brisk walking, gardening, or gentle cycling after 1 week. Just be careful and avoid getting water in your eyes. Would you like to ask another question?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks for the information. My next question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should continue to use the eye drops as prescribed. If you're running out, your GP should be able to provide some more. It's safe to use the eye drops you were using before your operation, unless you've been told otherwise. Just remember to store them as directed. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "It's normal for the eyes to be a bit sensitive to light as they adjust to the new lenses. If it's mild and just seems brighter than usual, wearing sunglasses when you're outside should help. However, if you have significant pain when it's bright or severe light sensitivity, especially if your eye is also red and painful, we may need to assess this further. Would you like to ask another question?",
+      "delivered": "It's normal for the eyes to be a bit sensitive to light as they adjust to the new lenses."
+    },
+    {
+      "speaker": "patient",
+      "text": "Right, got it."
+    },
+    {
+      "speaker": "agent",
+      "text": "If it's mild, just wearing sunglasses when you're outside might help. But if it's severe or accompanied by redness and pain, we might need to check it further. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "One last question: Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for vision to not be completely clear in the first week after surgery, but it should improve quickly and settle down over time. If your vision is still blurry or getting significantly worse, we may need to check it to make sure it's okay. Would you like to ask any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, that's all the questions I had. Thank you for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "All your questions have been answered. Have a great day and take care of your eyes. ."
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "transitional-sub-unit",
+    "cut_word_index": 19,
+    "total_words": 71
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 5 (\"It's normal for the eyes to be a bit sensitive to light as they adjust to the new lenses.\"). `mild_case_advice` was conveyed in turn 6 (\"If it's mild, just wearing sunglasses when you're outside might help.\"). `escalation_criteria` was also conveyed in turn 6 (\"But if it's severe or accompanied by redness and pain, we might need to check it further.\"). All points were covered."
+  }
+}

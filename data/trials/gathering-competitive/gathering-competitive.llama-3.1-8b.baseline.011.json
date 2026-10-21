@@ -1,0 +1,116 @@
+{
+  "trial_id": "gathering-competitive.llama-3.1-8b.baseline.011",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to help you with your recovery after cataract surgery. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note to go into your overall recovery. Is your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any eye redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note that you haven't experienced eye redness. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't had any eye pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note that you haven't experienced eye pain. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed some mild blurry vision since the surgery, and I'm concerned about it. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you're experiencing mild blurry vision. That can be a normal part of the recovery process, but I'll make sure to pass this along to the team. Have you noticed the blurry vision at a distance, such as when watching TV, or up close, such as while reading?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've mostly noticed the mild blurry vision at a distance, like when watching TV."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note that the blurry vision is mostly at a distance. When exactly did you first notice the blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I first noticed the mild blurry vision shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you first noticed the blurry vision shortly after the surgery. Do you think the blurriness is getting better or worse over time?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It seems to be staying about the same for now."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that the blurriness seems to be stable for now. Is your vision slightly hazy, or completely blurred when you're watching TV?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's slightly hazy when I'm watching TV."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that your vision is slightly hazy when watching TV. Is the blurriness only when you are wearing your old glasses, or even with your new prescription?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The blurriness is present even with my new prescription."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note that the blurriness persists even with your new prescription. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you haven't experienced any floaters since the surgery. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you haven't experienced any flashing lights since the surgery.\n\nLet me summarize what you've told me so far:\n\n* You're overall eye recovery has been okay\n* You haven't experienced eye redness\n* You haven't experienced eye pain\n* You've noticed mild blurry vision, mostly at a distance, since the surgery\n* The blurriness is slightly hazy and persists even with your new prescription\n* You haven't noticed any floaters\n* You haven't noticed any flashing lights\n\nIs this summary correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary is correct."
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for eye redness and did not bundle it with other questions. The patient also answered the question clearly."
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "trial_id": "gathering-competitive.marker-absent.gemini-2.5-flash.interrupt.021",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "absent",
+  "arm": "interrupt",
+  "model": "Gemini 2.5 Flash",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to ask you a few questions about your recovery after cataract surgery.\n\nHow are your eyes doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "Glad to hear that.\n\nAre your eyes red?",
+      "delivered": "Glad to hear that.\n\nAre your eyes"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you're experiencing blurry vision.\n\nHas your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been mild, but I'm a bit concerned about it since I expected it to be clearer by now."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand your concern about the blurriness. The team will go through everything, and someone will be in touch if needed.\n\nAre you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's mostly trouble seeing clearly at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for clarifying that.\n\nWhen exactly did you first notice the blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I noticed the mild blurriness shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for that information.\n\nDo you think the blurriness is getting better or worse?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It seems to be staying about the same for now."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you.\n\nIs your vision slightly hazy, or completely blurred?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's slightly hazy."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for clarifying.\n\nIs the blurriness only when you are wearing your old glasses?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, the blurriness is there even without my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for that information.\n\nHave you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "Understood.\n\nHave you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, thank you.\n\nTo summarize, you mentioned that your eyes are doing fine overall since the surgery. You are experiencing mild blurry vision, mostly at a distance, which you first noticed shortly after the surgery. It seems to be staying about the same and is a slight haziness, present even without your old glasses. You have not noticed any floaters or flashing lights.\n\nIs that an accurate summary of your symptoms?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's an accurate summary."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for confirming.\n\nSummary of symptoms:\n- Overall eye recovery: Doing fine.\n- Eye redness: Not reported.\n- Eye pain: Not reported.\n- Blurry vision: Yes, mild and mostly at a distance. Noticed shortly after surgery, staying about the same, described as slightly hazy, and present even without old glasses.\n- Floaters: Not reported.\n- Flashing lights: Not reported."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 7,
+    "total_words": 8
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "fail",
+    "reasoning": "The agent did not explicitly ask the top-level question for the target symptom 'eye redness' during history-taking. The summary statement \"Eye redness: Not reported\" does not count as having asked the question."
+  }
+}

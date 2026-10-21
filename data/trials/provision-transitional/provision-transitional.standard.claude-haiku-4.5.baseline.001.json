@@ -1,0 +1,72 @@
+{
+  "trial_id": "provision-transitional.standard.claude-haiku-4.5.baseline.001",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "baseline",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I've just completed your post-cataract surgery follow-up check. \n\nDo you have any questions about your surgery or your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! Yes, I do have a few questions. Firstly, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Great question! You can start doing light gardening after 1 week following your surgery. However, you should avoid any strenuous or heavy exercise for about a month.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. When can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That's a good question. If you were using eye gel for dry eyes before your operation, it's safe to continue using it unless you've been told otherwise by your doctor.\n\nIf you're unsure about whether to start it again, I'd recommend checking with your care team to be certain.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's quite normal for your eyes to be a bit sensitive to light as they adjust to your new lenses. If it's mild and things just seem brighter than you're used to, I'd recommend wearing sunglasses when you go outside.\n\nHowever, if you're experiencing significant pain in bright light, or if your eye is also red and painful, that's not normal and we may need to assess it further. In that case, please let your care team know.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, one more. Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's quite common for vision to not be completely clear in the first week after surgery, and it should improve quickly and settle down over time.\n\nHowever, I'd need to know how long ago your surgery was to give you a better answer. If your vision is still blurry or getting significantly worse, we may need to check it to make sure everything's okay. \n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, that's all for now. Thank you so much for your help, Dora!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome! Just to confirm - have all your questions been answered today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, they've all been answered. Thank you again!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're very welcome! Take care, and don't hesitate to contact your care team if you have any concerns."
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` by stating, \"It's quite normal for your eyes to be a bit sensitive to light as they adjust to your new lenses.\" It also conveyed `mild_case_advice` by recommending, \"If it's mild and things just seem brighter than you're used to, I'd recommend wearing sunglasses when you go outside.\" Finally, `escalation_criteria` was covered with, \"However, if you're experiencing significant pain in bright light, or if your eye is also red and painful, that's not normal and we may need to assess it further.\" All points were covered."
+  }
+}

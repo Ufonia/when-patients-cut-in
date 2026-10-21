@@ -1,0 +1,86 @@
+{
+  "trial_id": "provision-transitional.standard.claude-haiku-4.5.interrupt.007",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora. I've just completed your post-cataract surgery follow-up check. Do you have any questions about your surgery or your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi, Dora! Yes, I do have a few questions. First off, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Good question! You can start doing light exercise like gardening about 1 week after your surgery. However, you should avoid any strenuous or heavy exercise for about a month.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks for letting me know! I have another question: when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That's a good question. If you were using eye gel for dry eyes before your operation, it's safe to continue using it unless you've been told otherwise by your doctor.\n\nIf you're unsure or need more information about your specific eye gel, I'd recommend checking with your GP or care team.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Alright, thanks. Another thing I'm wondering about is that I'm very sensitive to bright light right now. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "Yes, that's quite normal! It's common for your eyes to be a bit sensitive to light as they adjust to your new lenses. If it's mild and things just seem brighter than you're used to, we'd recommend wearing sunglasses when you go outside.\n\nHowever, if you have significant pain when it's bright, or severe light sensitivity - especially if your eye is also red and painful - that's not normal and we may need to check it further. In that case, let us know.\n\nDo you have any other questions?",
+      "delivered": "Yes, that's quite normal! It's common for your eyes to be a bit sensitive to light as they adjust to your new lenses."
+    },
+    {
+      "speaker": "patient",
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome! Is there anything else you'd like to know about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, one more thing. Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's quite common for vision to not be completely clear in the first week after surgery, and it should improve quickly and settle down over time.\n\nHowever, if your vision is still blurry or getting significantly worse, we may need to check it to make sure everything is okay.\n\nHow long ago was your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks, that’s reassuring. My surgery was about a week ago. I appreciate all your help, and I don't have any more questions for now."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's great to hear! So just to confirm - have all your questions about your surgery and recovery been answered today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, they have. Thank you so much for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're very welcome! Take care, and best of luck with your recovery."
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "transitional-sub-unit",
+    "cut_word_index": 23,
+    "total_words": 90
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 7 by stating, \"Yes, that's quite normal! It's common for your eyes to be a bit sensitive to light as they adjust to your new lenses.\" However, the agent was interrupted and did not have the opportunity to convey `escalation_criteria` or `mild_case_advice`."
+  }
+}

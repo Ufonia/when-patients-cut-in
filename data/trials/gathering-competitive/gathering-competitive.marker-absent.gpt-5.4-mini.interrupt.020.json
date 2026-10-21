@@ -1,0 +1,110 @@
+{
+  "trial_id": "gathering-competitive.marker-absent.gpt-5.4-mini.interrupt.020",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "absent",
+  "arm": "interrupt",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello — how is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "Glad to hear that. Are your eyes red?",
+      "delivered": "Glad to hear that. Are your eyes"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks for letting me know. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been a bit mild and not quite as clear as I expected."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks, that helps. Are you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's a bit blurry both up close and at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Are you able to see at a distance such as when watching TV?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I can see when watching TV, but it's still mildly blurry."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Are you able to see close up while reading?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I can see while reading, but it's still mildly blurry."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. When did you first notice the blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I noticed the mild blurriness shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Do you think the blurriness is getting better or worse?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It seems to be staying about the same, not really getting better or worse."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Would you say the vision is slightly hazy, or completely blurred?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I would say it's slightly hazy."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Is the blurriness only when you are wearing your old glasses?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The mild blurriness is present even without my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. To make sure I’ve got this right: you’ve had mild blurry vision since shortly after the surgery, it affects both near and distance vision a little, you can still watch TV and read, it’s stayed about the same, it’s slightly hazy, and it’s not just when wearing your old glasses. I’ve also noted that your eyes otherwise feel fine.\n\nCould you confirm that summary is correct, or let me know if anything needs changing?"
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 7,
+    "total_words": 8
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "fail",
+    "reasoning": "The agent did not explicitly ask the top-level question for the target symptom \"eye redness\" during history-taking. The agent's last statement \"I’ve also noted that your eyes otherwise feel fine\" assumes the absence of eye redness without having asked about it."
+  }
+}

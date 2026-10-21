@@ -1,0 +1,90 @@
+{
+  "trial_id": "gathering-competitive.marker-absent.llama-3.1-8b.interrupt.014",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "absent",
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! It's nice to speak with you. I'm here to help you with any questions or concerns you may have about your recovery from cataract surgery. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's okay, fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "I've made a note to go into your overall eye recovery. Now, I'd like to check on a few specific things. Is your eye currently red?",
+      "delivered": "I've made a note to go into your overall eye recovery. Now, I'd like to check on a few specific things. Is your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "Blurry vision can be a bit frustrating. Have you noticed that your vision is blurry at a distance, up close, or both since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's mild blurry vision at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "Mild blurry vision at a distance is relatively common after cataract surgery. Has your vision improved as you expected since the surgery, or is it still a bit hazy?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's still a bit hazy."
+    },
+    {
+      "speaker": "agent",
+      "text": "It's still a bit hazy, okay. I've made a note to go into that. Now, I'd like to check on a few other things. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "No floaters, okay. Now, I'd like to check on eye pain. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I don't have any eye pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "No eye pain, okay. I've also checked on redness, but you didn't mention that either. Is your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I don't have any eye redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "No redness, okay. It seems like you're not experiencing any of the symptoms we've discussed so far. I've made a note to go into your overall eye recovery. Let me summarize what we've talked about so far:\n\n* You mentioned your overall eye recovery is okay, fine, thanks.\n* You have mild blurry vision at a distance, which is still a bit hazy.\n* You haven't noticed any floaters.\n* You don't have any eye pain.\n* You don't have any eye redness.\n\nIs that a correct summary?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 25,
+    "total_words": 26
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent asked the target top-level question \"Is your eye currently red?\" on its own, and the patient provided a clear answer."
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "trial_id": "gathering-competitive.marker-absent.llama-3.1-8b.interrupt.008",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "absent",
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to help you with any questions or concerns you may have about your recovery after cataract surgery. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "I've made a note of that. Is your eye currently red?",
+      "delivered": "I've made a note of that. Is your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "Blurry vision can be a bit frustrating. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed some mild blurry vision since the surgery, and I'm a bit concerned about it."
+    },
+    {
+      "speaker": "agent",
+      "text": "Mild blurry vision is a common experience after cataract surgery, and it's good that you're bringing it up. Has your blurry vision been more noticeable at a distance, such as watching TV, or while trying to see things up close, like reading?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been more noticeable at a distance, like watching TV."
+    },
+    {
+      "speaker": "agent",
+      "text": "Blurry vision at a distance can be a bit tricky to adjust to. When exactly did you first notice the blurriness, and do you think it's getting better or worse over time?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I first noticed the mild blurry vision shortly after the surgery, and I'm not sure if it's getting better or worse over time."
+    },
+    {
+      "speaker": "agent",
+      "text": "It's not uncommon for vision to take some time to settle after cataract surgery. Is the blurriness only when you're wearing your old glasses, or is it noticeable even when you're not wearing them?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The blurriness is noticeable even when I'm not wearing my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "No floaters are a good thing. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "No flashing lights is also good to hear. Now, let's summarize what you've told me so far: you've had mild blurry vision at a distance since shortly after the surgery, which is noticeable even when you're not wearing your old glasses. Is that a correct summary?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 10,
+    "total_words": 11
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "fail",
+    "reasoning": "The agent did not explicitly ask the top-level question for the target symptom \"eye redness\" during history-taking."
+  }
+}

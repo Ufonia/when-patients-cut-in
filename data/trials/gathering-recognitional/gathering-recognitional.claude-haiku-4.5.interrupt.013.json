@@ -1,0 +1,102 @@
+{
+  "trial_id": "gathering-recognitional.claude-haiku-4.5.interrupt.013",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to help you with your recovery after cataract surgery. I'd like to check in on how you're doing and ask you a few questions about any symptoms you might be experiencing.\n\nTo start with, did you have surgery on one eye or both eyes?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I had surgery on one eye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for letting me know. \n\nHow is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "That's good to hear! Let me ask you a few more questions to make sure everything is progressing well.\n\nIs your eye currently red?",
+      "delivered": "That's good to hear! Let me ask you a few more questions to make sure everything is progressing well.\n\nIs your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Nope, nothing like that."
+    },
+    {
+      "speaker": "agent",
+      "text": "I appreciate you letting me know. Just to clarify, I haven't asked about redness yet — I was about to. Let me continue checking in.\n\nIs your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not red. It's feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great, that's reassuring. \n\nHas your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my vision has improved as expected, and my eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's excellent news! \n\nHave you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good to hear.\n\nHave you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Wonderful! Let me just check one more thing.\n\nIs your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not painful. It's feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's great to hear. Thank you for answering all my questions.\n\nLet me summarize what we've discussed:\n\n**Summary of your recovery:**\n- Your eye is doing well overall since surgery\n- No redness in your eye\n- Your vision has improved as expected\n- No pain in your eye\n- No floaters noticed\n- No flashing lights noticed\n\nEverything sounds like it's progressing nicely with your recovery. Does this summary sound correct to you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary is correct. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're very welcome! I'm glad everything is going well with your recovery. The team will review this information, and if anything needs follow-up, someone will be in touch with you.\n\nTake care, and wishing you continued smooth healing!"
+    }
+  ],
+  "interruption": {
+    "utterance": 5,
+    "type": "recognitional",
+    "cut_word_index": 23,
+    "total_words": 24
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent initially asked an incomplete question \"Is your eye currently\" which could have confused the patient. However, the agent clarified and explicitly asked \"Is your eye currently red?\" later in the conversation."
+  }
+}

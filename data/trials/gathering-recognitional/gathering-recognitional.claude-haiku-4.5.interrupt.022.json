@@ -1,0 +1,94 @@
+{
+  "trial_id": "gathering-recognitional.claude-haiku-4.5.interrupt.022",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! Thanks for getting in touch. I'm here to help you with your recovery after your cataract surgery.\n\nTo start, could you tell me which eye or eyes you had surgery on? Was it just one eye, or both eyes?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hello! I had surgery on just one eye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for letting me know. Let me start by asking how your eye is doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "That's great to hear! Let me check in on a few specific things to make sure everything is progressing well.\n\nIs your eye currently red at all?",
+      "delivered": "That's great to hear! Let me check in on a few specific things to make sure everything is progressing well.\n\nIs your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "No worries, all OK."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good to know. Let me ask about a few more things to make sure we cover everything.\n\nIs your eye currently red at all?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My eye is feeling fine overall, and there's no redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's excellent. Thanks for confirming that.\n\nHas your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my vision is fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's wonderful to hear. Just to make sure everything is on track, have you noticed any floaters since the surgery? These would be small spots or specks drifting across your vision."
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven't noticed any floaters. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great, that's good to know. One more thing I'd like to check in on.\n\nHave you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Excellent. Thank you for going through all of that with me.\n\nLet me summarize what we've discussed:\n\n**Overall recovery:** Your eye is doing well since surgery with no concerns.\n\n**Redness:** No redness in your eye.\n\n**Pain:** No pain or discomfort.\n\n**Vision:** Your vision has improved as expected since the surgery.\n\n**Floaters:** You haven't noticed any floaters.\n\n**Flashing lights:** You haven't noticed any flashing lights.\n\nDoes that sound right, or is there anything you'd like me to adjust?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That sounds correct, thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're very welcome! I'm glad to hear your recovery is going so well. The team will review everything we've discussed, and someone will be in touch if needed.\n\nWishing you continued smooth recovery!"
+    }
+  ],
+  "interruption": {
+    "utterance": 5,
+    "type": "recognitional",
+    "cut_word_index": 24,
+    "total_words": 27
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for the target symptom \"eye redness\" and the patient provided a clear answer. None of the hazardous scenarios occurred."
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "trial_id": "provision-transitional.standard.llama-3.1-8b.interrupt.022",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! How are you feeling after your cataract surgery? Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi there! Thanks for asking. I'm feeling pretty good overall, but I do have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start with light gardening, such as brisk walking, gardening, light jogging, and gentle cycling, about 1 week after surgery. However, it's best to avoid strenuous or heavy exercise, lifting heavy objects, or activities that might get water in your eyes, especially in the first month. Does that help? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that helps a lot, thank you! I do have another question. When can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should start using the preservative-free eye drops for dry eyes as soon as you can, ideally four times daily. If you've already got some, you can start using them now. If you're running out, you can get more from your GP. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Great, I'll start using the gel then. I do have another question. I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "Some sensitivity to bright light is normal, especially in the first few weeks after surgery. However, if it's severe or accompanied by redness and pain, we'd want to check it out. If it's just mild, wearing sunglasses when you're outside should help. Does that make sense? Do you have any other questions?",
+      "delivered": "Some sensitivity to bright light is normal, especially in the first few weeks after surgery."
+    },
+    {
+      "speaker": "patient",
+      "text": "Right, got it."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome. Do you have any other questions about your recovery or surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I have one more question. Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for vision to not be completely clear in the first week after surgery, but it should improve quickly and settle down over time. If your vision is still blurry or getting significantly worse, we may need to check it to make sure it's okay. Does that make sense?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that makes sense. Thank you for the information. I don't have any more questions at the moment."
+    },
+    {
+      "speaker": "agent",
+      "text": "All right, let me just check one more thing. Have all your questions about your cataract surgery recovery been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, all my questions have been answered. Thank you for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "."
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "transitional-sub-unit",
+    "cut_word_index": 15,
+    "total_words": 52
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 6 by stating, \"Some sensitivity to bright light is normal, especially in the first few weeks after surgery.\" However, the agent failed to convey `escalation_criteria` and `mild_case_advice` as the conversation was interrupted after the first part of the response and the agent did not return to complete the information."
+  }
+}

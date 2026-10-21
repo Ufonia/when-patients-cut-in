@@ -1,0 +1,70 @@
+{
+  "trial_id": "provision-competitive.standard.llama-3.1-8b.interrupt.013",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I'm happy to help you with any questions you may have about your cataract surgery recovery. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! Yes, I do have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start with light gardening about 1 week after surgery. Just be gentle with yourself and avoid heavy lifting or bending. It's also a good idea to wear protective eyewear when gardening to avoid any water or debris getting in your eyes. Does that help? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that helps a lot, thank you! My next question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should start using your preservative-free eye drops four times daily to help with dryness. You can start using them right away, actually. Just make sure to get them from the pharmacist and follow the instructions. If you were using eye drops before your surgery, it's also safe to continue using them unless you've been told otherwise. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you for that information! I'm also wondering, I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "It's normal for your eyes to be a bit sensitive to light after cataract surgery, especially in bright sunlight. If it's mild and just seems brighter than usual, you can try wearing sunglasses to help with it. But if the sensitivity is severe or accompanied by redness and pain, we may need to check on it further. Does that make sense? Do you have any other questions?",
+      "delivered": "It's normal for your eyes to be a bit sensitive to light after cataract surgery, especially in bright sunlight. If it's mild and just seems brighter than usual, you can try wearing sunglasses to help with it. But if the sensitivity is severe or accompanied"
+    },
+    {
+      "speaker": "patient",
+      "text": "Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for vision to not be completely clear in the first week after surgery, but it should improve quickly and settle down over time. If your vision is still blurry, or getting significantly worse or blurry, we may need to check it to make sure it's okay. But in general, most people's vision starts to clear up within a few days to a week. Does that help? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that helps a lot. I don't have any more questions. Thank you for your assistance!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome! It was my pleasure to help. I'm glad I could answer your questions and help you feel more comfortable with your recovery. If you think of anything else, don't hesitate to reach out to your care team. Otherwise, all the best with your recovery, and I hope your vision continues to improve. ."
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 45,
+    "total_words": 67
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in turn 5 by stating, \"It's normal for your eyes to be a bit sensitive to light after cataract surgery, especially in bright sunlight. If it's mild and just seems brighter than usual, you can try wearing sunglasses to help with it.\" However, the `escalation_criteria` point was interrupted before it could be fully delivered, as the patient interjected with a new question."
+  }
+}

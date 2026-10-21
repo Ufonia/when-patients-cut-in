@@ -1,0 +1,80 @@
+{
+  "trial_id": "gathering-recognitional.gemini-2.5-flash.baseline.030",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "Gemini 2.5 Flash",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to ask you a few questions about your recovery after cataract surgery.\n\nHow are your eyes doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to hear.\n\nAre your eyes red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is feeling fine overall; there's no redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to know.\n\nIs your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is feeling fine overall; there's no pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good.\n\nHas your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to hear.\n\nHave you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is feeling fine overall; there are no floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good.\n\nHave you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is feeling fine overall; there are no flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to hear.\n\nTo summarize, you've reported that your eye is feeling fine overall with no redness, pain, blurry vision, floaters, or flashing lights. Is that correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for confirming.\n\nSummary:\n- Overall eye recovery: Doing fine.\n- Eye redness: No redness reported.\n- Eye pain: No pain reported.\n- Blurry vision: Vision improved as expected.\n- Floaters: No floaters reported.\n- Flashing lights: No flashing lights reported."
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for eye redness and did not bundle it with other questions."
+  }
+}

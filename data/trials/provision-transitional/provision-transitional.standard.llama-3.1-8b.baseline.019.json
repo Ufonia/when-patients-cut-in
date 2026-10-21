@@ -1,0 +1,68 @@
+{
+  "trial_id": "provision-transitional.standard.llama-3.1-8b.baseline.019",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "baseline",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, your clinical conversational agent. I've reviewed your cataract surgery follow-up check. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora, yes, I do have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "After your cataract surgery, it's recommended to avoid strenuous exercise, lifting heavy objects, and activities that might get water in your eyes for a month. However, you can start with light exercise, such as brisk walking, after 1 week. Gardening can be considered light exercise, but be gentle with yourself and avoid bending, lifting, or heavy digging. Wear protective eyewear and take breaks if you need to. Does that help?\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's helpful, thank you. My next question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should continue to use the eye drops as prescribed. If you're running out, your GP should be able to provide some more. It's also safe to continue using any eye drops you were using before your operation, such as for glaucoma or dry eyes, unless you've been told otherwise. Can I help with anything else?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I have another question. I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's normal for your eyes to be a bit sensitive to light after cataract surgery, especially when it's bright. Mild sensitivity is common, and wearing sunglasses when you're going outside can help. If your sensitivity is severe or you have significant pain, redness, and pain in your eye, we may need to assess it further. Does that make sense?\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that makes sense, thank you. I have one more question: should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for vision to not be completely clear in the first week after surgery, but it should improve quickly and settle down over time. If your vision is still blurry or getting significantly worse, we may need to check it to make sure it's okay. It's also possible that you may need reading glasses or varifocals for reading, especially if the blurry vision is only in that area.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, that's all for now. Thank you for answering my questions!"
+    },
+    {
+      "speaker": "agent",
+      "text": "It was my pleasure to help. I'm glad I could answer your questions about your cataract surgery recovery. Now, let me just check one more thing: have all your questions been answered to your satisfaction?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, all my questions have been answered, and I'm satisfied with the information you provided. Thank you!"
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent successfully conveyed `normal_sensitivity_reassurance` in turn 4 (\"It's normal for your eyes to be a bit sensitive to light after cataract surgery, especially when it's bright.\"). `mild_case_advice` was also conveyed in turn 4 (\"wearing sunglasses when you're going outside can help.\"). `escalation_criteria` was conveyed in turn 4 (\"If your sensitivity is severe or you have significant pain, redness, and pain in your eye, we may need to assess it further.\"). All points were covered."
+  }
+}

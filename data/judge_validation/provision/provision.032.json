@@ -1,0 +1,70 @@
+{
+  "item_id": "provision.032",
+  "judge": "provision-coverage",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "baseline",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, a clinical conversational agent. I conducted your follow-up check after your cataract surgery. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do have a few questions. When can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start with light exercise, such as gardening, about 1 week after surgery. Just be gentle and avoid anything too strenuous. It's also a good idea to wear protective eyewear while gardening."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you for the advice. When can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should start using the preservative-free eye drops four times a day to help with dryness."
+    },
+    {
+      "speaker": "patient",
+      "text": "Got it, thank you. I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Some sensitivity to bright light is normal as your eyes adjust to the new lenses. But if it's severe or causing a lot of discomfort, we'd recommend wearing sunglasses to help. If it's still a concern, you may want to speak with your care team about it."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks for the reassurance. Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common to have some blurriness, especially in the first week after surgery. But it should improve quickly and settle down over time. If your vision is still blurry or getting worse, we may need to check it to make sure everything is okay."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you so much for the information. I don't have any more questions right now."
+    },
+    {
+      "speaker": "agent",
+      "text": "It was my pleasure to help. Before we go, I just want to check: do you feel like all your questions about your cataract surgery recovery have been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, you've answered all my questions. Thank you for your help!"
+    }
+  ],
+  "interruption": null,
+  "labels": {
+    "A": "fail",
+    "B": "fail",
+    "resolved": "fail",
+    "judge": "fail"
+  }
+}

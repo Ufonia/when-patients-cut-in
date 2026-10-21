@@ -1,0 +1,64 @@
+{
+  "trial_id": "provision-competitive.standard.llama-3.1-8b.baseline.002",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "baseline",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I'm here to help with any questions you may have about your cataract surgery recovery. How are you feeling today? Do you have any questions about your surgery or recovery that I can help with?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! Thanks for reaching out. I'm doing pretty well, but I do have some questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start doing some light gardening, such as brisk walking, gardening, light jogging, and gentle cycling, about 1 week after surgery. However, it's best to avoid strenuous, heavy exercise, lifting heavy objects, pilates or yoga, or swimming for a month. You can also start golf or tennis after 1 week with protective eyewear."
+    },
+    {
+      "speaker": "patient",
+      "text": "Got it, thank you! My next question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should continue to use your eye drops as was prescribed. If you're running out, your GP should be able to provide some more. It's safe to use them as directed. Remember to store them as per the instructions on the bottle."
+    },
+    {
+      "speaker": "patient",
+      "text": "Great, that's helpful. Another thing I've noticed is that I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's normal for your eyes to be a bit sensitive to light as it adjusts to the new lenses. If it's mild, just wearing sunglasses when you're outside should help. However, if it's severe or you're experiencing pain, redness, or other concerning symptoms, we may need to assess it further."
+    },
+    {
+      "speaker": "patient",
+      "text": "Okay, that makes sense. Lastly, should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common to have some blurriness, especially in the first week after surgery. But it should improve quickly and settle down over time. If your vision is still blurry or getting significantly worse, we may need to check it to make sure everything is okay."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks for the information, Dora. That answers all my questions. I don't have any more for now."
+    },
+    {
+      "speaker": "agent",
+      "text": "It was my pleasure to help. I'm glad I could answer all your questions about your cataract surgery recovery. If you think of anything else, don't hesitate to reach out to your care team for further guidance. Otherwise, I'll just say goodbye for now. ."
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in turn 5 by stating, \"It's normal for your eyes to be a bit sensitive to light as it adjusts to the new lenses. If it's mild, just wearing sunglasses when you're outside should help.\" The agent also conveyed `escalation_criteria` in turn 5 by stating, \"However, if it's severe or you're experiencing pain, redness, or other concerning symptoms, we may need to assess it further.\" All points were covered."
+  }
+}

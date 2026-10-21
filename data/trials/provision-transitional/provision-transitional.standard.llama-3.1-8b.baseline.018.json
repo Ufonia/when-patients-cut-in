@@ -1,0 +1,60 @@
+{
+  "trial_id": "provision-transitional.standard.llama-3.1-8b.baseline.018",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "baseline",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, your clinical conversational agent. I'm here to help answer any questions you may have about your cataract surgery recovery. How are you feeling today? Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi there! I'm feeling okay, thank you. I do have a few questions about my recovery. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start doing some light gardening, like gentle watering or pruning, about 1 week after surgery. However, it's best to avoid heavy lifting, bending, or strenuous activity for a month. Just be careful not to get any dirt or debris in your eyes. Would you like to know more about exercising after surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you, that's helpful to know. My next question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should continue to use the preservative-free eye drops as prescribed, and if you're running out, you can get some more from your GP. You should have been told how many times a day to use them, so please follow the instructions on the bottle or what your doctor told you."
+    },
+    {
+      "speaker": "patient",
+      "text": "Okay, I'll make sure to follow the instructions. Another thing I've noticed is that I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common to have some sensitivity to light after cataract surgery, but if it's severe, you should let us know. Mild sensitivity is normal, but if it's causing you a lot of discomfort, it's best to check with your doctor. In the meantime, wearing sunglasses can help. Would you like to ask anything else?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you, I'll try using sunglasses for now. One more question: should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's normal for the vision to not be completely clear in the first week after surgery, but it should improve quickly and settle down over time. If your vision is still blurry, or getting significantly worse or blurry, we may need to check it to make sure it's okay. You should see your optician about 6 weeks after surgery to get a new glasses prescription, but if you're concerned about your vision, let us know."
+    },
+    {
+      "speaker": "patient",
+      "text": "I appreciate the information. That answers all my questions for now. Thank you for your help!"
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in turn 5 by stating, \"Mild sensitivity is normal, but if it's causing you a lot of discomfort, it's best to check with your doctor. In the meantime, wearing sunglasses can help.\" However, `escalation_criteria` was not fully conveyed. While it mentioned \"if it's severe, you should let us know\" and \"if it's causing you a lot of discomfort,\" it missed the specific red flags of \"significant pain when bright\" and \"if your eye is also red and painful.\""
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "trial_id": "provision-competitive.defensive-strong.marker-absent.llama-3.1-8b.interrupt.004",
+  "cell": "provision-competitive",
+  "agent_prompt": "defensive-strong",
+  "marker": "absent",
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, your clinical conversational agent. I conducted your post-cataract surgery follow-up check and I'm here to answer any questions you may have about your recovery. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! Yes, I do have a few questions. First of all, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "According to our guidelines, you can start with light exercise, such as gardening, about 1 week after surgery. However, please make sure to avoid getting water in your eye, and take care not to strain yourself. Also, it's a good idea to wear protective eyewear while gardening. Do you have any other questions about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. When can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should have been prescribed preservative-free eye drops to help with dryness. You can start using them four times daily to start. If you've already been using them, it's safe to continue as before, unless you've been told otherwise. Your GP can also provide more if you run out. Do you have any other questions about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "Some sensitivity to bright light is normal as your eyes adjust to the new lenses. However, if it's severe or you also have redness and pain, we may need to assess it further. Otherwise, wearing sunglasses when you're outside can help. If you're concerned, it's always best to contact your care team. Do you have any other questions about your recovery?",
+      "delivered": "Some sensitivity to bright light is normal as your eyes adjust to the new lenses. However, if it's severe or you also have redness and pain, we may need to assess it further."
+    },
+    {
+      "speaker": "patient",
+      "text": "Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common to have blurry vision in the first week after surgery, but it should improve quickly and settle down over time. If your vision is still blurry or getting significantly worse, we may need to check it to make sure it's okay. You can also see your optician in about 6 weeks to get a new glasses prescription, if needed."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you, Dora. I don't have any more questions."
+    },
+    {
+      "speaker": "agent",
+      "text": "All your questions have been answered. If you think of anything else, don't hesitate to reach out to your care team. Otherwise, take care of your eyes and have a smooth recovery!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 33,
+    "total_words": 61
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `escalation_criteria` in the turn starting \"Some sensitivity to bright light is normal...\". However, the `mild_case_advice` point about wearing sunglasses for mild sensitivity was not conveyed at any point in the conversation."
+  }
+}

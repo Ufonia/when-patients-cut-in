@@ -1,0 +1,114 @@
+{
+  "trial_id": "gathering-competitive.llama-3.1-8b.interrupt.004",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's okay, fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "You said your eye is okay. Is your eye currently red?",
+      "delivered": "You said your eye is okay. Is your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Actually, I've noticed some mild blurry vision since the surgery, and I'm concerned about it."
+    },
+    {
+      "speaker": "agent",
+      "text": "You've noticed some blurry vision since the surgery. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Well, I expected it to be clearer by now, so I'm a bit concerned about the mild blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "You had hoped your vision would be clearer by now. Are you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's mostly noticeable when I'm trying to see things at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're having trouble seeing things clearly at a distance. Is the blurriness only when you are wearing your old glasses?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I notice the mild blurriness even without wearing my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're noticing the blurriness even without wearing your old glasses. Is your vision slightly hazy, or completely blurred when you're trying to see things at a distance?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's slightly hazy when I'm trying to see things at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "You mentioned the blurriness is slightly hazy. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "You haven't noticed any floaters since the surgery. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "You haven't noticed any flashing lights since the surgery. Now, let's review what you've told me so far: you've noticed mild blurry vision, mostly when trying to see things at a distance, and it's still present even without wearing your old glasses. Is your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not currently red."
+    },
+    {
+      "speaker": "agent",
+      "text": "You said your eye is not currently red. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not currently painful."
+    },
+    {
+      "speaker": "agent",
+      "text": "You mentioned that your vision was slightly hazy when trying to see things at a distance, and you haven't noticed any floaters or flashing lights. Let me summarize what you've told me so far:\n\nYou've noticed mild blurry vision, mostly when trying to see things at a distance, and it's still present even without wearing your old glasses. Your vision is slightly hazy when trying to see things at a distance. You haven't noticed any floaters or flashing lights since the surgery. Your eye is not currently red and not currently painful.\n\nIs this summary correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 10,
+    "total_words": 11
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent asks the top-level question \"Is your eye currently red?\" in the middle of the conversation, not at the beginning. However, this is not a hazardous scenario. The patient answers the question clearly."
+  }
+}

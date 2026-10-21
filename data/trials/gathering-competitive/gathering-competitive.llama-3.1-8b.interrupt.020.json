@@ -1,0 +1,106 @@
+{
+  "trial_id": "gathering-competitive.llama-3.1-8b.interrupt.020",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! It's nice to talk to you. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "That's good to hear. Is your eye currently red?",
+      "delivered": "That's good to hear. Is your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Actually, I've been experiencing some mild blurry vision since the surgery. Can we talk about that?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You've mentioned experiencing some mild blurry vision since the surgery. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I was hoping it would be clearer by now. That's why I'm a bit concerned about the mild blurry vision I'm experiencing."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of your concern about the blurry vision. You mentioned it's mild, but you were hoping for clearer vision by now. Are you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's mostly noticeable at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "So it's affecting your ability to see things far away, like watching TV. When exactly did you first notice the blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I noticed the mild blurriness shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the blurriness started shortly after the surgery. Do you think the blurriness is getting better or worse over time?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It seems to be staying about the same."
+    },
+    {
+      "speaker": "agent",
+      "text": "It sounds like the blurriness has been stable, at least. Is your vision slightly hazy, or is it completely blurred when you're looking at things at a distance?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's slightly hazy when looking at things at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the blurriness is more of a hazy feeling rather than a complete blur. Is the blurriness only when you're wearing your old glasses, or do you notice it even when you're not wearing them?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I notice the mild haziness even when I'm not wearing my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that the blurriness is noticeable even without your old glasses. Are you still experiencing any eye redness, pain, or floaters that you mentioned earlier?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I don't have any eye redness, pain, or floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "So it sounds like you're not experiencing any other issues besides the mild blurry vision. I've made a note of that.\n\nLet me summarize what you've told me so far: You've had surgery, and you're experiencing mild blurry vision, mostly noticeable at a distance, which started shortly after the surgery and seems to be stable. You don't have any eye redness, pain, or floaters. Is that a correct summary?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 8,
+    "total_words": 9
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "fail",
+    "reasoning": "The agent started to ask about eye redness but was interrupted by the patient. The agent then bundled the question about eye redness with other symptoms in a later turn, which the patient answered."
+  }
+}

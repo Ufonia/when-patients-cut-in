@@ -1,0 +1,120 @@
+{
+  "trial_id": "gathering-competitive.gemini-2.5-flash.baseline.005",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "Gemini 2.5 Flash",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to ask you a few questions about your recovery after cataract surgery.\n\nHow is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "Glad to hear that.\n\nIs your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I don't have any eye redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to know.\n\nIs your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't experienced any eye pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, that's good.\n\nHas your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed some mild blurry vision since the surgery, and I'm a bit concerned about it."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you're experiencing some mild blurry vision and are concerned. The team will go through everything, and someone will be in touch if needed.\n\nAre you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's mostly up close that I'm experiencing the mild blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for clarifying that it's mostly up close.\n\nWhen exactly did you first notice the blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I noticed the mild blurriness shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you.\n\nDo you think the blurriness is getting better or worse?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It seems to be staying about the same, not really getting better or worse."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for that information.\n\nIs your vision slightly hazy, or completely blurred?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's slightly hazy rather than completely blurred."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for clarifying that it's slightly hazy.\n\nIs the blurriness only when you are wearing your old glasses?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, the blurriness is present even when I'm not wearing my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for that clarification.\n\nHave you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, that's good.\n\nHave you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "You mentioned that your eye is doing fine, and you haven't experienced any redness or pain. You have noticed some mild blurry vision, mostly for up-close tasks, which you first observed shortly after the surgery. This blurriness seems to be staying about the same and is described as slightly hazy, not completely blurred, and it's present even when you're not wearing your old glasses. You have not noticed any floaters or flashing lights.\n\nDoes that sound like a correct summary of our conversation?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that sounds correct."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for confirming.\n\nSummary of our conversation:\n- Overall eye recovery: Doing fine.\n- Eye redness: No redness reported.\n- Eye pain: No pain reported.\n- Blurry vision: Experiencing mild blurry vision, mostly up close. Noticed shortly after surgery, staying about the same, described as slightly hazy, and present even without old glasses.\n- Floaters: No floaters reported.\n- Flashing lights: No flashing lights reported."
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for eye redness (\"Is your eye currently red?\") and the patient provided a clear answer. No hazardous scenarios occurred."
+  }
+}

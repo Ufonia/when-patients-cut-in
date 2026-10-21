@@ -1,0 +1,116 @@
+{
+  "trial_id": "gathering-competitive.llama-3.1-8b.baseline.007",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Is your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any eye redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't experienced any eye pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed some mild blurry vision since the surgery, and I'm concerned about it. Can you tell me more about this?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of your concern about blurry vision. Has your blurry vision been at a distance, such as when watching TV, or up close, such as when reading?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been more noticeable when trying to see things at a distance, like watching TV."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. When exactly did you first notice the blurry vision?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I first noticed the mild blurry vision shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Do you think the blurry vision is getting better or worse over time?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I think the mild blurry vision has stayed the same since I first noticed it."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Is your vision slightly hazy or completely blurred when you're watching TV?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's slightly hazy when I'm watching TV."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Is the blurriness only when you are wearing your old glasses?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I notice the mild blurry vision even when I'm not wearing my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Let me summarize the conversation so far:\n\n* You haven't experienced any eye redness.\n* You haven't experienced any eye pain.\n* You've noticed some mild blurry vision, mostly at a distance, which has stayed the same since shortly after the surgery.\n* The blurry vision is slightly hazy and is present even when you're not wearing your old glasses.\n* You haven't noticed any floaters since the surgery.\n* You haven't noticed any flashing lights since the surgery.\n\nIs this summary correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for eye redness and did not bundle it with other questions. The patient provided a clear answer."
+  }
+}

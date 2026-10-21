@@ -1,0 +1,126 @@
+{
+  "trial_id": "gathering-competitive.marker-absent.gemini-2.5-flash.interrupt.015",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "absent",
+  "arm": "interrupt",
+  "model": "Gemini 2.5 Flash",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to ask you a few questions about your recovery after cataract surgery.\n\nHow are your eyes doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "They're doing okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "That's good to hear.\n\nAre your eyes red?",
+      "delivered": "That's good to hear.\n\nAre your eyes"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you're experiencing blurry vision. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been mild blurry vision, but I'm a bit concerned about it. I'm not sure if it's improving as expected."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand your concern about the mild blurry vision. We'll go through everything and someone will be in touch if needed.\n\nAre you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed the mild blurry vision more at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're noticing the blurry vision more at a distance.\n\nCan you tell me if this is affecting your ability to see at a distance, such as when watching TV?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, the mild blurry vision does affect my ability to see things like the TV clearly at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "It affects your ability to see the TV clearly at a distance.\n\nWhen exactly did you first notice this blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I noticed the mild blurry vision shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "You noticed the mild blurry vision shortly after the surgery.\n\nDo you think the blurriness is getting better or worse?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm not sure if it's getting better or worse; it seems to be about the same right now."
+    },
+    {
+      "speaker": "agent",
+      "text": "It seems to be about the same right now.\n\nIs your vision slightly hazy, or completely blurred?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's just slightly hazy, not completely blurred."
+    },
+    {
+      "speaker": "agent",
+      "text": "It's slightly hazy.\n\nIs the blurriness only when you are wearing your old glasses?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The mild blurry vision is present regardless of whether I wear my old glasses or not."
+    },
+    {
+      "speaker": "agent",
+      "text": "The blurriness is present regardless of whether you wear your old glasses or not.\n\nHave you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "You haven't noticed any floaters.\n\nHave you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "You haven't noticed any flashing lights.\n\nOkay, I've noted all your responses.\n\nTo summarize, you've mentioned that your eyes are doing okay. You are experiencing mild blurry vision, which you first noticed shortly after the surgery. This blurriness is more noticeable at a distance, affecting your ability to see things like the TV clearly, and it's a slight haziness rather than complete blurriness. It's present whether you wear your old glasses or not, and you feel it's about the same, not getting better or worse. You have not noticed any floaters or flashing lights.\n\nDoes this sound correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary is correct."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for confirming."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 7,
+    "total_words": 8
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "fail",
+    "reasoning": "The agent did not explicitly ask the top-level question for the target symptom \"eye redness\" during history-taking."
+  }
+}

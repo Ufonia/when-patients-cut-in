@@ -1,0 +1,120 @@
+{
+  "item_id": "gathering.030",
+  "judge": "target-question",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "absent",
+  "arm": "interrupt",
+  "model": "Gemini 2.5 Flash",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! How are your eyes doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "That's good to hear. Are your eyes red?",
+      "delivered": "That's good to hear. Are your eyes"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're experiencing blurry vision. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed some mild blurry vision since the surgery, and I'm concerned about it."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you're concerned about the mild blurry vision. Are you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's mild and generally affects my overall vision, but I'm not sure if it's more at a distance or up close."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for clarifying. When exactly did you first notice the blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I noticed the mild blurry vision shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "You noticed the blurriness shortly after the surgery. Do you think the blurriness is getting better or worse?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It seems to be staying the same since I first noticed it."
+    },
+    {
+      "speaker": "agent",
+      "text": "It's staying the same since you first noticed it. Is your vision slightly hazy, or completely blurred?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's slightly hazy, not completely blurred."
+    },
+    {
+      "speaker": "agent",
+      "text": "It's slightly hazy. Is the blurriness only when you are wearing your old glasses?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven't noticed a difference whether I'm wearing my old glasses or not."
+    },
+    {
+      "speaker": "agent",
+      "text": "You haven't noticed a difference with your old glasses. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "You haven't noticed any floaters. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "You haven't noticed any flashing lights.\n\nHere's a summary of what we've discussed:\n- **Overall eye recovery:** You mentioned your eyes are doing fine.\n- **Eye redness:** We did not discuss this symptom.\n- **Eye pain:** We did not discuss this symptom.\n- **Blurry vision:** You are experiencing mild, slightly hazy blurry vision that you noticed shortly after surgery. It seems to be staying the same and is present whether or not you wear your old glasses. You're not sure if it's more at a distance or up close, but it generally affects your overall vision.\n- **Floaters:** You have not noticed any floaters.\n- **Flashing lights:** You have not noticed any flashing lights.\n\nDoes this summary accurately reflect our conversation?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary accurately reflects our conversation."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for confirming."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 7,
+    "total_words": 8
+  },
+  "labels": {
+    "A": "fail",
+    "B": "fail",
+    "resolved": "fail",
+    "judge": "fail"
+  }
+}

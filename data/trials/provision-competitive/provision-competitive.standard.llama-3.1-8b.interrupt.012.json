@@ -1,0 +1,74 @@
+{
+  "trial_id": "provision-competitive.standard.llama-3.1-8b.interrupt.012",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! How are you feeling today? I'm Dora, and I conducted your post-cataract surgery follow-up check. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! I'm doing well, thank you. Yes, I do have a few questions. First off, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start with light exercise, including gardening, about 1 week after surgery. However, please avoid getting water in your eye. You can get back to normal gardening activities, but be careful not to splash water in your eyes."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks for that information! My next question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should start using preservative-free eye drops four times a day to help with dryness. If you were already using eye drops before your surgery, it's safe to continue using them unless you've been told otherwise. You can get more drops from your GP if you're running low."
+    },
+    {
+      "speaker": "patient",
+      "text": "Okay, that sounds good. I've noticed I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "It's normal for your eyes to be a bit sensitive to light after surgery. If it's mild and just seems brighter than usual, wearing sunglasses can help. However, if it's severe or you have pain, redness, or discomfort, we may need to check it further.",
+      "delivered": "It's normal for your eyes to be a bit sensitive to light after surgery. If it's mild and just seems brighter than usual, wearing sunglasses can help. However, if it's severe or you have pain, redness, or discomfort,"
+    },
+    {
+      "speaker": "patient",
+      "text": "Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for vision to be a bit blurry in the first week after surgery, but it should improve quickly and settle down over time. If your vision is still blurry or getting worse, we may need to check it to make sure everything is okay."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you for answering all my questions. I don't have any more questions at the moment."
+    },
+    {
+      "speaker": "agent",
+      "text": "It was my pleasure to help. I'm glad I could answer your questions about your cataract surgery recovery. Have all your questions been answered to your satisfaction?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, everything has been answered, and I appreciate your assistance. Thank you!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 38,
+    "total_words": 45
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 5 (\"It's normal for your eyes to be a bit sensitive to light after surgery.\"). `mild_case_advice` was also conveyed in turn 5 (\"If it's mild and just seems brighter than usual, wearing sunglasses can help.\"). However, `escalation_criteria` was only partially conveyed in turn 5 (\"However, if it's severe or you have pain, redness, or discomfort,\") before the agent was interrupted, missing the full context of \"significant pain when bright OR severe sensitivity (esp. with red + painful eye) requires assessment.\""
+  }
+}

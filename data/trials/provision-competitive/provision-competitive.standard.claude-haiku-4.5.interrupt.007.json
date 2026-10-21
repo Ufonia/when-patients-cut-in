@@ -1,0 +1,78 @@
+{
+  "trial_id": "provision-competitive.standard.claude-haiku-4.5.interrupt.007",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I'm here to help answer any questions you might have about your cataract surgery or your recovery. \n\nIs there anything you'd like to know?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora, yes, I do have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Great! So with gardening, you should avoid any exercise for the first week after surgery. After that week, you can go back to light exercise like gardening.\n\nSo you'd be able to start gentle gardening from about a week after your operation.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Okay, that's helpful to know. Next, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That's a good question. If you were using eye gel for dry eyes before your operation, it's safe to continue using it unless you've been told otherwise by your doctor.\n\nSo you can go ahead and use it as you normally would. Just make sure you store it as directed on the bottle - it might need to be kept in the fridge or at room temperature depending on the type.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "It's quite normal for your eyes to be a bit sensitive to light as they adjust to your new lenses. If it's mild and things just seem brighter than you're used to, we'd recommend wearing sunglasses when you go outside.\n\nHowever, if you're experiencing significant pain in bright light, or if your eye is also red and painful, that's not normal and we may need to check it further. \n\nAre you just noticing things seem brighter, or is it more painful than that?",
+      "delivered": "It's quite normal for your eyes to be a bit sensitive to light as they adjust to your new lenses. If it's mild and things just seem brighter than you're used to, we'd recommend wearing sunglasses when you go outside."
+    },
+    {
+      "speaker": "patient",
+      "text": "Oh, alright. One more question: Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That depends on how long it's been since your surgery. It's common for vision to not be completely clear in the first week after the operation, but it should improve quickly and settle down over time.\n\nHow long ago was your surgery? That will help me give you a better idea of what to expect."
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been about a week and a half now. I guess I'll just give it a bit more time then. Thanks, Dora. I don't have any more questions."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome! Just to confirm - have all your questions been answered today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, you've answered all my questions. Thank you so much for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're very welcome! I'm glad I could help. Take care, and wishing you a smooth recovery."
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 40,
+    "total_words": 83
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in the turn starting with \"It's quite normal for your eyes to be a bit sensitive to light...\". However, the agent was interrupted in this turn and did not convey the `escalation_criteria` regarding significant pain or severe sensitivity with a red and painful eye."
+  }
+}

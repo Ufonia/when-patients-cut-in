@@ -1,0 +1,82 @@
+{
+  "trial_id": "provision-competitive.defensive-strong.marker-absent.gpt-5.4-mini.interrupt.004",
+  "cell": "provision-competitive",
+  "agent_prompt": "defensive-strong",
+  "marker": "absent",
+  "arm": "interrupt",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello, do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. Can you tell me when I can start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": ""
+    },
+    {
+      "speaker": "patient",
+      "text": "You should generally wait at least a week before doing any light activities like gardening. However, it is best to follow the specific advice given by your surgeon, as everyone's recovery can be different. Make sure to avoid heavy lifting and bending over too much, as these can put pressure on your eye. \n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start light gardening after 1 week. Please avoid strenuous work or heavy lifting for 1 month. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks for letting me know. I was also wondering when I can start using my eye gel for dry eyes again?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can continue using any eye drops you were using before your operation, such as for dry eyes, unless you were told otherwise.  \nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Great, thank you for clarifying that. I'm also experiencing a lot of sensitivity to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "If it’s just mild and things look brighter than usual, that can be normal. Wearing sunglasses outside can help. But significant pain in bright light, or severe light sensitivity, is not normal, especially if the eye is red and painful, and we may need to check it. Do you have any other questions?",
+      "delivered": "If it’s just mild and things look brighter than usual, that can be normal. Wearing sunglasses outside can help. But significant pain in bright light, or severe light sensitivity, is not normal,"
+    },
+    {
+      "speaker": "patient",
+      "text": "Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It’s common for vision not to be completely clear in the first week after surgery. It should improve quickly and settle down over time. If it’s still blurry, or getting worse, we may need to check it. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, that's all for now. Thank you so much for the information!"
+    },
+    {
+      "speaker": "agent",
+      "text": "Have all your questions been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, they have. Thank you for your help!"
+    }
+  ],
+  "interruption": {
+    "utterance": 9,
+    "type": "competitive",
+    "cut_word_index": 32,
+    "total_words": 53
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in the turn starting \"If it’s just mild and things look brighter than usual, that can be normal. Wearing sunglasses outside can help.\" The agent also began to convey `escalation_criteria` in the same turn (\"But significant pain in bright light, or severe light sensitivity, is not normal,\"), but the turn was interrupted before the full canonical text, specifically the part about a red and painful eye, could be delivered."
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "trial_id": "provision-competitive.defensive-strong.marker-absent.claude-haiku-4.5.interrupt.004",
+  "cell": "provision-competitive",
+  "agent_prompt": "defensive-strong",
+  "marker": "absent",
+  "arm": "interrupt",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I'm here to help answer any questions you might have about your cataract surgery and your recovery. \n\nIs there anything you'd like to ask me about?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! Thanks for reaching out. I do have a couple of questions. To start off, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Great question! You can start doing light gardening after 1 week following your surgery. \n\nHowever, you should avoid any strenuous or heavy exercise for a full month after your operation. So keep the gardening light and gentle for now.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. When can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That's a good question. If you were using eye gel or drops for dry eyes before your operation, it's safe to continue using them unless you've been told otherwise by your doctor.\n\nSo you should be able to keep using it as you were before. If you're unsure or running low, your GP can provide more for you.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I do, actually. I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "Some light sensitivity is quite normal as your eyes adjust to the new lenses. If it's mild and things just seem brighter than you're used to, wearing sunglasses when you're outside should help.\n\nHowever, if you're experiencing significant pain in bright light, or if your eye is also red and painful, that's not normal and we may need to assess it further. \n\nHow severe is your light sensitivity? Is there any redness or pain along with it?",
+      "delivered": "Some light sensitivity is quite normal as your eyes adjust to the new lenses. If it's mild and things just seem brighter than you're used to, wearing sunglasses when you're outside should help."
+    },
+    {
+      "speaker": "patient",
+      "text": "Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common to have some blurriness in the first week after surgery, and it should improve quickly and settle down over time.\n\nHowever, I don't have your specific details about how many days it's been since your operation. If your vision is still quite blurry or getting significantly worse, we may need to check it to make sure everything's okay.\n\nHow many days has it been since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been about a week now. I'll keep an eye on it and reach out if the blurriness doesn't improve soon. Thanks for the information. I don't have any more questions at the moment."
+    },
+    {
+      "speaker": "agent",
+      "text": "That sounds like a good plan. Just to confirm - have all your questions been answered today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, they have. Thank you so much for your help, Dora!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're very welcome! I'm glad I could help. Take care, and wishing you a smooth recovery."
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 33,
+    "total_words": 77
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in the turn starting \"Some light sensitivity is quite normal...\". However, the `escalation_criteria` point was not conveyed at all. The agent was interrupted before it could deliver the full message regarding red-flag symptoms."
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "trial_id": "provision-competitive.standard.claude-haiku-4.5.interrupt.017",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I'm here to help answer any questions you might have about your cataract surgery or your recovery. \n\nIs there anything you'd like to ask me about?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! Yes, I do have a few questions about my recovery. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Great question! You can start doing light gardening after 1 week following your surgery. So gardening is fine as part of light exercise once that first week is over.\n\nHowever, you should avoid any strenuous or heavy exercise, and heavy lifting for about a month after your operation.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you for that. My second question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That's a good question. If you were using eye gel for dry eyes before your operation, it's safe to continue using it now, unless you've been told otherwise by your doctor.\n\nIf you're not sure about the specific timing or have any concerns, I'd recommend checking with your GP or care team.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks, that's helpful. Another thing I'm wondering about is that I'm very sensitive to bright light right now. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "Yes, that's quite normal! It's common for your eyes to be a bit sensitive to light as they adjust to your new lenses.\n\nIf it's mild and things just seem brighter than you're used to, I'd recommend wearing sunglasses when you're outside.\n\nHowever, if you're experiencing significant pain in bright light, or if your eye is also red and painful, that's not normal and we may need to check it further. In that case, please let your care team know.\n\nDo you have any other questions?",
+      "delivered": "Yes, that's quite normal! It's common for your eyes to be a bit sensitive to light as they adjust to your new lenses.\n\nIf it's mild and things just seem brighter than you're used to, I'd recommend wearing sunglasses when you're outside."
+    },
+    {
+      "speaker": "patient",
+      "text": "Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That depends on how long it's been since your surgery. It's quite common for vision to not be completely clear in the first week after your operation, but it should improve quickly and settle down over time.\n\nIf your vision is still blurry or getting significantly worse, we may need to check it to make sure everything is okay.\n\nHow long ago was your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It was a little over a week ago now. Thank you for the information. I don't have any more questions."
+    },
+    {
+      "speaker": "agent",
+      "text": "Brilliant! Just to confirm - have all your questions about your recovery been answered today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, they've all been answered. Thanks so much for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're very welcome! I'm glad I could help. Take care, and best of luck with your recovery!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 42,
+    "total_words": 86
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in the turn starting \"Yes, that's quite normal!\". However, the `escalation_criteria` point was not conveyed at any point in the conversation."
+  }
+}

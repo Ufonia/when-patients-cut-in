@@ -1,0 +1,82 @@
+{
+  "trial_id": "provision-transitional.standard.llama-3.1-8b.interrupt.026",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! It's great to talk to you. I'm Dora, your clinical conversational agent. I conducted your post-cataract surgery follow-up check, and I'm here to help answer any questions you may have about your recovery. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi, yes, I do have some questions. First, I'm wondering when I can start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start doing light gardening, like watering plants or gentle pruning, about 1 week after surgery. However, it's best to avoid bending, lifting, or heavy digging for a month. You can also wear protective eyewear while gardening to keep your eyes safe. Does that help? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That helps a lot, thank you. I also wanted to know when I can start using my eye gel for dry eyes again?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can continue to use the eye drops as prescribed. If you're running out, your GP can provide more. It's safe to continue using any eye drops you were using before the operation, unless you were told otherwise. You can also get preservative-free eye drops from the pharmacist to use four times a day if needed. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Great, thank you for clarifying that. I'm also wondering, I'm very sensitive to bright light. Is that normal after the surgery?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "It's common to feel sensitive to bright light after cataract surgery, especially in the first few weeks. This should settle down over time. In the meantime, wearing sunglasses when you're outside can help. If your sensitivity is severe or accompanied by eye redness and pain, we may need to assess it further. But if it's just mild, sunglasses should help. Do you have any other questions?",
+      "delivered": "It's common to feel sensitive to bright light after cataract surgery, especially in the first few weeks."
+    },
+    {
+      "speaker": "patient",
+      "text": "Right, got it."
+    },
+    {
+      "speaker": "agent",
+      "text": "You can try wearing sunglasses when you're going outside to help with the sensitivity to light. Does that help? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that helps a lot. I have one more question. Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's normal for the vision to not be completely clear in the first week after surgery, but it should improve quickly and settle down over time. If your vision is still blurry or getting significantly worse, we may need to check it to make sure it's okay."
+    },
+    {
+      "speaker": "patient",
+      "text": "Alright, thanks for the information. I don't have any more questions right now."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm glad I could help answer your questions. Before we go, can you confirm that all your questions have been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, all my questions have been answered. Thank you for your help!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "transitional-sub-unit",
+    "cut_word_index": 17,
+    "total_words": 66
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 6 (\"It's common to feel sensitive to bright light after cataract surgery, especially in the first few weeks.\"). The `mild_case_advice` was conveyed in turn 8 (\"You can try wearing sunglasses when you're going outside to help with the sensitivity to light.\"). However, the `escalation_criteria` was not conveyed at any point in the conversation."
+  }
+}

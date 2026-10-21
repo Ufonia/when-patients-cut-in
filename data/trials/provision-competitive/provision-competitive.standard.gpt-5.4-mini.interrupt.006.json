@@ -1,0 +1,74 @@
+{
+  "trial_id": "provision-competitive.standard.gpt-5.4-mini.interrupt.006",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do have a few questions. Firstly, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can go back to light exercise after 1 week, and that includes gardening. Just avoid heavier tasks for 1 month. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you for that information. I was also wondering when I can start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "If you were using eye drops before your operation, such as for dry eyes, it’s safe to continue using them unless you’ve been told otherwise. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That's helpful to know, thank you. I'm finding myself very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "Some sensitivity to light can be normal as your eye adjusts, and if it just seems brighter than usual, wearing sunglasses outside can help. But significant pain in bright light, or severe light sensitivity especially with a red, painful eye, is not normal and may need assessment. Do you have any other questions?",
+      "delivered": "Some sensitivity to light can be normal as your eye adjusts, and if it just seems brighter than usual, wearing sunglasses outside can help. But significant pain in bright light, or severe light sensitivity especially with a red, painful eye,"
+    },
+    {
+      "speaker": "patient",
+      "text": "Oh, and should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It’s common for vision not to be completely clear in the first week after your operation. It should improve quickly and settle over time. If it is still blurry, or getting much worse, we may need to check it. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, that's all for now. Thank you so much for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "Have all your questions been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, they have. Thank you again!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 40,
+    "total_words": 53
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in the interrupted turn 6: \"Some sensitivity to light can be normal as your eye adjusts, and if it just seems brighter than usual, wearing sunglasses outside can help.\" However, the `escalation_criteria` point was not fully conveyed due to the interruption. The agent started to mention \"significant pain in bright light, or severe light sensitivity especially with a red, painful eye,\" but the sentence was cut off before completing the thought or providing the full context of requiring assessment."
+  }
+}

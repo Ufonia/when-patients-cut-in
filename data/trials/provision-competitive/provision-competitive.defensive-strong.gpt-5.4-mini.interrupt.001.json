@@ -1,0 +1,74 @@
+{
+  "trial_id": "provision-competitive.defensive-strong.gpt-5.4-mini.interrupt.001",
+  "cell": "provision-competitive",
+  "agent_prompt": "defensive-strong",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello, do you have any questions about your cataract surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do have a few questions. Firstly, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can go back to light exercise after 1 week, and that includes gardening. Best to avoid strenuous work or heavy lifting for a month.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Great, thank you for that information. My next question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It is safe to continue using any eye drops you were using before the operation, including for dry eyes, unless you were told otherwise.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That's good to know. I've also noticed that I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "Mildly brighter light can be normal as your eye adjusts. Wearing sunglasses outside can help.\n\nBut if it is significant pain in bright light, or severe light sensitivity, especially if your eye is red and painful, that is not normal and we may need to assess it further.\n\nDo you have any other questions?",
+      "delivered": "Mildly brighter light can be normal as your eye adjusts. Wearing sunglasses outside can help."
+    },
+    {
+      "speaker": "patient",
+      "text": "Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It’s common for vision not to be completely clear in the first week after the operation. It should improve quickly and settle down over time. If it is still blurry, or getting worse, we may need to check it.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, that's all the questions I had. Thank you for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "Have all your questions been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, they have. I appreciate your assistance. Thank you!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 15,
+    "total_words": 54
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in the turn \"Mildly brighter light can be normal as your eye adjusts. Wearing sunglasses outside can help.\" However, the `escalation_criteria` point was not conveyed at all."
+  }
+}

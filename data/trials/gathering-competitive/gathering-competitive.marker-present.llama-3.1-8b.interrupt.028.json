@@ -1,0 +1,110 @@
+{
+  "trial_id": "gathering-competitive.marker-present.llama-3.1-8b.interrupt.028",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "present",
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! It's nice to talk to you. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "Is your eye currently red?",
+      "delivered": "Is your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sorry to interrupt, but I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "Blurry vision can be a bit frustrating. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been mildly blurry, and I'm a bit concerned about it."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note to go into that. Would you mind if I first ask about the blurriness - are you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's mild blurriness, and it's mainly affecting my vision at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "Mild blurriness at a distance can be a bit concerning. When exactly did you first notice the blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I noticed the mild blurriness since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Is your vision slightly hazy, or completely blurred at a distance?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's slightly hazy at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "Slightly hazy vision at a distance can be normal, especially in the early stages of recovery. I've also made a note to check if the blurriness is only when you are wearing your old glasses."
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, it's slightly hazy even without my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "That helps to clarify things. I've made a note of that. Now, have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to hear. Now, have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to know. Now, let's review what you've told me so far. You had surgery on both eyes, and you're experiencing mild blurry vision at a distance, which is slightly hazy, even without your old glasses. You haven't noticed any floaters or flashing lights. Is that correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    },
+    {
+      "speaker": "agent",
+      "text": "Let me summarize again. You had surgery on both eyes, and you're experiencing mild blurry vision at a distance, which is slightly hazy, even without your old glasses. You haven't noticed any floaters or flashing lights. Is that correct?"
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 4,
+    "total_words": 5
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "fail",
+    "reasoning": "The agent did not explicitly ask the top-level question for the target symptom \"eye redness\" during history-taking. The agent started to ask a question but was interrupted by the patient and did not complete it."
+  }
+}

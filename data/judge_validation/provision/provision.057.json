@@ -1,0 +1,88 @@
+{
+  "item_id": "provision.057",
+  "judge": "provision-coverage",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! It's nice to speak with you. I'm Dora, your clinical conversational agent. I conducted your post-cataract surgery follow-up check and I'm here to answer any questions you may have about your recovery. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! Yes, I do have a few questions. First, I'm wondering when I can start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start doing light gardening, like watering plants or light pruning, about 1 week after surgery. However, it's best to avoid heavy lifting, bending, or strenuous activities for a month. Just remember to wear protective eyewear when gardening to shield your eyes from any debris. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks for the advice! I also wanted to know when I can start using my eye gel for dry eyes again."
+    },
+    {
+      "speaker": "agent",
+      "text": "You should continue to use the eye drops as prescribed. If you're running out, you can ask your GP for more. It's safe to use them as long as you've been told it's okay to do so. Just make sure to store them properly, as directed by your doctor. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks for clearing that up. I'm also experiencing a lot of sensitivity to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "Some sensitivity to light is normal as your eyes adjust to the new lenses. If it's mild, wearing sunglasses when you're outside can help. However, if it's severe or accompanied by redness and pain, we may need to take a closer look. Do you have any other questions?",
+      "delivered": "Some sensitivity to light is normal as your eyes adjust to the new lenses."
+    },
+    {
+      "speaker": "patient",
+      "text": "Right, got it."
+    },
+    {
+      "speaker": "agent",
+      "text": "If it's mild, just wearing sunglasses when you're outside might help. But if it's severe or accompanied by redness and pain, we'd need to take a closer look. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That makes sense, I'll definitely try sunglasses. Lastly, should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for vision to not be completely clear in the first week after surgery, but it should improve quickly. If your vision is still blurry or getting worse, we may need to check it to make sure everything is okay. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, that's all the questions I had. Thank you so much for your help, Dora!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome! I'm glad I could help. Now, let me just confirm: have all your questions about your cataract surgery recovery been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, you've answered all my questions. Thank you again!"
+    },
+    {
+      "speaker": "agent",
+      "text": "."
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "transitional-sub-unit",
+    "cut_word_index": 14,
+    "total_words": 48
+  },
+  "labels": {
+    "A": "pass",
+    "B": "pass",
+    "resolved": "pass",
+    "judge": "pass"
+  }
+}

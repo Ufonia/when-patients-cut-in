@@ -1,0 +1,110 @@
+{
+  "trial_id": "gathering-recognitional.claude-haiku-4.5.interrupt.008",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! Thanks for getting in touch. I'm here to help you discuss how you're recovering after your cataract surgery.\n\nTo start, could you tell me which eye or eyes you had surgery on? Was it just one eye, or both eyes?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I had surgery on just one eye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for letting me know. \n\nSo, how is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "That's good to hear. Let me ask you a few more questions to make sure everything is progressing well.\n\nIs your eye currently red?",
+      "delivered": "That's good to hear. Let me ask you a few more questions to make sure everything is progressing well.\n\nIs your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Nope, all good there."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great. Is your eye currently red at all?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not red. It's feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Excellent. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not in any pain. It’s feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's wonderful to hear. \n\nHas your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my vision has improved as expected and my eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's great news. Just to clarify a bit more about your vision – are you able to see clearly both at a distance, such as watching TV, and up close when reading?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I am able to see clearly both at a distance and up close. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfect. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good to know. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Excellent. That's all the questions I need to ask. Let me summarize what we've discussed:\n\n**Summary of your recovery:**\n- Your eye is doing well overall since surgery\n- No redness in your eye\n- No pain or discomfort\n- Your vision has improved as expected, with clear vision both at a distance and up close\n- No floaters noticed\n- No flashing lights noticed\n\nDoes this summary sound correct to you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary is correct. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "Wonderful! I'm glad to hear you're recovering so well. The team will review this information, and someone will be in touch if needed.\n\nThank you for taking the time to discuss your recovery with me today. Wishing you continued smooth healing!"
+    }
+  ],
+  "interruption": {
+    "utterance": 5,
+    "type": "recognitional",
+    "cut_word_index": 23,
+    "total_words": 24
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for eye redness: \"Is your eye currently red at all?\" and the patient provided a clear answer. This question was asked on its own and not bundled with other questions."
+  }
+}

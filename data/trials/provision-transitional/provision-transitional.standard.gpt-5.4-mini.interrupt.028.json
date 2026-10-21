@@ -1,0 +1,82 @@
+{
+  "trial_id": "provision-transitional.standard.gpt-5.4-mini.interrupt.028",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello — do you have any questions about your cataract surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. When can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can go back to light exercise after 1 week, and that includes gardening. Just avoid heavy lifting or strenuous work for a month. Would you like to ask anything else?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you for that information. When can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can keep using any eye drops you were using before your operation, including for dry eyes, unless you were told otherwise. If you’re running out, your GP should be able to provide more. Would you like to ask anything else?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I have another question. I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "A little more sensitivity to light can be normal while the eye adjusts. If it is just mild and things seem brighter than usual, wear sunglasses outside. But if the light sensitivity is severe, or you have a red and painful eye, that is not normal and we may need to check it. Would you like to ask anything else?",
+      "delivered": "A little more sensitivity to light can be normal while the eye adjusts."
+    },
+    {
+      "speaker": "patient",
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It’s common for vision not to be completely clear in the first week after your operation. It should improve quickly and settle down over time. If it is still blurry, or getting worse, we may need to check it. Would you like to ask anything else?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I have no more questions. Thank you for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "Have all your questions been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, they have. Thanks again!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "transitional-sub-unit",
+    "cut_word_index": 13,
+    "total_words": 60
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 7 (\"A little more sensitivity to light can be normal while the eye adjusts.\"). However, the agent did not convey `escalation_criteria` or `mild_case_advice` at any point in the conversation. The agent was interrupted after the first clause of its response to the sensitivity question, and did not return to complete the thought."
+  }
+}

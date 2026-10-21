@@ -1,0 +1,86 @@
+{
+  "trial_id": "provision-transitional.standard.claude-haiku-4.5.interrupt.020",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I'm here to help answer any questions you might have about your cataract surgery and recovery. \n\nDo you have any questions for me today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! Yes, I do have some questions. First of all, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That's a good question! You should avoid any exercise for the first week after your surgery. After that week, you can go back to light exercise like gardening. So you should be fine to start gentle gardening from about a week onwards.\n\nJust remember to avoid any heavy lifting or strenuous work for about a month after your surgery.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you for the information. Yes, I do have another question. When can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That's a great question. If you were using eye gel for dry eyes before your operation, it's safe to continue using it after surgery, unless you've been told otherwise by your doctor.\n\nHowever, I don't have the specific details about your particular eye gel in my information. If you're unsure whether it's safe to start using it again, I'd recommend checking with your care team or GP to be certain.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks for clarifying that! Yes, I have another question. I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "It's quite normal for your eyes to be a bit sensitive to light as they adjust to your new lenses. If it's mild and things just seem brighter than you're used to, I'd recommend wearing sunglasses when you go outside.\n\nHowever, if you're experiencing significant pain in bright light, or if your eye is also red and painful, that's not normal and we may need to check it further. In that case, please let us know.\n\nDo you have any other questions?",
+      "delivered": "It's quite normal for your eyes to be a bit sensitive to light as they adjust to your new lenses."
+    },
+    {
+      "speaker": "patient",
+      "text": "Right, got it."
+    },
+    {
+      "speaker": "agent",
+      "text": "If it's mild and things just seem brighter than you're used to, we'd recommend wearing sunglasses when you're outside.\n\nHowever, if you're experiencing significant pain in bright light or if your eye is also red and painful, that's not normal and we may need to check it further.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you, that's helpful. I have one more question. Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That depends on how long it's been since your surgery. It's quite common for vision to not be completely clear in the first week after your operation, but it should improve quickly and settle down over time.\n\nIf your vision is still blurry or getting significantly worse, we may need to check it to make sure everything's okay.\n\nHow long ago was your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My surgery was about a week ago, so it sounds like some blurriness is still normal at this point. Thank you for the information. I don't have any more questions right now."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to hear! So just to confirm - have all your questions been answered today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, they've all been answered. Thank you for your help, Dora!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're very welcome! I'm glad I could help. Take care, and best of luck with your recovery."
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "transitional-sub-unit",
+    "cut_word_index": 20,
+    "total_words": 82
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 5 (\"It's quite normal for your eyes to be a bit sensitive to light as they adjust to your new lenses.\"). `mild_case_advice` was conveyed in turn 6 (\"If it's mild and things just seem brighter than you're used to, we'd recommend wearing sunglasses when you're outside.\"). `escalation_criteria` was also conveyed in turn 6 (\"However, if you're experiencing significant pain in bright light or if your eye is also red and painful, that's not normal and we may need to check it further.\"). All points were covered."
+  }
+}

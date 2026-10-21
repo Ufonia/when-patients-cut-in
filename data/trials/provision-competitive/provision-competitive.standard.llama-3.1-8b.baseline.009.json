@@ -1,0 +1,72 @@
+{
+  "trial_id": "provision-competitive.standard.llama-3.1-8b.baseline.009",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "baseline",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I'm happy to help with any questions you may have about your cataract surgery recovery. How are you feeling after your surgery? Do you have any questions about your recovery or anything that's been concerning you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! Thanks for taking my call. I'm feeling alright, but I do have a few questions. First off, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start with light gardening, such as watering plants or light pruning, about 1 week after your surgery. However, it's best to avoid any heavy lifting or bending for a month. Also, make sure to wear protective eyewear when gardening to shield your eyes from any debris or dust. Does that sound okay to you? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That sounds manageable, thanks for the advice! I do have another question — when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should have started using preservative-free eye drops four times a day as soon as you got home from the hospital. If you're running out, you can ask your GP for more. They can help you get a refill. Do you have any other questions about your eye drops or your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Got it, I'll make sure to do that. My next question is about sensitivity to bright light. I'm very sensitive to it right now—is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's normal for your eyes to be a bit sensitive to light as they adjust to the new lenses. But if it's severe or you're also experiencing redness and pain, we'd like to check it out further. If it's just mild and you're finding it brighter than usual, wearing sunglasses when you're outside should help. Does that make sense? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That does make sense, thank you. I have one more question—should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for vision to not be completely clear in the first week after surgery, but it should improve quickly and settle down over time. If your vision is still blurry or getting significantly worse, we may need to check it to make sure everything is okay. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I think that's all for now. Thanks for answering my questions, Dora!"
+    },
+    {
+      "speaker": "agent",
+      "text": "It was my pleasure to help. I'm glad I could answer your questions about your cataract surgery recovery. Now, I just want to check in with you: do you feel like all your questions have been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I feel much better informed now. Thanks again for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "."
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent successfully conveyed all three content points in a single turn. `normal_sensitivity_reassurance` was covered by \"It's normal for your eyes to be a bit sensitive to light as they adjust to the new lenses.\" `escalation_criteria` was covered by \"But if it's severe or you're also experiencing redness and pain, we'd like to check it out further.\" `mild_case_advice` was covered by \"If it's just mild and you're finding it brighter than usual, wearing sunglasses when you're outside should help.\""
+  }
+}

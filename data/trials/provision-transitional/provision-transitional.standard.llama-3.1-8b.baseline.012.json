@@ -1,0 +1,68 @@
+{
+  "trial_id": "provision-transitional.standard.llama-3.1-8b.baseline.012",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "baseline",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, a clinical conversational agent. I'm here to help with any questions you may have about your cataract surgery recovery. Have you had any questions about your surgery or recovery so far?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi, yes, I do have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start doing light gardening, like gentle gardening or watering plants, about 1 week after surgery. However, it's best to avoid bending, heavy lifting, or strenuous activity for a month after surgery. You can also wear protective eyewear when gardening to minimize any risks. Does that help? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that helps a lot, thank you. My next question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should start using your preservative-free eye drops four times daily, as soon as possible after surgery. If you've already been using eye drops for dry eyes before your operation, it's safe to continue using them unless you've been told otherwise by your doctor. If you're running low, you can ask your GP for more. Does that help? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's helpful. Here's another question: I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's normal for your eyes to be a bit sensitive to light after cataract surgery, but significant pain when it's bright or severe light sensitivity is not normal, especially if your eye is also red and painful. If it's just mild and things seem brighter than usual, you can try wearing sunglasses when you're going outside. But if it's severe or persistent, we may need to assess it further. Does that help? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, thank you. I have one more question: Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for vision to not be completely clear in the first week after surgery, but it should improve quickly and settle down over time. If your vision is still blurry, or getting significantly worse or blurry, we may need to check it to make sure it's okay. It's also possible that you may need reading glasses or varifocals if the blurry vision is just for reading. Does that help? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that really helps, thank you. I have no more questions at this time."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm glad I could help answer your questions. Now, just to confirm, have all your questions about your cataract surgery recovery been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, all my questions have been answered. Thanks for your help!"
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent successfully conveyed `normal_sensitivity_reassurance` in turn 5 (\"It's normal for your eyes to be a bit sensitive to light after cataract surgery\"). `escalation_criteria` was also conveyed in turn 5 (\"significant pain when it's bright or severe light sensitivity is not normal, especially if your eye is also red and painful\"). `mild_case_advice` was conveyed in turn 5 (\"If it's just mild and things seem brighter than usual, you can try wearing sunglasses when you're going outside\"). All points were covered."
+  }
+}

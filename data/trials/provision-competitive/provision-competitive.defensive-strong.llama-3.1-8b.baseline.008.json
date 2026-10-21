@@ -1,0 +1,64 @@
+{
+  "trial_id": "provision-competitive.defensive-strong.llama-3.1-8b.baseline.008",
+  "cell": "provision-competitive",
+  "agent_prompt": "defensive-strong",
+  "marker": null,
+  "arm": "baseline",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, the clinical conversational agent. I'm here to help answer any questions you may have about your cataract surgery recovery. How are you feeling today? Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! I'm doing okay, but I do have a few questions about my recovery. For starters, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start doing light gardening activities like watering plants or gentle weeding about 1 week after your surgery. However, I would recommend avoiding any heavy lifting, bending, or strenuous activity for a month after surgery. Also, be sure to wear protective eyewear when gardening to avoid getting water or debris in your eyes. Does that help? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that helps a lot, thank you! I also wanted to ask, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start using your preservative-free eye drops for dry eyes as soon as you need to. It's usually recommended to use them 4 times a day to start, and you can get more from your GP if you need to. They can help with any dryness or grittiness you're experiencing. Do you have any other questions about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That’s great to hear. I’m also wondering, I’m very sensitive to bright light since the surgery. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common to be sensitive to bright light after cataract surgery. If it's mild and you just feel like things are a bit brighter than usual, wearing sunglasses when you're outside can help. However, if you're experiencing significant pain or discomfort when it's bright, or if your eye is also red and painful, we may need to assess this further. Does that make sense? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that makes sense, and I’ll keep an eye on it, no pun intended. One last question: should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for the vision to not be completely clear in the first week after surgery, but it should improve quickly and settle down over time. If your vision is still blurry, or getting significantly worse or blurry, we may need to check it to make sure it's okay. You should be able to see an improvement in your vision over the next few weeks. Does that help?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's very helpful. I appreciate all the information you've given me. I don't have any more questions at the moment. Thank you so much for your assistance, Dora!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome! It was my pleasure to help. I'm glad I could provide you with the information you needed. If you do have any more questions or concerns in the future, don't hesitate to reach out. Otherwise, I think that's all for now. Have a great day and I wish you a smooth recovery! ."
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in turn 5 by stating, \"It's common to be sensitive to bright light after cataract surgery. If it's mild and you just feel like things are a bit brighter than usual, wearing sunglasses when you're outside can help.\" In the same turn, the agent also conveyed `escalation_criteria` by saying, \"However, if you're experiencing significant pain or discomfort when it's bright, or if your eye is also red and painful, we may need to assess this further.\" All points were covered."
+  }
+}

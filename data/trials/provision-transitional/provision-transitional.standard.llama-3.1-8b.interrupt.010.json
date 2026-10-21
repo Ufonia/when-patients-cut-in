@@ -1,0 +1,82 @@
+{
+  "trial_id": "provision-transitional.standard.llama-3.1-8b.interrupt.010",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I'm here to help answer any questions you may have about your cataract surgery recovery. How are you feeling after your surgery? Do you have any questions about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora, thanks for checking in. I'm doing alright, but I have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start with light exercise, such as gardening, about 1 week after surgery. Just be gentle with yourself and avoid any strenuous activities, like heavy lifting or bending. It's also a good idea to wear protective eyewear while gardening to prevent any dirt or debris from getting in your eyes. Does that help? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that helps a lot, thank you! My next question is about using my eye gel for dry eyes. When can I start using it again?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should continue to use your eye drops as was prescribed. If you're running out, you can get more from your GP. It's safe to use them as directed, unless you've been told otherwise. Remember to store them as directed, such as in the fridge or at room temperature, as per the instructions on the bottle. Does that make sense? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that makes sense, thanks for clarifying. I have another question: I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "It's normal for your eyes to be sensitive to light after cataract surgery, especially when it's bright. If it's mild, wearing sunglasses when you're outside can help. But if it's severe, or you're experiencing significant pain, it's a good idea to get in touch with your care team to have it checked. Does that sound right? Do you have any other questions?",
+      "delivered": "It's normal for your eyes to be sensitive to light after cataract surgery, especially when it's bright."
+    },
+    {
+      "speaker": "patient",
+      "text": "Right, got it."
+    },
+    {
+      "speaker": "agent",
+      "text": "You can try wearing sunglasses when you're outside to help with the sensitivity to light. If it's severe or you're experiencing other symptoms like pain or redness, it's best to speak with your care team. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, one more. Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for vision to not be completely clear in the first week after surgery, but it should improve quickly and settle down over time. If your vision is still blurry or getting worse, it's best to check with your care team to make sure everything is okay. Does that help?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that helps a lot. Thank you for answering all my questions. I don't have any more for now."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome! It was my pleasure to help. I'm glad I could answer all your questions. Now, just to confirm, have all your questions about your cataract surgery recovery been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, all my questions have been answered. Thank you again!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "transitional-sub-unit",
+    "cut_word_index": 17,
+    "total_words": 62
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 6 (\"It's normal for your eyes to be sensitive to light after cataract surgery, especially when it's bright.\"). `mild_case_advice` was conveyed in turn 7 (\"You can try wearing sunglasses when you're outside to help with the sensitivity to light.\"). `escalation_criteria` was also conveyed in turn 7 (\"If it's severe or you're experiencing other symptoms like pain or redness, it's best to speak with your care team.\"). All points were covered."
+  }
+}

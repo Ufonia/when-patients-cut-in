@@ -1,0 +1,118 @@
+{
+  "trial_id": "gathering-competitive.marker-absent.gemini-2.5-flash.interrupt.024",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "absent",
+  "arm": "interrupt",
+  "model": "Gemini 2.5 Flash",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to ask you a few questions about your recovery after cataract surgery.\n\nTo start, how is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "That's good to hear.\n\nIs your eye currently red?",
+      "delivered": "That's good to hear.\n\nIs your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks for letting me know.\n\nHas your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed some mild blurry vision since the surgery, and I'm a bit concerned about it."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you're concerned about the mild blurry vision. The team will go through everything, and someone will be in touch if needed.\n\nRegarding the blurry vision, are you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed the mild blurry vision more at a distance than up close."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks for clarifying.\n\nWhen exactly did you first notice this blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I noticed the mild blurry vision shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you.\n\nDo you think the blurriness is getting better or worse?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It seems to be about the same since I first noticed it."
+    },
+    {
+      "speaker": "agent",
+      "text": "I see.\n\nIs your vision slightly hazy, or completely blurred?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's slightly hazy rather than completely blurred."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for that description.\n\nIs the blurriness only when you are wearing your old glasses?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, the blurriness is noticeable when I'm wearing my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for that information.\n\nHave you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay.\n\nHave you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "Alright, I've noted that.\n\nTo summarize, you've had cataract surgery on one eye, and it's been okay overall. You are experiencing mild blurry vision, which you noticed shortly after surgery. This blurriness is more noticeable at a distance and seems to be about the same as when it started; it's a slight haziness rather than complete blurriness, and it's particularly noticeable when you wear your old glasses. You haven't noticed any floaters or flashing lights.\n\nDoes that sound correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that sounds correct."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great. Thank you for confirming."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 8,
+    "total_words": 9
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "fail",
+    "reasoning": "The agent did not explicitly ask the top-level question for the target symptom 'eye redness' during history-taking. The agent started a question \"Is your eye currently\" but did not complete it before the patient interrupted."
+  }
+}

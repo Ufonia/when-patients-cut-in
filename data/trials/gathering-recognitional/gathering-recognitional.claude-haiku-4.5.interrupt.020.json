@@ -1,0 +1,102 @@
+{
+  "trial_id": "gathering-recognitional.claude-haiku-4.5.interrupt.020",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to help you with your recovery after cataract surgery. I'll be asking you about how you're doing and checking in on a few things to make sure everything is progressing well.\n\nLet me start by asking: Did you have surgery on one eye or both eyes?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I had surgery on one eye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for letting me know. \n\nHow is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "That's good to hear. Let me ask you a few more questions to make sure everything is going well.\n\nIs your eye currently red?",
+      "delivered": "That's good to hear. Let me ask you a few more questions to make sure everything is going well.\n\nIs your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "No worries, all OK."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great! I'm glad to hear that.\n\nLet me continue checking in. Is your eye currently red at all?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not red at all. It's feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's excellent news.\n\nHas your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my vision has improved as expected. Everything is fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's wonderful to hear that your vision has improved as expected.\n\nHave you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's great.\n\nHave you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Excellent. That's all very positive.\n\nLet me just check one more thing - is your eye currently painful at all?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not painful at all. It's feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfect! That's wonderful to hear.\n\nLet me summarize what we've discussed today:\n\n**Summary of your recovery:**\n- Your eye is doing well overall since surgery\n- No redness in your eye\n- Your vision has improved as expected\n- No floaters noticed\n- No flashing lights noticed\n- No pain in your eye\n\nEverything you've described sounds very positive and suggests your recovery is progressing well. Does this summary sound correct to you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary sounds correct to me."
+    },
+    {
+      "speaker": "agent",
+      "text": "Wonderful! Thank you for going through all of that with me. Your recovery is looking great, and it's reassuring to hear that everything is progressing well.\n\nIf you have any concerns in the future, please don't hesitate to reach out."
+    }
+  ],
+  "interruption": {
+    "utterance": 5,
+    "type": "recognitional",
+    "cut_word_index": 23,
+    "total_words": 24
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question about eye redness (\"Is your eye currently red at all?\") and the patient provided a clear answer. This question was asked on its own and not bundled with other top-level questions."
+  }
+}

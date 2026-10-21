@@ -1,0 +1,82 @@
+{
+  "trial_id": "provision-transitional.standard.llama-3.1-8b.interrupt.024",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I'm here to help with any questions you may have about your cataract surgery recovery. How are you feeling today? Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi, Dora! I'm doing okay, thank you. I do have a few questions about my recovery. When can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start doing light gardening activities, like watering or pruning, about 1 week after surgery. However, it's best to avoid heavy lifting or bending for a month. If you're unsure, it's always best to check with your care team for personalized advice.\n\nDo you have any other questions about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. When can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start using your preservative-free eye drops, which are for dry eyes, four times daily to start. If you were using any eye drops before your operation, such as for glaucoma or dry eyes, it's safe to continue using them, unless you've been told otherwise. You can also get more eye drops from your GP if you need to.\n\nDo you have any other questions about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "It's normal to have some sensitivity to light as your eyes adjust to the new lenses. However, if it's severe or you also have redness and pain, we may need to assess it further. If it's just mild and things seem brighter than usual, wearing sunglasses when you're outside can help.\n\nDo you have any other questions about your recovery?",
+      "delivered": "It's normal to have some sensitivity to light as your eyes adjust to the new lenses."
+    },
+    {
+      "speaker": "patient",
+      "text": "Right, got it."
+    },
+    {
+      "speaker": "agent",
+      "text": "You might also want to consider wearing sunglasses when you're going outside. That should help.\n\nDo you have any other questions about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I have one more question. Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common to have some blurriness, especially in the first week after surgery. But it should improve quickly and settle down over time. If your vision is still blurry or getting significantly worse, we may need to check it to make sure it's okay.\n\nDo you have any other questions about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, that's all for now. Thanks for answering my questions, Dora."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome! It was my pleasure to help. I hope you have a smooth recovery. I'll just check in with you one more time: do you feel like all your questions about your cataract surgery recovery have been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I feel like all my questions have been answered. Thank you for your help!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "transitional-sub-unit",
+    "cut_word_index": 16,
+    "total_words": 60
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 6 (\"It's normal to have some sensitivity to light as your eyes adjust to the new lenses.\"). The agent also conveyed `mild_case_advice` in turn 7 (\"You might also want to consider wearing sunglasses when you're going outside.\"). However, the `escalation_criteria` point was not conveyed at any point in the conversation."
+  }
+}
