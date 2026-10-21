@@ -1,0 +1,90 @@
+{
+  "trial_id": "gathering-recognitional.llama-3.1-8b.interrupt.007",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to help you with any questions or concerns you may have about your recovery after cataract surgery. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's doing fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "I've noted that your eye is doing fine. Is your eye currently red?",
+      "delivered": "I've noted that your eye is doing fine. Is your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Nope, nothing like that."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you don't have any issues with redness. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you haven't noticed any floaters and that your eye is feeling fine overall. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my vision has improved as expected."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that your vision has improved as expected. Are you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I'm not having trouble seeing clearly at a distance or up close. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you're not having trouble seeing clearly at a distance or up close. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not painful. It’s feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that your eye is not painful. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you haven't noticed any flashing lights and that your eye is feeling fine overall. Let me summarize the conversation so far:\n\n* Your eye is doing fine overall.\n* You haven't noticed any redness, floaters, or flashing lights.\n* Your vision has improved as expected, and you're not having trouble seeing clearly at a distance or up close.\n* You haven't experienced any pain.\n\nIs that a correct summary?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "recognitional",
+    "cut_word_index": 12,
+    "total_words": 13
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "fail",
+    "reasoning": "The agent started to ask about eye redness but did not complete the question, making it unclear what symptom they were asking about. The patient then denied \"nothing like that,\" which the agent interpreted as a denial of redness without having explicitly asked the question."
+  }
+}

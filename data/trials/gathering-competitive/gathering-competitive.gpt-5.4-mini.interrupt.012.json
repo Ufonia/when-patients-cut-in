@@ -1,0 +1,126 @@
+{
+  "trial_id": "gathering-competitive.gpt-5.4-mini.interrupt.012",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello — how is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "Glad to hear that. Are your eyes red?",
+      "delivered": "Glad to hear that. Are your eyes"
+    },
+    {
+      "speaker": "patient",
+      "text": "Actually, I've noticed some mild blurry vision since the surgery. Could you help me understand what's going on?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks for letting me know. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I expected it to be a bit clearer, but it's still mildly blurry."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks, that helps. Are you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's mostly blurry at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Are you able to see okay at a distance such as watching TV?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's mildly blurry when watching TV or focusing on distant objects."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Are you able to see okay close up, like while reading?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I can see okay up close for reading."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. When did you first notice the blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I first noticed the mild blurriness shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Do you think the blurriness is getting better or worse?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It hasn't changed much; it's remained consistently mildly blurry."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Is the blurriness slightly hazy, or completely blurred?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's slightly hazy rather than completely blurred."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Is the blurriness only when you are wearing your old glasses?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I notice the mild blurriness even without my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Summary so far: after cataract surgery, you’ve had mild, slightly hazy blurry vision mainly at a distance. It’s noticeable when watching TV or looking at distant objects, while close-up reading is okay. You first noticed it shortly after surgery, it hasn’t changed much, and it’s present even without your old glasses. You have not noticed floaters or flashing lights.\n\nPlease confirm if that summary is correct, or let me know if anything should be changed."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 7,
+    "total_words": 8
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "fail",
+    "reasoning": "The agent did not ask the top-level question about eye redness."
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "trial_id": "gathering-recognitional.llama-3.1-8b.interrupt.018",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! How are your eyes doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks. My recovery has been smooth overall."
+    },
+    {
+      "speaker": "agent",
+      "intended": "That's great to hear! You had surgery on both eyes, right? \n\nIs your eye currently red?",
+      "delivered": "That's great to hear! You had surgery on both eyes, right? \n\nIs your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Nope, nothing like that. All good there."
+    },
+    {
+      "speaker": "agent",
+      "text": "So, you had surgery on one eye. \n\nIs your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye isn't red. It's feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to know. \n\nIs your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye isn't painful. It's feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "So your eye isn't red or painful. That's good to hear.\n\nHas your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, everything is fine overall with my vision. My recovery has been smooth."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's great to hear that your vision has improved as expected.\n\nHas your vision improved as much as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, everything is fine overall with my vision. My recovery has been smooth."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note to go into that. Would you mind if I first ask about floaters? Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to know.\n\nHave you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "So you haven't noticed any floaters or flashing lights.\n\nLet me summarize what we've discussed so far: you're experiencing no redness, no pain, and your vision has improved as expected since the surgery. You also haven't noticed any floaters or flashing lights.\n\nIs that correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct. My recovery has been smooth, and everything is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "It sounds like your recovery is going well. Would you like me to summarize everything one more time before we wrap up?\n\nHere's a summary: you had surgery on one eye, and you're experiencing no redness, no pain, and your vision has improved as expected since the surgery. You also haven't noticed any floaters or flashing lights. Your overall recovery has been smooth, and everything is feeling fine."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "recognitional",
+    "cut_word_index": 15,
+    "total_words": 16
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent asked the top-level question \"Is your eye currently red?\" explicitly and on its own, and the patient provided a clear answer."
+  }
+}

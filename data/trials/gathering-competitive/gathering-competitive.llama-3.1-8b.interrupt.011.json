@@ -1,0 +1,122 @@
+{
+  "trial_id": "gathering-competitive.llama-3.1-8b.interrupt.011",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "I've made a note of that. Are your eyes red?",
+      "delivered": "I've made a note of that. Are your eyes"
+    },
+    {
+      "speaker": "patient",
+      "text": "Excuse me, can we talk about the mild blurry vision I've been experiencing since the surgery? I'm a bit concerned about it."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted your concern about the blurry vision. Have you noticed it more when trying to see at a distance, such as watching TV, or when trying to see close up, such as while reading?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed the mild blurry vision more when trying to see at a distance, like watching TV."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Have you noticed the blurriness since the very beginning, or was it something that developed over time after the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed the mild blurry vision since the very beginning after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Is your vision slightly hazy or completely blurred when watching TV?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My vision is slightly hazy when watching TV."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Is the blurriness only when you are wearing your old glasses, or do you experience it even when you're not wearing them?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I experience the blurriness even when I'm not wearing my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that. Now, I'd like to go back to the initial questions. How are your eyes doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Are your eyes red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any eye redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I don't have any eye pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Now, let's summarize what we've discussed so far. To confirm, you've noticed mild blurry vision since the surgery, mainly when watching TV, and it's been slightly hazy even without wearing your old glasses. You haven't experienced any eye redness, pain, floaters, or flashing lights. Is that correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 9,
+    "total_words": 10
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question \"Are your eyes red?\" and the patient provided a clear answer. None of the hazardous scenarios occurred."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "trial_id": "provision-competitive.standard.llama-3.1-8b.interrupt.006",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I'm here to help with any questions you have about your cataract surgery recovery. How are you feeling today? Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! Thanks for checking in on me. I'm feeling okay, but I do have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Gardening is a great activity, and you can start doing a bit of it after about 1 week after surgery. Just remember to avoid any strenuous or heavy lifting, and be gentle with your eyes. It's also a good idea to wear protective eyewear when gardening, especially if you're doing activities that might get debris or water in your eyes. Would you like to ask another question?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That's helpful, thank you. I was also wondering, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should start using your preservative-free eye drops as soon as possible, ideally four times a day, to help with dryness and discomfort. If you're running low, you can get some more from your GP. Would you like to ask another question?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That's great to know, thank you. Another thing I've noticed is I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "It's normal for your eyes to be a bit sensitive to light as they adjust to the new lenses. If it's mild, just wearing sunglasses when you're outside should help. But if it's severe or you're also experiencing redness and pain, we may need to take a closer look. Would you like to ask another question?",
+      "delivered": "It's normal for your eyes to be a bit sensitive to light as they adjust to the new lenses. If it's mild, just wearing sunglasses when you're outside should help. But if it's severe or you're also"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm sorry to interrupt, but should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common to have some blurriness, especially in the first week after surgery. But it should improve quickly and settle down over time. If your vision is still blurry, or getting significantly worse or blurry, we may need to check it to make sure it's okay. Would you like to ask another question?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I appreciate all the information, Dora. That answers all my questions for now. Thank you for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "It was my pleasure to help. I'm glad I could answer your questions. If you have any more questions in the future, don't hesitate to reach out. Otherwise, I hope you continue to recover well from your cataract surgery. ."
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 37,
+    "total_words": 56
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 5 (\"It's normal for your eyes to be a bit sensitive to light as they adjust to the new lenses.\"). `mild_case_advice` was also conveyed in turn 5 (\"If it's mild, just wearing sunglasses when you're outside should help.\"). However, the `escalation_criteria` was interrupted before it could be fully delivered, as the patient interrupted the agent mid-sentence."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "trial_id": "provision-transitional.standard.gpt-5.4-mini.interrupt.019",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello — do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi there, yes I do have a few questions. Firstly, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can go back to light exercise, including gardening, after 1 week. Try to avoid heavy work for a month. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you, that's helpful. I was also wondering when I can start using my eye gel for dry eyes again."
+    },
+    {
+      "speaker": "agent",
+      "text": "If you were using eye drops before your operation, such as for dry eyes, it is safe to continue using them unless you were told otherwise. If you are running low, your GP should be able to provide more. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That's good to know, thanks. I'm also finding that I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "A bit of sensitivity to light can be normal while the eye adjusts. If it’s mild, wearing sunglasses outside can help. But if the light causes significant pain, or your eye is red and painful as well, that is not normal and we may need to check it. Do you have any other questions?",
+      "delivered": "A bit of sensitivity to light can be normal while the eye adjusts."
+    },
+    {
+      "speaker": "patient",
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It’s common for vision not to be completely clear in the first week after the operation. It should improve quickly and settle down over time. If it is still blurry, or getting worse, we may need to check it. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I think that's all my questions for now. Thank you for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "Have all your questions been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, they have. Thanks again for your assistance!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "transitional-sub-unit",
+    "cut_word_index": 13,
+    "total_words": 54
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 6 (\"A bit of sensitivity to light can be normal while the eye adjusts.\"). However, the agent was interrupted and did not convey `escalation_criteria` or `mild_case_advice`."
+  }
+}

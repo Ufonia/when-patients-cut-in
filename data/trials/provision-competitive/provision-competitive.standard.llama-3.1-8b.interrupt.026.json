@@ -1,0 +1,74 @@
+{
+  "trial_id": "provision-competitive.standard.llama-3.1-8b.interrupt.026",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, a clinical conversational agent. I'm here to help answer any questions you may have about your cataract surgery recovery. How are you feeling after your surgery? Do you have any questions about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! Thanks for asking. I'm feeling okay, just trying to take it easy. I do have a few questions about my recovery. When can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start with light gardening activities, such as watering plants or doing some gentle weeding, about 1 week after your surgery. However, it's best to avoid any strenuous or heavy lifting, bending, or digging for a month. Remember to wear protective eyewear while gardening to prevent any water or debris from getting in your eyes."
+    },
+    {
+      "speaker": "patient",
+      "text": "Okay, that makes sense. I'll be careful. Another thing I was wondering: when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should start using the preservative-free eye drops as prescribed, which is four times daily. If you're running out, you can contact your GP for a refill. It's safe to continue using them as directed, unless you've been told otherwise by your doctor."
+    },
+    {
+      "speaker": "patient",
+      "text": "Got it, I'll make sure to follow those instructions. I'm also finding myself very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "It's common to have some sensitivity to light after cataract surgery. If it's just a bit brighter than usual, wearing sunglasses when you're outside should help. But if it's severe or accompanied by pain, redness, or discomfort, we may need to take a closer look. Would you like to discuss this further?",
+      "delivered": "It's common to have some sensitivity to light after cataract surgery. If it's just a bit brighter than usual, wearing sunglasses when you're outside should help."
+    },
+    {
+      "speaker": "patient",
+      "text": "Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common to have blurry vision for the first week after surgery. But it should improve quickly and settle down over time. If your vision is still blurry or getting worse, we may need to check it to make sure it's okay."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you for the information, Dora. It's reassuring to know what's normal and what's not. I don't have any more questions right now. I appreciate your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm glad I could help. It's always a good idea to be aware of what to expect during your recovery. If you do think of anything else, don't hesitate to reach out. But for now, it seems like you're all set. I just want to check: are all your questions about your cataract surgery recovery answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, all my questions have been answered. Thank you so much for your assistance!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 26,
+    "total_words": 52
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` by stating \"It's common to have some sensitivity to light after cataract surgery.\" and `mild_case_advice` by recommending \"wearing sunglasses when you're outside should help.\" in the same turn. However, the `escalation_criteria` regarding significant pain or severe sensitivity with a red and painful eye was not conveyed."
+  }
+}

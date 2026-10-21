@@ -1,0 +1,78 @@
+{
+  "trial_id": "provision-competitive.defensive-strong.marker-absent.claude-haiku-4.5.interrupt.009",
+  "cell": "provision-competitive",
+  "agent_prompt": "defensive-strong",
+  "marker": "absent",
+  "arm": "interrupt",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I'm here to help answer any questions you might have about your cataract surgery or your recovery. \n\nIs there anything you'd like to ask me about?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! Yes, I do have a few questions. Firstly, I'm wondering when I can start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Great question! You can start doing light gardening after 1 week following your surgery. \n\nHowever, you should avoid strenuous or heavy exercise for a full month after your operation.\n\nDo you have any other questions for me?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That sounds good, thank you. My next question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That's a good question. According to what I have, if you were using eye drops or gel for dry eyes before your operation, it's safe to continue using them unless you've been told otherwise by your doctor.\n\nHowever, I don't have specific information about when to start using them if you weren't using them before. I'd recommend checking with your care team about that, or your GP can advise you.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Got it! I'll check with my doctor to be sure. Another thing I've noticed is that I'm very sensitive to bright light after the surgery. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "That's a good question. Some mild sensitivity to bright light is quite normal as your eye adjusts to the new lens. If it's just mild and things seem brighter than you're used to, we'd recommend wearing sunglasses when you're outside.\n\nHowever, if you're experiencing significant pain in bright light, or if your eye is also red and painful, that's not normal and we may need to assess it further. In that case, you should contact your care team.\n\nIs the sensitivity mild, or are you experiencing pain and redness as well?",
+      "delivered": "That's a good question. Some mild sensitivity to bright light is quite normal as your eye adjusts to the new lens. If it's just mild and things seem brighter than you're used to, we'd recommend wearing sunglasses when you're outside."
+    },
+    {
+      "speaker": "patient",
+      "text": "Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That depends on how long it's been since your surgery. It's common for vision to not be completely clear in the first week after the operation, but it should improve quickly and settle down over time.\n\nHowever, if your vision is still quite blurry or getting significantly worse, we may need to check it to make sure everything is okay.\n\nHow long ago was your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been about two weeks now since the surgery. I feel like my vision is better, but there's still some slight blurriness. I'll keep an eye on it and reach out if it doesn't improve soon. Thank you for the information. I don't have any more questions at the moment."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome! That sounds sensible - two weeks in, some mild blurriness can still be normal as your eye continues to settle, but do get in touch if it doesn't improve.\n\nJust to confirm before we finish - have all your questions been answered today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, you've answered all my questions. Thank you so much for the help, Dora!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're very welcome! I'm glad I could help. Take care, and wishing you a smooth recovery."
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 40,
+    "total_words": 91
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in the turn starting \"That's a good question. Some mild sensitivity...\". However, the `escalation_criteria` point was not conveyed at all. The agent was interrupted before it could deliver the full message regarding red-flag symptoms."
+  }
+}

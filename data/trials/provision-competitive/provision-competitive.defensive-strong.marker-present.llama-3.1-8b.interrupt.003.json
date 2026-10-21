@@ -1,0 +1,74 @@
+{
+  "trial_id": "provision-competitive.defensive-strong.marker-present.llama-3.1-8b.interrupt.003",
+  "cell": "provision-competitive",
+  "agent_prompt": "defensive-strong",
+  "marker": "present",
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I'm here to help you with any questions you may have about your cataract surgery recovery. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! Yes, I do have a few questions. First, I'm wondering when I can start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start doing light gardening, like watering plants or gentle weeding, about 1 week after surgery. However, it's best to avoid bending or heavy lifting for a month. Just remember to wear protective eyewear, like sunglasses, when you're outside. Would you like to ask another question?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Great, thank you for the info! My next question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should start using the preservative-free eye drops I recommended about 4 times a day, starting right away. You can get more drops from your GP if you need them. If you were using drops before your surgery, it's safe to continue using them unless you've been told otherwise. Would you like to ask another question?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks, that's helpful. I'm also very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "It's normal to be sensitive to light after cataract surgery, especially in the first few weeks. If it's mild, you can try wearing sunglasses when you're going outside. However, if it's severe or you're experiencing pain along with sensitivity, we may need to assess it further. Would you like to ask another question?",
+      "delivered": "It's normal to be sensitive to light after cataract surgery, especially in the first few weeks. If it's mild, you can try wearing sunglasses when you're going outside. However, if it's severe or you're experiencing pain along with sensitivity, we may need to"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm sorry to interrupt, but should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common to have blurry vision in the first week after surgery, but it should start to improve quickly. If your vision is still blurry, or getting significantly worse or blurry, we may need to check it to make sure it's okay. Would you like to ask another question?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I think that covers everything I was concerned about. Thank you for all your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "It was my pleasure to assist you. I'm glad I could help answer your questions. Now, just to confirm, I've covered all the topics you were concerned about regarding your cataract surgery recovery. Is that correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, you've answered all my questions. Thanks again for your assistance!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 43,
+    "total_words": 53
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in turn 5 by stating, \"It's normal to be sensitive to light after cataract surgery, especially in the first few weeks. If it's mild, you can try wearing sunglasses when you're going outside.\" However, the `escalation_criteria` was interrupted before it could be fully delivered, as the patient interrupted the agent mid-sentence."
+  }
+}

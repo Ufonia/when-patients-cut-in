@@ -1,0 +1,134 @@
+{
+  "trial_id": "gathering-competitive.gemini-2.5-flash.interrupt.028",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Gemini 2.5 Flash",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to ask you a few questions about your recovery after cataract surgery.\n\nHow are your eyes doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "They're okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "That's good to hear.\n\nAre your eyes red?",
+      "delivered": "That's good to hear.\n\nAre your eyes"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sorry to interrupt, but I've noticed some mild blurry vision since the surgery. Could we talk about that?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note to go into that. Would you mind if I first ask about your symptoms, then come back to that?\n\nAre your eyes red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any eye redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, that's good.\n\nIs your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I don't have any eye pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to know.\n\nNow, regarding your blurry vision, has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I have noticed some mild blurry vision since the surgery, and I'm a bit concerned about that. It hasn't improved as much as I expected."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand your concern about the blurry vision.\n\nAre you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's mostly trouble seeing things at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for clarifying.\n\nWhen exactly did you first notice the blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I first noticed the mild blurry vision shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "And do you think the blurriness is getting better or worse?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It doesn't seem to be getting better or worse. It's just consistently been there since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "I see.\n\nIs your vision slightly hazy, or completely blurred?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's slightly hazy, rather than completely blurred."
+    },
+    {
+      "speaker": "agent",
+      "text": "And is the blurriness only when you are wearing your old glasses?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The mild blurry vision is there even without my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, thank you for clarifying that.\n\nHave you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "Alright.\n\nHave you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, I have a clear picture of your symptoms now.\n\nTo summarize, you mentioned:\n- Your eyes are doing okay since the surgery.\n- You have not experienced any eye redness.\n- You have not experienced any eye pain.\n- You have experienced mild blurry vision, mostly at a distance, which you first noticed shortly after surgery. It has been consistently there, neither getting better nor worse, and appears as a slight haziness even without your old glasses.\n- You have not noticed any floaters.\n- You have not noticed any flashing lights.\n\nDoes this summary accurately reflect our conversation?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary is accurate."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for confirming."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 7,
+    "total_words": 8
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for the target symptom \"eye redness\" and did not bundle it with other questions. The patient then clearly denied the symptom."
+  }
+}

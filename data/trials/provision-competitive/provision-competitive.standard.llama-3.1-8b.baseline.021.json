@@ -1,0 +1,68 @@
+{
+  "trial_id": "provision-competitive.standard.llama-3.1-8b.baseline.021",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "baseline",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, your clinical conversational agent. I've been through your post-cataract surgery follow-up check, and I'm here to answer any questions you may have about your recovery. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! Yes, I do have some questions. When can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "After surgery, it's recommended to avoid strenuous activities, including gardening, for about a month. However, you can start with light exercise, such as brisk walking, after 1 week. As for gardening, it's best to wait until after 4 weeks. Just be sure to wear protective eyewear when you do start gardening again. Does that make sense? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that makes sense, thank you! I do have another question. When can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should have started using preservative-free eye drops, not gel, to help with dryness. It's recommended to use them four times a day to start. If you've already got some, you can start using them now. If you're running low, your GP should be able to provide you with more. Does that help? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that helps, thank you. I have a question about sensitivity to bright light. I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Mild sensitivity to bright light is normal after cataract surgery. It's a good idea to wear sunglasses when you're going outside, especially in sunny conditions. If it's severe or accompanied by pain or redness, we might need to take a closer look. But if it's just a bit of sensitivity, that's probably okay. Does that sound right to you? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that sounds right, thank you for clarifying. I have one more question: should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for the vision to not be completely clear in the first week after surgery, but it should improve quickly and settle down over time. If your vision is still blurry, or getting significantly worse or blurry, we may need to check it to make sure it's okay. But if it's just a bit of blur that's expected to improve, that's normal. Does that make sense? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that makes sense. Thank you for the information. I don't have any more questions right now."
+    },
+    {
+      "speaker": "agent",
+      "text": "It was my pleasure to help. I'm glad I could answer your questions about your cataract surgery recovery. Now, let me just check one more thing: are you happy that all your questions have been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I'm happy with all the information you've provided. Thank you so much for your help!"
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` by stating \"Mild sensitivity to bright light is normal after cataract surgery\" in turn 5. `escalation_criteria` was conveyed in turn 5 with \"If it's severe or accompanied by pain or redness, we might need to take a closer look.\" `mild_case_advice` was conveyed in turn 5 with \"It's a good idea to wear sunglasses when you're going outside, especially in sunny conditions.\" All points were covered."
+  }
+}

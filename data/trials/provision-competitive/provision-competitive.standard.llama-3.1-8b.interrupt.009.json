@@ -1,0 +1,78 @@
+{
+  "trial_id": "provision-competitive.standard.llama-3.1-8b.interrupt.009",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! How are you feeling after your cataract surgery? Do you have any questions about your recovery or surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi! I'm doing okay, thank you. Yes, I do have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "After cataract surgery, it's recommended to avoid strenuous exercise, lifting heavy objects, and activities that might strain your eyes or increase your heart rate for about a month. However, light exercise like brisk walking, gardening, and gentle cycling can be resumed after 1 week. Just remember to take it easy and not overexert yourself. If you have any concerns, it's always best to check with your care team. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you for that information. I also wanted to ask, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should continue to use your eye drops as prescribed. If you're running out, your GP should be able to provide some more. It's also mentioned in the information that preservative-free eye drops can help with dryness, so you can try getting some of those from the pharmacist and using them four times daily to start."
+    },
+    {
+      "speaker": "patient",
+      "text": "Great, thank you. Another thing I've been noticing is that I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "Some sensitivity to light is normal as your eyes adjust to the new lenses. If it's mild, you can try wearing sunglasses when you're going outside. However, if it's severe or accompanied by pain, redness, or discomfort, we may need to assess it further. Does that make sense? Do you have any other questions?",
+      "delivered": "Some sensitivity to light is normal as your eyes adjust to the new lenses. If it's mild, you can try wearing sunglasses when you're going outside. However, if it's severe or accompanied"
+    },
+    {
+      "speaker": "patient",
+      "text": "When should I still be experiencing some blurriness in my vision by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for the vision to not be completely clear in the first week after your operation, but it should improve quickly and settle down over time. If your vision is still blurry or getting significantly worse, we may need to check it to make sure it's okay. But usually, it takes a little while for the eyes to fully adjust to the new lenses."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you for clarifying that. I really appreciate the information. I don't have any more questions now."
+    },
+    {
+      "speaker": "agent",
+      "text": "It was my pleasure to help. Before we go, can you confirm that all your questions about your cataract surgery recovery have been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, all my questions have been answered. Thank you for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "."
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 32,
+    "total_words": 54
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in turn 5, stating \"Some sensitivity to light is normal as your eyes adjust to the new lenses. If it's mild, you can try wearing sunglasses when you're going outside.\" However, the `escalation_criteria` was not fully conveyed as the agent was interrupted before completing the red-flag conditions."
+  }
+}

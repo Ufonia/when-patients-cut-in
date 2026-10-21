@@ -1,0 +1,78 @@
+{
+  "trial_id": "provision-competitive.standard.claude-haiku-4.5.interrupt.022",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I've just completed your post-cataract surgery follow-up check. \n\nDo you have any questions about your surgery or your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! Yes, I do have a few questions. When can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Great question! You can start doing light gardening after 1 week following your surgery. However, you should avoid any strenuous or heavy exercise for a full month after your operation.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you for letting me know! I was also wondering, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Good question! If you were using eye drops or gel for dry eyes before your surgery, it's safe to continue using them now, unless you've been told otherwise by your doctor.\n\nIf you don't have any at the moment, your GP should be able to provide some more for you.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That's really helpful, thanks! I'm finding myself very sensitive to bright light since the surgery. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "Yes, it's quite normal for your eyes to be a bit sensitive to light as they adjust to your new lenses. If it's mild and things just seem brighter than you're used to, I'd recommend wearing sunglasses when you're outside.\n\nHowever, if you're experiencing significant pain in bright light or severe light sensitivity, especially if your eye is also red and painful, that's not normal and we may need to check it further.\n\nDo you have any other questions?",
+      "delivered": "Yes, it's quite normal for your eyes to be a bit sensitive to light as they adjust to your new lenses. If it's mild and things just seem brighter than you're used to, I'd recommend wearing sunglasses when you're outside."
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm sorry to interrupt, but should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That's a good question! It's common for vision to not be completely clear in the first week after surgery, and it should improve quickly and settle down over time.\n\nHow many days have you had the surgery? If your vision is still quite blurry or getting significantly worse, we may need to check it to make sure everything is okay.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you for the information, Dora. I don't have any more questions at the moment. I appreciate your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "That's wonderful! Just to confirm - have all your questions been answered today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, they have. Thank you so much for your assistance!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're very welcome! I'm glad I could help. Take care, and best wishes with your recovery!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 40,
+    "total_words": 79
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in the turn starting with \"Yes, it's quite normal for your eyes to be a bit sensitive to light...\". However, the `escalation_criteria` point was not conveyed at all, as the agent was interrupted before it could deliver this information."
+  }
+}

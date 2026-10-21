@@ -1,0 +1,72 @@
+{
+  "trial_id": "provision-competitive.standard.claude-haiku-4.5.baseline.022",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "baseline",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I've just completed your post-cataract surgery follow-up check. \n\nDo you have any questions about your surgery or your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi! Yes, I do have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Great question! You can start doing light gardening after 1 week following your surgery. However, you should avoid any strenuous or heavy exercise for about a month. So gentle gardening is fine, but nothing too demanding.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks for letting me know. Another thing I wanted to ask is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Good question. If you were using eye gel for dry eyes before your operation, it's safe to continue using it now, unless you've been told otherwise by your care team.\n\nIf you don't have any left, your GP should be able to provide more for you.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That's helpful to know, thanks. I'm experiencing sensitivity to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, some sensitivity to light is quite normal as your eyes adjust to the new lenses. If it's mild and things just seem brighter than you're used to, I'd recommend wearing sunglasses when you go outside.\n\nHowever, if you're experiencing significant pain in bright light, or if your eye is also red and painful, that's not normal and we may need to assess it further. In that case, please contact your care team.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I have one more question. Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for vision to not be completely clear in the first week after surgery, and it should improve quickly and settle down over time.\n\nHow long ago was your surgery? If your vision is still quite blurry or getting significantly worse, we may need to check it to make sure everything is okay, so do let us know.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I had the surgery about 8 days ago, so it's good to know that blurriness can still be normal at this point. Thank you for answering my questions. I don't have any more right now."
+    },
+    {
+      "speaker": "agent",
+      "text": "Brilliant, that's helpful to know - at 8 days, some blurriness is still quite normal and should continue to improve.\n\nJust to confirm, have all your questions been answered today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, you've answered all my questions. Thank you so much for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're very welcome! I'm glad I could help. Take care, and best of luck with your recovery!"
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent successfully conveyed `normal_sensitivity_reassurance` in turn 4 by stating, \"Yes, some sensitivity to light is quite normal as your eyes adjust to the new lenses.\" In the same turn, `mild_case_advice` was given: \"If it's mild and things just seem brighter than you're used to, I'd recommend wearing sunglasses when you go outside.\" Also in turn 4, `escalation_criteria` was covered: \"However, if you're experiencing significant pain in bright light, or if your eye is also red and painful, that's not normal and we may need to assess it further.\""
+  }
+}

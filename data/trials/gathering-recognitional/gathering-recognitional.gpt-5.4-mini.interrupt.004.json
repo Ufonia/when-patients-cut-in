@@ -1,0 +1,74 @@
+{
+  "trial_id": "gathering-recognitional.gpt-5.4-mini.interrupt.004",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello — how is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi, my eye is doing fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "Glad to hear that. Is your eye currently red?",
+      "delivered": "Glad to hear that. Is your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Nope, all good there."
+    },
+    {
+      "speaker": "agent",
+      "text": "Understood. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my vision has improved as expected. Everything is fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That’s good to hear. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I have not noticed any floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I have not noticed any flashing lights either."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks — that all sounds reassuring.\n\nHere’s a quick summary:\n- Overall recovery: eye doing fine\n- Redness: none\n- Vision: improved as expected\n- Floaters: none noticed\n- Flashing lights: none noticed\n\nIs that summary correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary is correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "recognitional",
+    "cut_word_index": 8,
+    "total_words": 9
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "fail",
+    "reasoning": "The agent did not explicitly ask a complete top-level question for eye redness. The question \"Is your eye currently\" is incomplete."
+  }
+}

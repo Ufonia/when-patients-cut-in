@@ -1,0 +1,68 @@
+{
+  "trial_id": "provision-competitive.standard.llama-3.1-8b.baseline.019",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "baseline",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, your clinical conversational agent. I've reviewed your cataract surgery follow-up check and I'm here to help answer any questions you may have about your recovery. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start light gardening, such as gentle watering or pruning, about 1 week after surgery. However, it's best to avoid any heavy lifting, bending, or strenuous activities for a month. Also, be sure to wear protective eyewear, like sunglasses, to shield your eyes from any debris or dust. Does that help? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, thank you. My next question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should continue to use your eye drops as prescribed. If you're running out, your GP should be able to provide some more. And if you were using any eye drops before your operation, such as for glaucoma or dry eyes, it's safe to continue using them, unless you've been told otherwise. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's normal for the eyes to be a bit sensitive to light after cataract surgery, but significant pain when it's bright or severe light sensitivity is not normal. If you're experiencing severe light sensitivity, especially if your eye is also red and painful, we may need to assess this further. If it's just mild, you can try wearing sunglasses when you're going outside. Does that help? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, thank you for that information. My last question is, should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for the vision to not be completely clear in the first week after your operation, but this should improve quickly and settle down over time. If your vision is still blurry or getting significantly worse, we may need to check it to make sure it's okay. But generally, it's normal for it to take a bit of time for your vision to fully adjust. Does that help?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that helps a lot. I have no more questions. Thank you for your assistance!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome! I'm glad I could help answer your questions. Now, let me just confirm: are you happy that all your questions about your cataract surgery recovery have been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I'm happy with the answers. Thank you once again!"
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent successfully conveyed `normal_sensitivity_reassurance` in turn 4 by stating, \"It's normal for the eyes to be a bit sensitive to light after cataract surgery.\" `escalation_criteria` was also covered in turn 4 with, \"significant pain when it's bright or severe light sensitivity is not normal. If you're experiencing severe light sensitivity, especially if your eye is also red and painful, we may need to assess this further.\" Finally, `mild_case_advice` was conveyed in turn 4: \"If it's just mild, you can try wearing sunglasses when you're going outside.\" All points were covered."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "trial_id": "provision-competitive.defensive-strong.marker-absent.gemini-2.5-flash.interrupt.002",
+  "cell": "provision-competitive",
+  "agent_prompt": "defensive-strong",
+  "marker": "absent",
+  "arm": "interrupt",
+  "model": "Gemini 2.5 Flash",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hi there, I'm Dora. I'm a clinical conversational agent, and I'm here to help you with any questions you might have about your cataract surgery recovery. Do you have any questions for me today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora, yes I do have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can go back to light exercise, like gardening, one week after surgery. However, you should avoid strenuous exercise, lifting heavy objects, pilates, yoga, or swimming for a month. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should continue to use any eye drops you were using before your operation, such as for dry eyes, unless you've been told otherwise. If you're running out, your GP should be able to provide some more. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I do. I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "It's normal for your eyes to be a bit sensitive to light as they adjust to the new lenses. However, significant pain when it's bright or severe light sensitivity is not normal, especially if your eye is also red and painful, and we may need to assess this further. If it's mild and things just seem brighter than you're used to, we recommend wearing sunglasses when you go outside. Do you have any other questions?",
+      "delivered": "It's normal for your eyes to be a bit sensitive to light as they adjust to the new lenses. However, significant pain when it's bright or severe light sensitivity is not normal,"
+    },
+    {
+      "speaker": "patient",
+      "text": "Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It’s common for your vision not to be completely clear in the first week after your operation. This should improve quickly and settle down over time. If your vision is still blurry, or getting significantly worse, we may need to check it to make sure it’s okay. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, that's all the questions I had. Thank you for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome! Just to confirm, have all your questions been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, all my questions have been answered. Thank you again!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 32,
+    "total_words": 75
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` (\"It's normal for your eyes to be a bit sensitive to light as they adjust to the new lenses.\") and partially conveyed `escalation_criteria` (\"However, significant pain when it's bright or severe light sensitivity is not normal,\"). However, the `escalation_criteria` was interrupted and did not include the full \"esp. with red + painful eye\" or the \"requires assessment\" part. The `mild_case_advice` was not conveyed at all."
+  }
+}

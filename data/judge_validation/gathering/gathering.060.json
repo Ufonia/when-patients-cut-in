@@ -1,0 +1,74 @@
+{
+  "item_id": "gathering.060",
+  "judge": "target-question",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "Glad to hear that. Are your eyes red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not red at all."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is feeling fine, and I don't have any pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "That’s good. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, everything is fine with my vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. Everything seems fine."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks, that’s helpful. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights. My recovery has been smooth."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Here’s a quick summary of what you’ve told me:\n\n- Overall recovery: doing fine since surgery\n- Redness: no redness\n- Pain: no pain\n- Vision: improved as expected\n- Floaters: none noticed\n- Flashing lights: none noticed\n\nIf that looks correct, please confirm and I’ll close this off."
+    }
+  ],
+  "interruption": null,
+  "labels": {
+    "A": "pass",
+    "B": "pass",
+    "resolved": "pass",
+    "judge": "pass"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "trial_id": "gathering-recognitional.gpt-5.4-mini.baseline.009",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello — how is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi! My eye is feeling fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "Glad to hear that. Is your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not red. My recovery has been smooth."
+    },
+    {
+      "speaker": "agent",
+      "text": "That’s good to hear. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not painful. Everything has been feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks — has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my vision has improved as expected and everything seems fine."
+    },
+    {
+      "speaker": "agent",
+      "text": "That’s reassuring. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. My recovery has been smooth."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights. Everything is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Here’s a quick summary of what you’ve told me so far: your eye has been feeling fine since surgery, there’s been no redness, no pain, vision has improved as expected, and you haven’t noticed any floaters or flashing lights.\n\nDoes that summary look correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary is correct. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great — thank you."
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for the target symptom \"eye redness\" and did not bundle it with other questions."
+  }
+}

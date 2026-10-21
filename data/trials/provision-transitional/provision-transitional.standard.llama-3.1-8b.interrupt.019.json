@@ -1,0 +1,86 @@
+{
+  "trial_id": "provision-transitional.standard.llama-3.1-8b.interrupt.019",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, the clinical conversational agent. I've been following up with you after your cataract surgery. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! Yes, I do have a few questions. First, I'm wondering when I can start doing a little bit of gardening again?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start with light gardening activities, such as watering plants or gentle pruning, about 1 week after surgery. However, it's best to avoid heavy lifting, bending, or strenuous activities for a month. Remember to wear protective eyewear when working with plants or in the garden. Would you like to ask another question?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks for the information! I appreciate it. Next, I'm curious about when I can start using my eye gel for dry eyes."
+    },
+    {
+      "speaker": "agent",
+      "text": "You were recommended to use preservative-free eye drops four times daily to start, and you should continue to use them as prescribed. If you're running out, you can contact your GP to get more. They can also provide more information if needed. Would you like to ask another question?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Great, that makes sense. I have another concern — I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "Some sensitivity to light is normal as your eyes adjust to the new lenses. If it's mild and just seems brighter than usual, wearing sunglasses when you're outside should help. However, if it's severe or accompanied by redness and pain, we may need to assess it further. Would you like to ask another question?",
+      "delivered": "Some sensitivity to light is normal as your eyes adjust to the new lenses."
+    },
+    {
+      "speaker": "patient",
+      "text": "Right, got it."
+    },
+    {
+      "speaker": "agent",
+      "text": "If the sensitivity is mild, just wearing sunglasses when you're outside should help. But if it's severe or accompanied by pain and redness, we'd recommend checking with your care team to make sure everything is okay. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common to have some blurriness in the first week after surgery, but it should improve quickly. If your vision is still blurry or getting worse, we may need to check it to make sure it's okay."
+    },
+    {
+      "speaker": "patient",
+      "text": "That's helpful to know, thank you. That's all the questions I have for now. Thanks for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome! I'm glad I could help. It was a pleasure speaking with you. Before we go, can you confirm that all your questions have been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, you've answered all my questions. Thanks again for your assistance!"
+    },
+    {
+      "speaker": "agent",
+      "text": "."
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "transitional-sub-unit",
+    "cut_word_index": 14,
+    "total_words": 54
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 6 (\"Some sensitivity to light is normal as your eyes adjust to the new lenses.\"). `mild_case_advice` was conveyed in turn 7 (\"If the sensitivity is mild, just wearing sunglasses when you're outside should help.\"). `escalation_criteria` was also conveyed in turn 7 (\"But if it's severe or accompanied by pain and redness, we'd recommend checking with your care team to make sure everything is okay.\"). All points were covered."
+  }
+}

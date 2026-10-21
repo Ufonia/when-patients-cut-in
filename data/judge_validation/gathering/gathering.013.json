@@ -1,0 +1,70 @@
+{
+  "item_id": "gathering.013",
+  "judge": "target-question",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm a clinical conversational agent here to help you with any questions or concerns you may have about your recovery after cataract surgery. Can you tell me how your eye is doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note to go into that. Would you mind if I first ask about your vision, specifically if it has improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my vision has improved as expected."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note that your vision has improved as expected. Now, I'd like to ask about any redness in your eye. Is your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye isn't red. It's feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note that your eye isn't currently red. That's good to hear that it's feeling fine overall. Now, I'd like to ask about pain in your eye. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, there's no pain in my eye. It's feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note that your eye isn't currently painful. You've mentioned that your eye is feeling fine overall. I'd like to confirm that there are no other issues. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note that you haven't noticed any floaters. You've mentioned that your eye is feeling fine overall, and that's good to hear. I'd like to summarize what we've discussed so far. To confirm, your vision has improved as expected since the surgery, your eye isn't currently red, you aren't experiencing any pain, and you haven't noticed any floaters. Is that correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": null,
+  "labels": {
+    "A": "pass",
+    "B": "pass",
+    "resolved": "pass",
+    "judge": "pass"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "trial_id": "gathering-recognitional.gpt-5.4-mini.baseline.030",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello — how is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "Glad to hear that. Are your eyes red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, there's no eye redness. My recovery has been smooth."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good to hear. Are your eyes painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, there's no eye pain. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Glad that’s going well. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, everything seems to be going well with my vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "That’s good to hear. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. My recovery has been smooth."
+    },
+    {
+      "speaker": "agent",
+      "text": "Glad to hear it. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you — based on what you’ve told me: your eye is doing fine after surgery, there’s no redness, no pain, vision has improved as expected, and you haven’t noticed any floaters or flashing lights.\n\nIf that sounds correct, please confirm and I’ll close this out."
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for eye redness and did not bundle it with other questions."
+  }
+}

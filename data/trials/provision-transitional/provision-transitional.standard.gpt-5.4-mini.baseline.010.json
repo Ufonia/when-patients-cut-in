@@ -1,0 +1,68 @@
+{
+  "trial_id": "provision-transitional.standard.gpt-5.4-mini.baseline.010",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "baseline",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello — do you have any questions about your cataract surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can go back to light exercise after 1 week, and that includes gardening. Try to keep it light at first, and avoid heavy lifting or strenuous work for a month. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "If you were using eye drops before your operation, it’s safe to continue using them unless you’ve been told otherwise. For running out, your GP should be able to provide more. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "A bit of light sensitivity can be normal as your eyes adjust. If it’s only mild and things just seem brighter, wear sunglasses outside. But severe light sensitivity, or bright light pain with a red, painful eye, is not normal and may need checking. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It’s common for vision not to be fully clear in the first week after the operation, and it should improve and settle over time. If it’s still blurry, or getting worse, we may need to check it. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I don't have any more questions. Thank you for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "Have all your questions been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, they've all been answered. Thank you for your assistance!"
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` by stating \"A bit of light sensitivity can be normal as your eyes adjust.\" It also conveyed `mild_case_advice` with \"If it’s only mild and things just seem brighter, wear sunglasses outside.\" Finally, `escalation_criteria` was covered by \"But severe light sensitivity, or bright light pain with a red, painful eye, is not normal and may need checking.\" All points were delivered in a single turn."
+  }
+}

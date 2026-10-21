@@ -1,0 +1,68 @@
+{
+  "trial_id": "provision-competitive.standard.gpt-5.4-mini.baseline.026",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "baseline",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello — do you have any questions about your cataract surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can go back to light gardening after 1 week, as long as it’s not heavy work. Please avoid strenuous exercise and heavy lifting for a month.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you! When can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "If you were using eye drops or gel before your operation, it’s safe to continue using them unless you were told otherwise. If you’re running out, your GP should be able to provide more.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I appreciate that information. I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Some sensitivity to light can be normal while your eye adjusts to the new lens. If it’s mild and things just seem brighter, wear sunglasses outside.\n\nBut significant pain with bright light, or severe light sensitivity, especially with a red and painful eye, is not normal and may need checking.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks for the advice. Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It’s common for vision not to be completely clear in the first week after the operation. It should improve quickly and settle over time. If it’s still blurry, or getting worse, it may need to be checked.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I think that covers everything. Thank you so much for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "Have all your questions been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, they have. Thank you for your assistance!"
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in turn 4 by stating, \"Some sensitivity to light can be normal while your eye adjusts to the new lens. If it’s mild and things just seem brighter, wear sunglasses outside.\" In the same turn, `escalation_criteria` was conveyed with, \"But significant pain with bright light, or severe light sensitivity, especially with a red and painful eye, is not normal and may need checking.\" All points were covered."
+  }
+}

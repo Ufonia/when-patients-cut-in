@@ -1,0 +1,116 @@
+{
+  "trial_id": "gathering-competitive.llama-3.1-8b.baseline.021",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "So, your overall eye recovery is going well. Is your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I don't have any eye redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "No redness. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I don't have any eye pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "No eye pain. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed some mild blurry vision since the surgery, and I'm a bit concerned about it. Could you give me some advice on that?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of your concern about blurry vision. Let's go into that. You mentioned you've noticed some mild blurry vision since the surgery. Can you tell me if you're having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed the mild blurry vision mostly at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the blurry vision is mostly at a distance. Are you still able to see clearly at a distance, such as watching TV, or is it affecting your ability to see things that are far away?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I can still see things at a distance, like watching TV, but it's just a bit blurry and not as clear as I expected."
+    },
+    {
+      "speaker": "agent",
+      "text": "So you're able to see things at a distance, but they're not as clear as you'd like. When exactly did you first notice the blurriness? Was it right after the surgery, or did it come on later?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I first noticed the mild blurriness right after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the blurriness started right after the surgery. Do you think the blurriness is getting better or worse over time?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The mild blurriness seems to be staying about the same over time."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the blurriness hasn't gotten worse, but it hasn't gotten better either. Is the blurriness only when you're wearing your old glasses, or is it noticeable even without them?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The mild blurriness is noticeable even without my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the blurriness is noticeable even without your old glasses. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "No floaters. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "No flashing lights. Let me summarize what you've told me so far: your overall eye recovery is going well, you don't have any redness or pain in your eye, you've noticed some mild blurry vision mostly at a distance since the surgery, but it's not affecting your daily activities, and you haven't noticed any floaters or flashing lights. Is this summary correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for eye redness (\"Is your eye currently red?\") and the patient answered it. This question was asked on its own and not bundled with other top-level questions."
+  }
+}

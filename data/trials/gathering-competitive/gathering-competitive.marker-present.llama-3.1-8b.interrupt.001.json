@@ -1,0 +1,122 @@
+{
+  "trial_id": "gathering-competitive.marker-present.llama-3.1-8b.interrupt.001",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "present",
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "I've made a note of that. Is your eye currently red?",
+      "delivered": "I've made a note of that. Is your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sorry to interrupt, but I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "Blurry vision can be a bit unsettling. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been mild blurry vision since the surgery, and I'm a bit concerned about it."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note that you've been experiencing mild blurry vision since the surgery. You're concerned about it, which is completely understandable. Has the blurry vision been at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The blurry vision has been more noticeable at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the blurry vision is more pronounced when you're watching TV or looking at things that are far away. Have you noticed any change in the blurry vision over time - is it getting better or worse?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It hasn't changed much; it's been about the same since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the blurry vision has been stable, but still present. Is the blurry vision severe, or is your vision slightly hazy?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's slightly hazy."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note that the blurry vision is slightly hazy and mainly at a distance. Are you still wearing your old glasses, or have you started wearing the new glasses that were prescribed for you after the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven't started wearing new glasses yet."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're still waiting to start wearing your new glasses. We'll discuss that with your doctor. Are you having any eye redness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any eye redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note that you haven't noticed any eye redness. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I have no eye pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note that you don't have any eye pain. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note that you haven't noticed any floaters. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note that you haven't noticed any flashing lights. Let me summarize what we've discussed so far. You've had cataract surgery, and your eye is doing fine overall. You've been experiencing mild blurry vision at a distance, which has been stable since the surgery. You haven't noticed any eye redness, pain, floaters, or flashing lights. You're still waiting to start wearing your new glasses. Is that a correct summary?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 10,
+    "total_words": 11
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for the target symptom \"eye redness\" and the patient provided a clear answer. The question was asked on its own and not bundled with other questions."
+  }
+}

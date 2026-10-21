@@ -1,0 +1,74 @@
+{
+  "trial_id": "provision-competitive.defensive-strong.marker-present.llama-3.1-8b.interrupt.005",
+  "cell": "provision-competitive",
+  "agent_prompt": "defensive-strong",
+  "marker": "present",
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I'm here to help you with any questions you may have about your cataract surgery recovery. Did you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! Yes, I do have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "According to the information, you can go back to light exercise, such as gardening, after 1 week. However, it's also recommended to avoid strenuous or heavy exercise, lifting heavy objects, or swimming for a month. So, it's best to start with gentle activities and gradually increase your intensity. Would you like to ask another question?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That's helpful, thank you. I also wanted to know, when can I start using my eye gel for dry eyes again?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should continue to use your eye drops as was prescribed. If you're running out, your GP should be able to provide some more. You don't need to stop using them unless you've been told otherwise. It's safe to keep using them, especially if you were using them before your operation for dry eyes or glaucoma. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Got it, thanks! Another thing I was wondering about is that I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "It's normal for the eyes to be a bit sensitive to light as it adjusts to the new lenses. Significant pain when it's bright or severe light sensitivity is not normal, especially if your eye is also red and painful. But if it's just mild and things seem brighter than usual, we'd recommend just wearing sunglasses when you're going outside. Would you like to ask another question?",
+      "delivered": "It's normal for the eyes to be a bit sensitive to light as it adjusts to the new lenses."
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm sorry to interrupt, but should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for the vision to not be completely clear in the first week after your operation, but it should improve quickly and settle down over time. If your vision is still blurry, or getting significantly worse or blurry, we may need to check it to make sure it's okay. I didn't finish answering this one completely earlier, so let me just finish saying that it's normal to take a little time to adjust to the new lenses, and it's best to follow up with your optometrist at the scheduled appointment, which is usually about 6 weeks after surgery. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, that's all for now. You've been really helpful. Thank you!"
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm glad I could help. Before we go, can you please confirm that all your questions have been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, all my questions have been answered. Thank you very much for your assistance!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 19,
+    "total_words": 67
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 5 by stating, \"It's normal for the eyes to be a bit sensitive to light as it adjusts to the new lenses.\" However, the agent was interrupted and did not convey `escalation_criteria` or `mild_case_advice`."
+  }
+}

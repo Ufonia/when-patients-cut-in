@@ -1,0 +1,88 @@
+{
+  "trial_id": "gathering-competitive.llama-3.1-8b.baseline.002",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to help you with any questions or concerns you may have about your cataract surgery recovery. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note to go into that. Would you mind if I first ask about any symptoms you're experiencing, such as redness or pain in your eye?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I don't have any eye redness or pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to hear. Have you noticed any blurry vision since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I've noticed some mild blurry vision since the surgery, and I'm concerned about it."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. You mentioned the blurry vision is mild. Have you noticed it when trying to see things at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed it when trying to see things at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "You've noticed the blurry vision when trying to see things at a distance, such as watching TV. Is the blurry vision something that's constant, or is it more noticeable at certain times, like when you're tired or in bright light?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's more noticeable at certain times, especially in bright light."
+    },
+    {
+      "speaker": "agent",
+      "text": "Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to hear. Have you noticed any flashing lights in your eye since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note to go into that. Would you mind if I first summarize what you've told me so far, and then we can go into any other questions or concerns you may have? \n\nSummary: You had surgery on both eyes, you don't have any redness or pain in your eyes, you've noticed mild blurry vision, especially when trying to see things at a distance, and it's more noticeable in bright light, but you haven't noticed any floaters or flashing lights.\n\nPlease confirm if this summary is correct."
+    },
+    {
+      "speaker": "patient",
+      "text": "The summary is almost correct. I had surgery on one eye, not both. Everything else you mentioned is correct."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note to correct that. Here's the updated summary:\n\nSummary: You had surgery on one eye, you don't have any redness or pain in your eye, you've noticed mild blurry vision, especially when trying to see things at a distance, and it's more noticeable in bright light, but you haven't noticed any floaters or flashing lights.\n\nPlease confirm if this summary is correct."
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent asked about eye redness bundled with pain, but the patient answered both, so it did not cause confusion. The agent did not assume a yes/no answer for the target symptom in a recap or summary without having explicitly asked the patient the top-level question."
+  }
+}

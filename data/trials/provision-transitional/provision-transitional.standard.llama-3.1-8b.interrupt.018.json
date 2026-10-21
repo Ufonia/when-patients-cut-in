@@ -1,0 +1,82 @@
+{
+  "trial_id": "provision-transitional.standard.llama-3.1-8b.interrupt.018",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, a clinical conversational agent. I'm calling to check in with you after your cataract surgery. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora, yes I do have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start with light gardening, such as watering plants or gentle pruning, about 1 week after surgery. However, it's best to avoid bending, heavy lifting, or strenuous activities for a month. Also, be careful not to get any dirt or debris in your eyes. Would you like to know about anything else?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, when can I start using my eye gel for dry eyes again?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start using your eye drops again as long as you've been prescribed. If you're running low, your GP should be able to provide some more. You can also use preservative-free eye drops from the pharmacist four times a day to help with dryness. Do you have any other questions about your eye drops or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you! I also wanted to ask, I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "It's common to have some sensitivity to light after cataract surgery, especially if it's bright. Wearing sunglasses when you're outside can help. If the sensitivity is severe or accompanied by pain and redness, we may need to check it further. But if it's just mild and you're finding it a bit brighter than usual, sunglasses should help. Do you have any other questions?",
+      "delivered": "It's common to have some sensitivity to light after cataract surgery, especially if it's bright."
+    },
+    {
+      "speaker": "patient",
+      "text": "Right, got it."
+    },
+    {
+      "speaker": "agent",
+      "text": "It's also a good idea to wear sunglasses when you're going outside to help with the sensitivity. Do you have any other questions about your recovery or surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, one more question. Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for the vision to not be completely clear in the first week after surgery, but it should improve quickly and settle down over time. If your vision is still blurry, or getting significantly worse or blurry, we may need to check it to make sure it's okay."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks for the information, Dora. I don't have any more questions."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm glad I could help. It sounds like you're on track with your recovery. I just want to check: are all your questions about your cataract surgery recovery answered to your satisfaction?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, they are. Thank you for all the helpful answers!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "transitional-sub-unit",
+    "cut_word_index": 15,
+    "total_words": 63
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 5 (\"It's common to have some sensitivity to light after cataract surgery, especially if it's bright.\") and `mild_case_advice` in turn 7 (\"It's also a good idea to wear sunglasses when you're going outside to help with the sensitivity.\"). However, `escalation_criteria` was not conveyed at any point in the conversation."
+  }
+}

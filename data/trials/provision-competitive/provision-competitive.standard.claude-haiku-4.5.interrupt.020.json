@@ -1,0 +1,74 @@
+{
+  "trial_id": "provision-competitive.standard.claude-haiku-4.5.interrupt.020",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I've just completed your post-cataract surgery follow-up check. \n\nDo you have any questions about your surgery or your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! Yes, I do have some questions. Firstly, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That's a great question! You should avoid any exercise for the first week after surgery. After that week, you can go back to light exercise like gardening, brisk walking, or light jogging. Just avoid anything strenuous or heavy for about a month.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks for the information! I was also wondering when I can start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Good question! If you were using eye drops or gel for dry eyes before your operation, it's safe to continue using them unless you've been told otherwise by your doctor.\n\nSo you should be able to use your eye gel as normal. If you're unsure about anything specific, just check with your GP or care team.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That's helpful, thanks! I’ve been noticing that I’m very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "Yes, that's actually quite normal! It's common for your eyes to be a bit sensitive to light as they adjust to your new lenses. If it's mild and things just seem brighter than you're used to, I'd recommend wearing sunglasses when you're outside.\n\nHowever, if you're experiencing significant pain in bright light, or if your eye is also red and painful, that's not normal and we may need to assess it further. In that case, please let your care team know.\n\nDo you have any other questions?",
+      "delivered": "Yes, that's actually quite normal! It's common for your eyes to be a bit sensitive to light as they adjust to your new lenses. If it's mild and things just seem brighter than you're used to, I'd recommend wearing sunglasses when you're outside."
+    },
+    {
+      "speaker": "patient",
+      "text": "Oh, and should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for vision to not be completely clear in the first week after surgery, and it should improve quickly and settle down over time.\n\nHow long has it been since your operation? If your vision is still quite blurry or getting significantly worse, we may need to check it to make sure everything's okay.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's just been about a week, so that sounds reassuring. I don't have any more questions at the moment. Thank you so much for your help, Dora!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome! Just to confirm - have all your questions been answered today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, all my questions have been answered. Thanks again!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 43,
+    "total_words": 87
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 4 (\"Yes, that's actually quite normal! It's common for your eyes to be a bit sensitive to light as they adjust to your new lenses.\"). The agent also conveyed `mild_case_advice` in turn 4 (\"If it's mild and things just seem brighter than you're used to, I'd recommend wearing sunglasses when you're outside.\"). However, the `escalation_criteria` point was not conveyed at all."
+  }
+}

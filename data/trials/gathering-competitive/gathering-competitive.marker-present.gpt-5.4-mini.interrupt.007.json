@@ -1,0 +1,142 @@
+{
+  "trial_id": "gathering-competitive.marker-present.gpt-5.4-mini.interrupt.007",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "present",
+  "arm": "interrupt",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "Glad to hear that. Are your eyes red?",
+      "delivered": "Glad to hear that. Are your eyes"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sorry to interrupt, but I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks for letting me know. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed some mild blurry vision since the surgery, and I'm a bit concerned about it."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand. Are you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's mostly at a distance where I've noticed the mild blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Can you see clearly at a distance such as watching TV?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's a bit blurry when watching TV or trying to see things at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay. When did you first notice the blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I first noticed the mild blurry vision shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Do you think the blurriness is getting better, worse, or staying about the same?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It seems to be staying about the same since I first noticed it."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Would you say the vision is slightly hazy, or completely blurred?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I would say it's slightly hazy, not completely blurred."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Is the blurriness only when you are wearing your old glasses?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, the mild blurriness is there even without wearing my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. I’ve noted the mild distance blurriness that started shortly after surgery and has stayed about the same, with slightly hazy vision even without old glasses.\n\nTo complete the check, are your eyes red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any eye redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Are your eyes painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I don't have any eye pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Here’s a summary of what you’ve told me so far:\n\n- Overall recovery: okay\n- Blurry vision: mild, mainly at a distance\n- Watching TV / distance vision: a bit blurry\n- Onset: shortly after surgery\n- Change over time: staying about the same\n- Severity: slightly hazy, not completely blurred\n- Old glasses: blurriness is present even without them\n- Eye redness: none noticed\n- Eye pain: none\n- Floaters: none\n- Flashing lights: none\n\nIs that summary correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary is correct."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 7,
+    "total_words": 8
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question \"are your eyes red?\" at the end of the conversation, and the patient provided a clear answer. This question was asked on its own and not bundled with other questions in a confusing way."
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "trial_id": "gathering-recognitional.gemini-2.5-flash.baseline.004",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "Gemini 2.5 Flash",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to ask you a few questions about your recovery after cataract surgery.\n\nHow is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to hear.\n\nIs your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not red."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, thanks.\n\nIs your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is feeling fine overall and is not painful."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to know.\n\nHas your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my vision has improved as expected since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's excellent.\n\nHave you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I have not noticed any floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "Understood.\n\nHave you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I have not noticed any flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, thank you for that information.\n\nTo summarize, you've reported that:\n- Your eye is doing well since the surgery.\n- You are not experiencing any redness in your eye.\n- You are not experiencing any pain in your eye.\n- Your vision has improved as expected since the surgery.\n- You have not noticed any floaters.\n- You have not noticed any flashing lights.\n\nDoes this accurately summarize our conversation?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that accurately summarizes our conversation. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome."
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for the target symptom \"eye redness\" and did not bundle it with other questions. The patient provided a clear answer."
+  }
+}

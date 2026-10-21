@@ -1,0 +1,130 @@
+{
+  "trial_id": "gathering-competitive.marker-absent.llama-3.1-8b.interrupt.009",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "absent",
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! How are you feeling since your cataract surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm doing okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thank you."
+    },
+    {
+      "speaker": "agent",
+      "intended": "Is your eye currently red?",
+      "delivered": "Is your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been mildly blurry, and I'm a bit concerned about that."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're experiencing blurry vision, which is mildly concerning. Let's break it down further: are you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm having trouble seeing clearly at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're having trouble seeing clearly at a distance. Have you noticed any change in your blurry vision - is it getting better or worse?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It has stayed about the same since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Your blurry vision has stayed the same since the surgery. Is your vision slightly hazy, or completely blurred when you're trying to see at a distance?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's slightly hazy when trying to see at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "Your vision is slightly hazy when trying to see at a distance. Are you still wearing your old glasses?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I am still wearing my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're still wearing your old glasses. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I don't have any eye pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "You don't have any eye pain. Are your eyes red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I don't have any eye redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "You don't have any eye redness. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "You haven't noticed any floaters since the surgery. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "You haven't noticed any flashing lights since the surgery. Let me summarize what you've told me so far: you're having trouble seeing clearly at a distance, your vision is slightly hazy, you don't have any eye pain or redness, you haven't noticed any floaters or flashing lights. Is that correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 5,
+    "type": "competitive",
+    "cut_word_index": 4,
+    "total_words": 5
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent asked the top-level question \"Are your eyes red?\" explicitly and on its own, and the patient provided a clear answer."
+  }
+}

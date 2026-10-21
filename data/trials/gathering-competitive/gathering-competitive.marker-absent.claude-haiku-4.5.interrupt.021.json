@@ -1,0 +1,126 @@
+{
+  "trial_id": "gathering-competitive.marker-absent.claude-haiku-4.5.interrupt.021",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "absent",
+  "arm": "interrupt",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! Thank you for reaching out. I'm here to help you discuss your recovery following your cataract surgery.\n\nTo start, could you tell me a bit about your surgery? Did you have surgery on one eye or both eyes?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I had surgery on one eye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for letting me know. \n\nTo begin, how is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "That's good to hear. Let me ask you a few more questions to make sure everything is progressing well.\n\nIs your eye currently red?",
+      "delivered": "That's good to hear. Let me ask you a few more questions to make sure everything is progressing well.\n\nIs your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you're experiencing some blurriness. Let me ask you a bit more about that.\n\nAre you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's mild and generally affects my vision, both at a distance and up close."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for clarifying that. So the blurriness is affecting both distance and close-up vision.\n\nWhen exactly did you first notice the blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I noticed the mild blurry vision since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Got it, so the blurriness started right after your surgery.\n\nDo you think the blurriness is getting better, worse, or staying about the same?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's staying about the same."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, thank you for that information.\n\nIs the blurriness only when you are wearing your old glasses, or does it happen even without them?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The mild blurry vision happens even without my glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for clarifying that.\n\nNow let me ask about something else. Is your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I have no eye redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good to hear there's no redness.\n\nIs your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I have no eye pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good. Let me ask about a couple more things.\n\nHave you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for letting me know.\n\nHave you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for answering all those questions. Let me summarize what we've discussed to make sure I have everything correct:\n\n**Summary of your recovery:**\n\n- **Overall recovery:** Your eye is doing okay since surgery\n- **Blurry vision:** You are experiencing mild blurriness that affects both distance and close-up vision. This started right after your surgery and has remained about the same. The blurriness occurs even without your old glasses.\n- **Eye redness:** No redness\n- **Eye pain:** No pain\n- **Floaters:** None noticed\n- **Flashing lights:** None noticed\n\nDoes this summary sound accurate to you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that sounds accurate."
+    },
+    {
+      "speaker": "agent",
+      "text": "Excellent, thank you for confirming. The team will review this information, and someone will be in touch if needed.\n\nTake care, and wishing you a smooth recovery!"
+    }
+  ],
+  "interruption": {
+    "utterance": 5,
+    "type": "competitive",
+    "cut_word_index": 23,
+    "total_words": 24
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question \"Is your eye currently red?\" and the patient provided a clear answer. This question was asked on its own and not bundled with other questions."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "trial_id": "provision-transitional.standard.llama-3.1-8b.interrupt.027",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, your clinical conversational agent. I conducted your post-cataract surgery follow-up check, and I'm here to answer any questions you may have about your recovery. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do have a few questions. When can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start doing light gardening, like gentle weeding or watering, about 1 week after surgery. However, it's best to avoid bending, lifting, or heavy physical activity for about a month. It's also a good idea to wear protective eyewear while gardening to avoid any accidental water or debris getting into your eyes. Does that help? Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you, that's helpful. My next question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should have been prescribed some preservative-free eye drops to help with dryness. It's recommended to use them four times daily to start. If you're running out, you can contact your GP for more. You can start using them as soon as you need to, but I would recommend using them as directed by your doctor. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "Some sensitivity to light is normal, especially when you're adjusting to the new lenses. However, if it's severe or accompanied by redness and pain, we'd want to check on that further. If it's just mild, you might want to try wearing sunglasses when you're outside. Does that make sense? Do you have any other questions?",
+      "delivered": "Some sensitivity to light is normal, especially when you're adjusting to the new lenses."
+    },
+    {
+      "speaker": "patient",
+      "text": "Right, got it."
+    },
+    {
+      "speaker": "agent",
+      "text": "It's also a good idea to wear sunglasses when you're outside to help with the sensitivity. If your sensitivity is severe or you're experiencing pain, it's best to contact your care team for further advice. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, one more question. Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for vision to not be completely clear in the first week after surgery. But it should improve quickly and settle down over time. If your vision is still blurry or getting significantly worse, we may need to check it to make sure it's okay."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you for clarifying that. I don't have any more questions now."
+    },
+    {
+      "speaker": "agent",
+      "text": "All your questions have been answered. Have I answered all your questions about your cataract surgery recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, you've answered all of my questions. Thank you for your help!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "transitional-sub-unit",
+    "cut_word_index": 14,
+    "total_words": 55
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 5 (\"Some sensitivity to light is normal, especially when you're adjusting to the new lenses.\"). `mild_case_advice` was conveyed in turn 6 (\"It's also a good idea to wear sunglasses when you're outside to help with the sensitivity.\"). `escalation_criteria` was also conveyed in turn 6 (\"If your sensitivity is severe or you're experiencing pain, it's best to contact your care team for further advice.\")."
+  }
+}

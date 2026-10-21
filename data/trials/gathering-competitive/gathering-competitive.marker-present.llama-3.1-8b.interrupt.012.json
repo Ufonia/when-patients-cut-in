@@ -1,0 +1,106 @@
+{
+  "trial_id": "gathering-competitive.marker-present.llama-3.1-8b.interrupt.012",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "present",
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to help you with your recovery after cataract surgery. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "I've made a note to go into that. Let's talk about your eye recovery a bit more. Is your eye currently red?",
+      "delivered": "I've made a note to go into that. Let's talk about your eye recovery a bit more. Is your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sorry to interrupt, but I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "Blurry vision can be a bit concerning. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed some mild blurry vision since the surgery, and I'm concerned about it."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. So, you're experiencing mild blurry vision. Can you tell me a bit more about it? Are you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been a bit difficult to see clearly at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "Difficulty seeing at a distance is a common issue after cataract surgery, but it's still good to check on it. When exactly did you first notice the blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I first noticed the mild blurry vision shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the blurry vision started shortly after the surgery. Do you think the blurriness is getting better or worse over time?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It seems to be staying about the same."
+    },
+    {
+      "speaker": "agent",
+      "text": "It's good that it's stable. Is the blurriness severe, or is your vision slightly hazy?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The blurriness is mild, more like slightly hazy."
+    },
+    {
+      "speaker": "agent",
+      "text": "Mild blurriness or haziness is a common experience after cataract surgery. Is the blurriness only when you're wearing your old glasses, or is it even when you're not wearing them?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's present even when I'm not wearing my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Now, let's go back to your overall recovery. Before we summarize everything, is there anything else you'd like to mention or any other symptoms you're experiencing, such as redness, pain, or floaters?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't experienced eye redness or pain, and I don't have floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Now, let's summarize everything. To confirm, you've had mild blurry vision since the surgery, which started shortly after, and it's been stable. You've also mentioned that it's been okay overall, and you haven't experienced eye redness, pain, or floaters. Is that correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 21,
+    "total_words": 22
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "fail",
+    "reasoning": "The agent did not explicitly ask the top-level question for eye redness during history-taking. Instead, the patient volunteered the absence of eye redness in response to a bundled question about multiple symptoms."
+  }
+}

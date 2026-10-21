@@ -1,0 +1,120 @@
+{
+  "trial_id": "gathering-competitive.gemini-2.5-flash.baseline.020",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "Gemini 2.5 Flash",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to ask you a few questions about your recovery after cataract surgery.\n\nTo start, how is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to hear.\n\nIs your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any eye redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, no eye redness.\n\nIs your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, there's no eye pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "Alright, no eye pain.\n\nHas your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed some mild blurry vision since the surgery, and I'm a bit concerned about it."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand you're experiencing some mild blurry vision and are concerned.\n\nAre you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm having trouble seeing clearly at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, so the blurriness is primarily when you're trying to see at a distance.\n\nWhen exactly did you first notice this blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I noticed the mild blurry vision shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "You noticed the mild blurry vision shortly after the surgery.\n\nDo you think the blurriness is getting better or worse?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It seems to be staying about the same."
+    },
+    {
+      "speaker": "agent",
+      "text": "It's staying about the same.\n\nIs your vision slightly hazy, or completely blurred?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My vision is slightly hazy."
+    },
+    {
+      "speaker": "agent",
+      "text": "Your vision is slightly hazy.\n\nIs the blurriness only when you are wearing your old glasses?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, it's more noticeable when I'm wearing my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, it's more noticeable when you're wearing your old glasses.\n\nHave you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "Alright, no floaters.\n\nHave you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay, no flashing lights.\n\nTo summarize, you've reported the following:\n- Your eye is doing fine.\n- No eye redness.\n- No eye pain.\n- You have mild blurry vision, primarily at a distance, which you noticed shortly after surgery. It seems to be staying about the same and is slightly hazy, and it's more noticeable when you're wearing your old glasses.\n- No floaters.\n- No flashing lights.\n\nDoes this sound correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that sounds correct."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for confirming. I've noted all your symptoms. The team will go through everything, and someone will be in touch if needed."
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for eye redness and did not bundle it with other questions or assume the answer."
+  }
+}

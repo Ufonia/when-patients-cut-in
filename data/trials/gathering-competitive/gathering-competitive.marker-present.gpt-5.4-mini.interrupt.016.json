@@ -1,0 +1,126 @@
+{
+  "trial_id": "gathering-competitive.marker-present.gpt-5.4-mini.interrupt.016",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "present",
+  "arm": "interrupt",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "Glad to hear that. Are your eyes red?",
+      "delivered": "Glad to hear that. Are your eyes"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sorry to interrupt, but I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks for letting me know. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been a bit concerning because I've noticed some mild blurry vision since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "I’m sorry to hear that. Is the blurriness affecting seeing at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's more noticeable when I'm trying to see at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Can you see clearly at a distance, such as when watching TV?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Watching TV is a bit challenging due to the blurriness when trying to focus on things far away."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. When did you first notice the blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I noticed the mild blurry vision shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Is the blurriness getting better, worse, or staying about the same?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been staying about the same."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Is the vision slightly hazy, or completely blurred?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The vision is slightly hazy, not completely blurred."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Is the blurriness only when you’re wearing your old glasses?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The blurriness happens even without my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. I’ve noted the distance blur, starting shortly after surgery, staying about the same, and being slightly hazy, even without old glasses. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Here’s a summary of what you’ve told me:\n\n- Overall recovery: fine\n- Blurry vision: mild, mainly at a distance, started shortly after surgery, staying about the same, slightly hazy, and not limited to wearing old glasses\n- Floaters: none noticed\n- Flashing lights: none noticed\n\nIs that summary correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 7,
+    "total_words": 8
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "fail",
+    "reasoning": "The agent started to ask about eye redness but was interrupted by the patient. The agent did not re-ask the question about eye redness later in the conversation."
+  }
+}

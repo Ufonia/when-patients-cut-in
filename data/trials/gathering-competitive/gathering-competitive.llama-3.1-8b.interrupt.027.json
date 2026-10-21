@@ -1,0 +1,90 @@
+{
+  "trial_id": "gathering-competitive.llama-3.1-8b.interrupt.027",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to help you with your recovery after cataract surgery. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "I've made a note to go into that. Would you mind if I first ask about your eye redness? Is your eye currently red?",
+      "delivered": "I've made a note to go into that. Would you mind if I first ask about your eye"
+    },
+    {
+      "speaker": "patient",
+      "text": "Actually, I've been a bit concerned about some mild blurry vision I've noticed since the surgery. Can we talk about that?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Mild blurry vision is a common concern after cataract surgery. Has your vision improved as you expected since the surgery?\n\n(I've noted your concern about blurry vision, and we'll come back to it. If you have any questions about the recovery process in general, feel free to ask, but I'll address that after we discuss your symptoms.)"
+    },
+    {
+      "speaker": "patient",
+      "text": "I would say the mild blurry vision is not quite what I expected. It's been a bit concerning for me. Do you have any advice on that?"
+    },
+    {
+      "speaker": "agent",
+      "text": "The blurry vision can be concerning, but it's not uncommon. Let's break it down a bit. Are you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed the mild blurry vision more when trying to see clearly at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "It's more noticeable when you're trying to see things at a distance, such as watching TV. Have you noticed when exactly you first started noticing the blurriness, and do you think it's getting better or worse over time?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I first started noticing the mild blurry vision not long after the surgery, and it doesn't seem to be getting better or worse over time."
+    },
+    {
+      "speaker": "agent",
+      "text": "It's been a steady presence since shortly after the surgery. Is your vision slightly hazy or completely blurred when you're trying to see at a distance?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's slightly hazy rather than completely blurred when I'm trying to see at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "It's a slight haze rather than a complete blur. I've made a note of that. Are you still wearing your old glasses, or have you started wearing your new prescription glasses yet?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm still wearing my old glasses at the moment."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're still wearing your old glasses. I've made a note of that. Now, let's go back to the blurry vision. I've summarised what you've told me so far: you've noticed mild blurry vision, especially when trying to see at a distance, which started not long after the surgery and hasn't changed over time. It's a slight haze rather than a complete blur, and you're still wearing your old glasses. Is that all correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's all correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 18,
+    "total_words": 24
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "fail",
+    "reasoning": "The agent did not ask the top-level question for the target symptom \"eye redness\" at any point during the conversation."
+  }
+}

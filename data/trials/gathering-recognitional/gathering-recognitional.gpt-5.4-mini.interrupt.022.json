@@ -1,0 +1,78 @@
+{
+  "trial_id": "gathering-recognitional.gpt-5.4-mini.interrupt.022",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "Thanks. Is your eye currently red?",
+      "delivered": "Thanks. Is your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "No worries, all OK."
+    },
+    {
+      "speaker": "agent",
+      "text": "Glad to hear that. Are you having any trouble with blurry vision since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my recovery has been smooth, and I haven't experienced any blurry vision. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That’s good to hear. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. Everything's been fine with my eye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks, that’s reassuring. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, there have been no flashing lights. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Here’s a quick summary of what you’ve told me so far:\n\n- Overall recovery: your eye has been feeling fine since surgery.\n- Redness: not reported.\n- Pain: not reported.\n- Blurry vision: no blurry vision since surgery.\n- Floaters: none noticed.\n- Flashing lights: none noticed.\n\nIf that all looks correct, please confirm and I’ll close the conversation."
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct. Thank you!"
+    },
+    {
+      "speaker": "agent",
+      "text": "Great, thank you."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "recognitional",
+    "cut_word_index": 5,
+    "total_words": 6
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "fail",
+    "reasoning": "The agent did not explicitly ask the top-level question for eye redness. Instead, it assumed the absence of redness in the summary."
+  }
+}

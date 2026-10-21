@@ -1,0 +1,134 @@
+{
+  "trial_id": "gathering-competitive.marker-absent.gpt-5.4-mini.interrupt.011",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": "absent",
+  "arm": "interrupt",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello — how is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "Glad to hear that. Are your eyes red?",
+      "delivered": "Glad to hear that. Are your eyes"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm having blurry vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks for letting me know. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed some mild blurry vision since the surgery, and I'm a bit concerned about it."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks, I understand. Is the blurriness happening at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The blurriness is happening both at a distance and up close."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Is it making it hard to see at a distance, such as watching TV?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's mild, but it does make it a bit challenging to see at a distance like watching TV."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Is it also making reading up close difficult?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, the mild blurriness does make reading up close a bit difficult."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. When exactly did you first notice the blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I first noticed the blurriness shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Has the blurriness been getting better, worse, or staying about the same?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been staying about the same since I first noticed it."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Would you say the vision is slightly hazy, or completely blurred?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I would say the vision is slightly hazy."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Is the blurriness only when you are wearing your old glasses?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The blurriness is there even without my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Here’s a summary of what you’ve told me so far:\n\n- Overall recovery: you said things are fine.\n- Blurry vision: you’ve noticed mild blurriness since shortly after surgery.\n- Vision details: it affects both distance and near vision, makes watching TV and reading a bit difficult, has stayed the same, feels slightly hazy, and is present even without your old glasses.\n- Floaters: none.\n- Flashing lights: none.\n\nPlease reply if this summary is correct, or let me know if you’d like to change anything."
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary is correct. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks — I’ve confirmed the summary."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 7,
+    "total_words": 8
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "fail",
+    "reasoning": "The agent did not explicitly ask the top-level question for the target symptom \"eye redness\" during history-taking."
+  }
+}

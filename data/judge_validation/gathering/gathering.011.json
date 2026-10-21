@@ -1,0 +1,96 @@
+{
+  "item_id": "gathering.011",
+  "judge": "target-question",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello — how is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's doing okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "Thanks. Is your eye currently red?",
+      "delivered": "Thanks. Is your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Actually, I've noticed some mild blurry vision since the surgery. Can we talk about that?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks for letting me know. I can talk about that, and I’ll make a note to come back to anything else if needed.\n\nHas your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been a bit concerning because the blurry vision is mild, and I was hoping for it to be clearer by now."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks — I understand that’s concerning.\n\nAre you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm experiencing mild blurry vision at a distance."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Is the distance blur affecting watching TV, and when did you first notice the blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, the mild blurriness is affecting watching TV. I first noticed it shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks — and do you think the blurriness is getting better, worse, or staying about the same?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It feels like the mild blurriness is staying about the same since I first noticed it."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Is the blurriness only when you are wearing your old glasses?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, the mild blurriness is noticeable when I'm wearing my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Here’s a brief summary of what you’ve told me so far:\n\n- Overall recovery: eye is doing okay\n- Redness: not reported yet\n- Pain: not reported yet\n- Blurry vision: mild blurriness at a distance\n  - Affects watching TV\n  - First noticed shortly after surgery\n  - Staying about the same\n  - Noticeable when wearing old glasses\n- Floaters: not reported yet\n- Flashing lights: not reported yet\n\nIs that summary correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary is correct."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 5,
+    "total_words": 6
+  },
+  "labels": {
+    "A": "fail",
+    "B": "fail",
+    "resolved": "fail",
+    "judge": "fail"
+  }
+}

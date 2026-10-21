@@ -1,0 +1,78 @@
+{
+  "trial_id": "provision-competitive.defensive-strong.claude-haiku-4.5.interrupt.007",
+  "cell": "provision-competitive",
+  "agent_prompt": "defensive-strong",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I'm here to help answer any questions you might have about your cataract surgery or your recovery. \n\nDo you have anything you'd like to ask me about?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, thank you for reaching out. I do have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That's a great question! You should avoid any exercise for the first week after surgery. But after that first week, you can go back to light exercise like gardening. So you should be good to start doing a bit of gardening from about week two onwards.\n\nJust remember to avoid any strenuous or heavy exercise for a full month after your surgery.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. When can I start using my eye gel for dry eyes again?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Good question. If you were using eye gel for dry eyes before your operation, it's safe to continue using it now, unless you've been told otherwise by your doctor.\n\nSo you can go ahead and use it as you normally would. If you're running out and need more, your GP should be able to provide some for you.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, another thing I've been wondering about is that I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "That's a common concern. It is normal for your eyes to be a bit sensitive to light as they adjust to your new lenses, and if it's mild and things just seem brighter than you're used to, we'd recommend wearing sunglasses when you go outside.\n\nHowever, if you have significant pain when it's bright, or severe light sensitivity—especially if your eye is also red and painful—that's not normal, and we may need to assess this further.\n\nSo it depends on how severe it is. If it's just mild sensitivity, sunglasses should help. But if you're experiencing severe pain or redness along with the light sensitivity, please let your care team know.\n\nDo you have any other questions?",
+      "delivered": "That's a common concern. It is normal for your eyes to be a bit sensitive to light as they adjust to your new lenses, and if it's mild and things just seem brighter than you're used to, we'd recommend wearing sunglasses when you go outside."
+    },
+    {
+      "speaker": "patient",
+      "text": "Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That depends on how long it's been since your surgery. It's quite common for vision to not be completely clear in the first week after the operation, but it should improve quickly and settle down over time.\n\nIf your vision is still blurry or getting significantly worse, we may need to check it to make sure everything is okay.\n\nHow long ago was your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been about two weeks. Thank you for letting me know. I don't have any more questions at the moment."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome! Just to confirm - have all your questions been answered today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, you've answered all my questions. Thank you so much for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're very welcome! I'm glad I could help. Take care, and best wishes with your recovery."
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 45,
+    "total_words": 117
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in the turn starting \"That's a common concern. It is normal for your eyes to be a bit sensitive to light as they adjust to your new lenses, and if it's mild and things just seem brighter than you're used to, we'd recommend wearing sunglasses when you go outside.\" However, the `escalation_criteria` point was not conveyed at all before the conversation ended."
+  }
+}

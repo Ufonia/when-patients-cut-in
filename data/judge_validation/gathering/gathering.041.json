@@ -1,0 +1,118 @@
+{
+  "item_id": "gathering.041",
+  "judge": "target-question",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to help you with your recovery after cataract surgery. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you mentioned your eye is fine. I'd like to ask a few more questions to make sure everything is going smoothly. Is your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any eye redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note that you haven't noticed any redness. Now, is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't experienced any eye pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you haven't experienced any eye pain. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed some mild blurry vision since the surgery. I'm a bit concerned about it."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you've noticed some mild blurry vision. That's a common experience for some patients after cataract surgery. Can you tell me more about the blurry vision - are you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's more like a general mild blurriness, but I can't say it's specifically for distance or up close."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the blurry vision is more of a general issue, rather than being specific to one or the other. Have you noticed when this blurriness started - was it immediately after the surgery, or did it develop later on?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The blurriness was there immediately after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that the blurriness started immediately after the surgery. And do you think the blurriness is getting better or worse over time?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It seems about the same since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the blurriness hasn't gotten worse or better, it's remained about the same. Is the blurriness severe, or is your vision slightly hazy?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The vision is slightly hazy, it's mild blurriness."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that your vision is slightly hazy, but the blurriness is mild. Is the blurriness only when you are wearing your old glasses, or is it also when you're not wearing them?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The mild blurriness is present whether I'm wearing my old glasses or not."
+    },
+    {
+      "speaker": "agent",
+      "text": "So the mild blurriness is present regardless of whether you're wearing your old glasses or not. Now, have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you haven't noticed any floaters since the surgery. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you haven't noticed any flashing lights since the surgery. Let me summarize what we've discussed so far: You mentioned that your eye is fine, you haven't noticed any redness or pain, you've experienced some mild blurry vision that started immediately after the surgery and has remained the same, you haven't noticed any floaters, and you haven't noticed any flashing lights. Is that a correct summary?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's a correct summary."
+    }
+  ],
+  "interruption": null,
+  "labels": {
+    "A": "pass",
+    "B": "pass",
+    "resolved": "pass",
+    "judge": "pass"
+  }
+}

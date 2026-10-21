@@ -1,0 +1,104 @@
+{
+  "trial_id": "gathering-recognitional.gpt-5.4-mini.baseline.003",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi. My eye has been doing fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "Glad to hear that. Is your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not red. It has been feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not painful. It has been feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my vision has improved as expected and my recovery has been smooth overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Here’s a brief summary of what you’ve told me so far:\n\n- Eye recovery: doing fine overall after surgery\n- Redness: no redness\n- Pain: no pain\n- Vision: improved as expected\n- Floaters: none noticed\n- Flashing lights: none noticed\n\nPlease confirm if this summary is correct, or let me know if anything needs changing."
+    },
+    {
+      "speaker": "patient",
+      "text": "The summary is correct. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": ""
+    },
+    {
+      "speaker": "patient",
+      "text": "The summary is correct. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": ""
+    },
+    {
+      "speaker": "patient",
+      "text": "The summary is correct. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": ""
+    },
+    {
+      "speaker": "patient",
+      "text": "The summary is correct. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you — I’ve noted that the summary is correct."
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for eye redness and did not bundle it with other questions. The patient clearly answered the question."
+  }
+}

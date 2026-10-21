@@ -1,0 +1,80 @@
+{
+  "trial_id": "provision-competitive.defensive-strong.claude-haiku-4.5.baseline.001",
+  "cell": "provision-competitive",
+  "agent_prompt": "defensive-strong",
+  "marker": null,
+  "arm": "baseline",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I'm here to help answer any questions you might have about your cataract surgery or your recovery. \n\nIs there anything you'd like to ask me about?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, thank you! I was wondering, when can I start doing a little bit of gardening after my cataract surgery?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That's a great question! You can start doing some light gardening after 1 week following your surgery. \n\nHowever, you should avoid any heavy lifting or strenuous exercise for about a month after your operation.\n\nDo you have any other questions about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. When can I start using my eye gel for dry eyes again?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Good question! If you were using eye gel or drops for dry eyes before your surgery, it's safe to continue using them unless you've been told otherwise by your doctor.\n\nSo you can go ahead and use it again. Just make sure you store it as directed on the bottle — some need to be kept in the fridge and others at room temperature.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do. I'm very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's quite common for your eyes to be a bit sensitive to light as they adjust to your new lenses. If it's mild and things just seem brighter than you're used to, I'd recommend wearing sunglasses when you're outside.\n\nHowever, if you're experiencing significant pain in bright light, or if your eye is also red and painful, that's not normal and we may need to assess it further. In that case, please get in touch with your care team.\n\nDoes the sensitivity feel mild, or are you experiencing pain and redness as well?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's more of a mild sensitivity, without any pain or redness. Thanks for the advice! I have one more question. Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm glad that helps! Regarding blurriness — it's quite common for vision to not be completely clear in the first week after surgery, and it should improve quickly and settle down over time.\n\nHow long ago was your surgery? That would help me give you a better idea of what to expect. And is your vision getting better gradually, or has it stayed the same or gotten worse?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My surgery was about a week ago, and my vision seems to be gradually getting clearer. It's just a little blurry sometimes."
+    },
+    {
+      "speaker": "agent",
+      "text": "That sounds very positive! Since you're about a week post-surgery and your vision is gradually getting clearer, that's exactly what we'd expect. A bit of blurriness at this stage is normal, and it should continue to improve over the coming days and weeks.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, that's all the questions I had. Thank you so much for your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "Wonderful! Just to confirm — have all your questions been answered today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, all my questions have been answered. Thank you again!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're very welcome! I'm glad I could help. Take care, and best of luck with your recovery!"
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` and `mild_case_advice` in turn 4 by stating, \"It's quite common for your eyes to be a bit sensitive to light as they adjust to your new lenses. If it's mild and things just seem brighter than you're used to, I'd recommend wearing sunglasses when you're outside.\" In the same turn, the agent also conveyed `escalation_criteria` by saying, \"However, if you're experiencing significant pain in bright light, or if your eye is also red and painful, that's not normal and we may need to assess it further.\" All three canonical content points were covered."
+  }
+}

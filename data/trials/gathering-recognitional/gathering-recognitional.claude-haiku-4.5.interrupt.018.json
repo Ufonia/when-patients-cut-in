@@ -1,0 +1,102 @@
+{
+  "trial_id": "gathering-recognitional.claude-haiku-4.5.interrupt.018",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to help you with your recovery after cataract surgery. I'll be asking you a few questions about how you're doing.\n\nBefore we start, could you let me know: did you have surgery on one eye or both eyes?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I had surgery on one eye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for letting me know. Let me start by asking: How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "That's good to hear. Let me ask you a few more questions to make sure everything is progressing well.\n\nIs your eye currently red?",
+      "delivered": "That's good to hear. Let me ask you a few more questions to make sure everything is progressing well.\n\nIs your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Nope, nothing like that."
+    },
+    {
+      "speaker": "agent",
+      "text": "I appreciate that, but let me ask you properly so I can make sure I'm checking everything. \n\nIs your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My eye is feeling fine overall, and there's no redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great, that's reassuring. Thanks for confirming that.\n\nHas your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my recovery has been smooth and my eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's excellent to hear. Just to make sure everything is on track, I'd like to ask a bit more about your vision specifically.\n\nAre you having any trouble seeing clearly at a distance, such as when watching TV, or up close when reading?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I'm not experiencing any blurry vision. My recovery has been smooth, and my eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's wonderful. I'm glad your vision is clear.\n\nHave you noticed any floaters since the surgery? These would be small spots or specks drifting across your vision."
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. My recovery has been smooth, and my eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfect. One more thing to check:\n\nHave you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights. My recovery has been smooth, and my eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Excellent. Thank you for answering all those questions. Let me summarize what we've discussed to make sure I have everything correct:\n\n**Summary of your recovery:**\n- Your eye is doing well overall with no concerns\n- No redness in your eye\n- Your vision has improved as expected with no blurriness\n- No floaters noticed\n- No flashing lights noticed\n\nIt sounds like your recovery is progressing very smoothly. Does this summary sound correct to you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary is correct. My recovery has been smooth and my eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Wonderful! I'm so glad to hear that your recovery is going so well. Thank you for taking the time to go through these questions with me.\n\nThe information you've provided will be reviewed by the team, and someone will be in touch if needed. In the meantime, please continue following your post-operative care instructions and don't hesitate to reach out if you notice any changes."
+    }
+  ],
+  "interruption": {
+    "utterance": 5,
+    "type": "recognitional",
+    "cut_word_index": 23,
+    "total_words": 24
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent initially asked an incomplete question about eye redness, which the patient did not answer. The agent then rephrased and explicitly asked \"Is your eye currently red?\", which the patient answered."
+  }
+}

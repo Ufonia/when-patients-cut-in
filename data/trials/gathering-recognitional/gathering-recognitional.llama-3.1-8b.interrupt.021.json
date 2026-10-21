@@ -1,0 +1,90 @@
+{
+  "trial_id": "gathering-recognitional.llama-3.1-8b.interrupt.021",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm happy to help you discuss your recovery after cataract surgery. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "I've made a note of that. Is your eye currently red?",
+      "delivered": "I've made a note of that. Is your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "No worries, all OK."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Are your eyes red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eyes do not have any redness. They're feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not painful at all. It's feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my vision has improved as expected. It's been fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of that. Let me summarize what you've told me so far. You had surgery and your eye is feeling fine overall, you don't have any redness, pain, floaters, or flashing lights. Your vision has also improved as expected. Is that correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "recognitional",
+    "cut_word_index": 10,
+    "total_words": 11
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent asked the top-level question \"Are your eyes red?\" on its own, and the patient answered it clearly."
+  }
+}

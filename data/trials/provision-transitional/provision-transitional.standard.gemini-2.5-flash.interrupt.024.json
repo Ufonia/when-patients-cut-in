@@ -1,0 +1,82 @@
+{
+  "trial_id": "provision-transitional.standard.gemini-2.5-flash.interrupt.024",
+  "cell": "provision-transitional",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Gemini 2.5 Flash",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hi, I'm Dora. I'm a clinical conversational agent here to help you with any questions you might have about your cataract surgery recovery. Do you have any questions for me?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! Yes, I've got a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can go back to light exercise, such as gardening, one week after surgery. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Great, thanks! My next question is, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "If you were using eye drops for dry eyes before your operation, it's safe to continue using them unless you've been told otherwise. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Alright, that's good to know. I'm also feeling very sensitive to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "It's normal for your eyes to be a bit sensitive to light as they adjust to the new lenses. If it's mild and things just seem brighter than you're used to, we recommend wearing sunglasses when you go outside. However, if you have significant pain when it's bright, or severe light sensitivity, especially if your eye is also red and painful, that is not normal and may need further assessment. Do you have any other questions?",
+      "delivered": "It's normal for your eyes to be a bit sensitive to light as they adjust to the new lenses."
+    },
+    {
+      "speaker": "patient",
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, one last question. Should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It’s common for your vision not to be completely clear in the first week after your operation. This should improve quickly over time. If your vision is still blurry, or getting significantly worse, we may need to check it to make sure everything is okay. Do you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I think that covers all my questions. Thanks for the help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome! So, just to confirm, all your questions have been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, they have. Thanks again for the information!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "transitional-sub-unit",
+    "cut_word_index": 19,
+    "total_words": 76
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` in turn 6 (\"It's normal for your eyes to be a bit sensitive to light as they adjust to the new lenses.\"). However, the agent did not convey `escalation_criteria` or `mild_case_advice` at any point in the conversation. The agent was interrupted after delivering only the first part of the expected response to the sensitivity question."
+  }
+}

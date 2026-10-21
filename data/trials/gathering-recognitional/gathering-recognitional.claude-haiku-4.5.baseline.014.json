@@ -1,0 +1,88 @@
+{
+  "trial_id": "gathering-recognitional.claude-haiku-4.5.baseline.014",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "Claude Haiku 4.5",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! Thanks for getting in touch. I'm here to help you with your recovery following your cataract surgery.\n\nTo get started, could you tell me which eye or eyes you had surgery on? Was it one eye or both eyes?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I had surgery on one eye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for letting me know. \n\nSo, how is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to hear. I'm glad things are going well so far.\n\nNow, is your eye currently red at all?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye doesn't have any redness at the moment."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good, that's reassuring.\n\nIs your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is feeling fine overall, and there's no pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's great to hear.\n\nHas your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my recovery has been smooth, and my vision has improved as expected."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's excellent news.\n\nHave you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good to know.\n\nHave you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's all positive. Thank you for answering those questions.\n\nLet me summarise what we've discussed today:\n\n**Surgery:** You had cataract surgery on one eye.\n\n**Overall recovery:** Your eye is doing well since the surgery.\n\n**Eye redness:** No redness present.\n\n**Eye pain:** No pain present.\n\n**Vision:** Your vision has improved as expected since the surgery.\n\n**Floaters:** You haven't noticed any floaters since the surgery.\n\n**Flashing lights:** You haven't noticed any flashing lights since the surgery.\n\nDoes this summary sound correct to you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary is correct."
+    },
+    {
+      "speaker": "agent",
+      "text": "Wonderful! Thank you for going through this with me today. It sounds like your recovery is progressing very well. The team will review this information, and someone will be in touch if needed.\n\nTake care, and wishing you continued smooth recovery!"
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for the target symptom \"eye redness\" and did not bundle it with other questions or assume the answer."
+  }
+}

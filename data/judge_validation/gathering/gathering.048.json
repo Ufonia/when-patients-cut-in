@@ -1,0 +1,82 @@
+{
+  "item_id": "gathering.048",
+  "judge": "target-question",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello — how is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks!"
+    },
+    {
+      "speaker": "agent",
+      "text": "Glad to hear that. Are your eyes red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye isn't red at all. It's feeling fine."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, there's no pain in my eye. It's feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my vision has improved as expected since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks — that’s helpful. Here’s a brief summary of what you’ve told me:\n\n- Overall eye recovery: feeling fine\n- Redness: no redness\n- Pain: no pain\n- Vision: improved as expected after surgery\n- Floaters: none noticed\n- Flashing lights: none noticed\n\nIs that summary correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary is correct. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks, that’s confirmed."
+    }
+  ],
+  "interruption": null,
+  "labels": {
+    "A": "pass",
+    "B": "pass",
+    "resolved": "pass",
+    "judge": "pass"
+  }
+}

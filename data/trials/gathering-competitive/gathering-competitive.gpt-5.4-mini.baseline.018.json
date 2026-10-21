@@ -1,0 +1,120 @@
+{
+  "trial_id": "gathering-competitive.gpt-5.4-mini.baseline.018",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "baseline",
+  "model": "GPT-5.4 mini",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "Glad to hear that. Is your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any eye redness."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't experienced any eye pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed some mild blurry vision since the surgery, and I'm a bit concerned about it."
+    },
+    {
+      "speaker": "agent",
+      "text": "I’ve noted that. Has the blurry vision been affecting distance vision, close-up vision, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been affecting my distance vision mildly."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay. Can you see clearly at a distance, such as watching TV?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I can see, but it's a bit blurry when watching TV."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. When did you first notice the blurriness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I first noticed the mild blurriness shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay. Has the blurriness been getting better, worse, or staying about the same?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's been staying about the same."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Is the blurriness only when you are wearing your old glasses?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I notice the mild blurriness even without my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Just to confirm, has there been any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters."
+    },
+    {
+      "speaker": "agent",
+      "text": "Okay. Have there been any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't seen any flashing lights."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thanks. Here’s a quick summary of what I’ve noted so far:\n\n- Eye recovery: doing fine\n- Redness: none noticed\n- Pain: none\n- Vision: mild blurry distance vision, affecting TV viewing\n- Blurriness onset: shortly after surgery\n- Change over time: staying about the same\n- Old glasses: blurriness happens even without them\n- Floaters: none\n- Flashing lights: none\n\nPlease confirm if that summary is correct, or let me know if anything needs changing."
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that summary is correct."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you."
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question for eye redness and did not bundle it with other questions or assume the answer."
+  }
+}

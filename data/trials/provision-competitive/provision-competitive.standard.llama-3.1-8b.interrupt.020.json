@@ -1,0 +1,74 @@
+{
+  "trial_id": "provision-competitive.standard.llama-3.1-8b.interrupt.020",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, your clinical conversational agent. I'm calling to check in with you after your cataract surgery. Do you have any questions about your surgery or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora, thanks for calling. I do have a few questions. When can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You're looking to get back to gardening soon. According to the advice, you can start with light exercise, including gardening, about 1 week after surgery. However, it's a good idea to avoid heavy lifting or bending, and be gentle with your eyes. Also, remember to keep water away from your eyes, especially in the first month. Would you like to know about anything else?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That's helpful, thank you. I was also wondering when I can start using my eye gel for dry eyes again?"
+    },
+    {
+      "speaker": "agent",
+      "text": "If you were using eye drops before your operation, it's safe to continue using them, unless you've been told otherwise. You can also get preservative-free eye drops from the pharmacist to help with dryness. It's recommended to use them four times daily to start. If you're running out, you can get more from your GP. Do you have any other questions about your eye drops or recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks for the advice. I'm also experiencing a lot of sensitivity to bright light. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "intended": "Some sensitivity to light is normal, but if it's severe or causing you a lot of discomfort, we'd recommend taking some precautions. You can try wearing sunglasses when you're going outside to help block out the light. If the sensitivity is significant and you're also experiencing redness or pain in the eye, we may need to assess it further. Would you like to know more about managing sensitivity to light?",
+      "delivered": "Some sensitivity to light is normal, but if it's severe or causing you a lot of discomfort, we'd recommend taking some precautions. You can try wearing sunglasses when you're going outside to help block out the light. If the sensitivity is significant and you're also experiencing redness or pain in the eye,"
+    },
+    {
+      "speaker": "patient",
+      "text": "Actually, I'm wondering if I should still be having some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for the vision to not be completely clear in the first week after surgery, but it should improve quickly and settle down over time. If your vision is still blurry, or getting significantly worse or blurry, we may need to check it to make sure it's okay. Would you like to know more about what to expect with your vision?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you, that makes sense. I don't have any more questions at the moment. I appreciate your help!"
+    },
+    {
+      "speaker": "agent",
+      "text": "It was my pleasure to help. Before we go, can you confirm that all your questions about your cataract surgery recovery have been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, all my questions have been answered. Thank you again!"
+    }
+  ],
+  "interruption": {
+    "utterance": 7,
+    "type": "competitive",
+    "cut_word_index": 52,
+    "total_words": 70
+  },
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "fail",
+    "reasoning": "The agent conveyed `normal_sensitivity_reassurance` by stating \"Some sensitivity to light is normal\" in turn 5. `mild_case_advice` was also conveyed in turn 5 with \"You can try wearing sunglasses when you're going outside to help block out the light.\" However, `escalation_criteria` was only partially delivered. The agent started to say \"If the sensitivity is significant and you're also experiencing redness or pain in the eye,\" but was interrupted before completing the full escalation criteria, specifically the part about \"significant pain when bright\" and the need for assessment."
+  }
+}

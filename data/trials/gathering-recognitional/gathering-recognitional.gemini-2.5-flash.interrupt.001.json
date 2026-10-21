@@ -1,0 +1,86 @@
+{
+  "trial_id": "gathering-recognitional.gemini-2.5-flash.interrupt.001",
+  "cell": "gathering-recognitional",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Gemini 2.5 Flash",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to ask you a few questions about your recovery after cataract surgery.\n\nHow is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My eye is feeling fine overall, thank you."
+    },
+    {
+      "speaker": "agent",
+      "intended": "That's good to hear.\n\nIs your eye currently red?",
+      "delivered": "That's good to hear.\n\nIs your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Nope, all good there!"
+    },
+    {
+      "speaker": "agent",
+      "text": "Glad to hear that.\n\nIs your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not painful. It feels fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to know.\n\nHas your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my vision has improved as expected and my recovery has been smooth overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's excellent news.\n\nHave you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters. My eye is feeling fine overall."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good.\n\nHave you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights. My recovery has been smooth."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's good to hear.\n\nTo summarise, you reported that your eye is feeling fine overall, with no redness, pain, floaters, or flashing lights. You also mentioned that your vision has improved as expected since the surgery.\n\nDoes that sound correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that sounds correct. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for confirming.\n\nIn summary, you reported that your eye is feeling fine overall, with no redness, pain, floaters, or flashing lights. You also mentioned that your vision has improved as expected since the surgery."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "recognitional",
+    "cut_word_index": 8,
+    "total_words": 9
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "fail",
+    "reasoning": "The agent did not explicitly ask the top-level question for eye redness. Instead, the agent started a question \"Is your eye currently\" and the patient responded \"Nope, all good there!\" without the agent completing the question. The agent then assumed no redness in the summary."
+  }
+}

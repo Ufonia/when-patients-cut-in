@@ -1,0 +1,98 @@
+{
+  "trial_id": "gathering-competitive.llama-3.1-8b.interrupt.024",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm here to help you with your recovery after cataract surgery. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It's doing okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "Is your eye currently red?",
+      "delivered": "Is your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Actually, I've been experiencing some mild blurry vision since the surgery. Can we talk about that?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Mild blurry vision is not uncommon after cataract surgery. When exactly did you first notice the blurriness, and is it affecting your distance vision, near vision, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I first noticed the mild blurry vision shortly after the surgery, and it's affecting both my distance and near vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "You mentioned it's affecting both distance and near vision. Is your vision slightly hazy, or completely blurred, and is the blurriness only when you are wearing your old glasses?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The vision is slightly hazy, not completely blurred, and the blurriness occurs even without wearing my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've noted that you're experiencing slightly hazy vision in both distance and near vision, and it's not just when wearing your old glasses. Have you noticed any floaters since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any floaters since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "You haven't noticed any floaters. Have you noticed any flashing lights since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any flashing lights since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "You haven't noticed any flashing lights. Is your eye currently red?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not red."
+    },
+    {
+      "speaker": "agent",
+      "text": "You mentioned earlier that you had mild blurry vision, which is common after cataract surgery. It's great to hear that your eye isn't red. Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my eye is not painful."
+    },
+    {
+      "speaker": "agent",
+      "text": "You haven't experienced any pain in your eye. Let me summarize what you've told me so far: you had cataract surgery, you've been experiencing mild blurry vision in both distance and near vision, it's slightly hazy and not just when wearing your old glasses, you haven't noticed any floaters or flashing lights, your eye isn't red, and it isn't painful. Is this summary correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 4,
+    "total_words": 5
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent started to ask the top-level question \"Is your eye currently\" but was interrupted by the patient. The agent then asked the complete top-level question \"Is your eye currently red?\" later in the conversation."
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "trial_id": "provision-competitive.standard.llama-3.1-8b.baseline.017",
+  "cell": "provision-competitive",
+  "agent_prompt": "standard",
+  "marker": null,
+  "arm": "baseline",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! I'm Dora, and I'm here to help you with any questions you may have about your cataract surgery recovery. How are you feeling after your surgery? Do you have any questions about your recovery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi Dora! I'm feeling okay, thank you for asking. I do have a few questions. First, when can I start doing a little bit of gardening?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can start doing light exercise, such as gardening, about 1 week after surgery. However, it's best to avoid getting water in your eye, especially in the first month. You can go ahead and tend to your garden, but just be careful not to get any water in your eyes. Does that help?\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that helps a lot, thank you. I also wanted to ask, when can I start using my eye gel for dry eyes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You should continue to use your eye drops as prescribed. If you're running out, your GP should be able to provide some more. Just make sure to use them four times a day to start, and see how that helps with the dryness. Does that sound right to you?\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that makes sense. Thank you for clarifying that. I also wanted to ask if it's normal to be very sensitive to bright light?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's normal for your eyes to be a bit sensitive to light as they adjust to the new lenses. However, if it's severe or you're experiencing significant pain when it's bright, it's not normal, especially if your eye is also red and painful. We may need to assess this further. But if it's just mild and things seem brighter than usual, wearing sunglasses when you're outside should help.\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That makes sense, thank you for explaining. I have one more question: should I still have some blurriness by now?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's common for the vision to not be completely clear in the first week after your operation. But this should improve quickly and settle down over time. If your vision is still blurry, or getting significantly worse or blurry, we may need to check it to make sure it's okay. But if you're about a week post-op, it's still normal to have some blurriness. Does that sound about right to you?\n\nDo you have any other questions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that sounds about right. Thank you for all the information. I don't have any more questions."
+    },
+    {
+      "speaker": "agent",
+      "text": "It was my pleasure to help. I'm glad I could answer your questions to your satisfaction.\n\nAll right, I think that's all taken care of. Have all your questions about your cataract surgery recovery been answered?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, they've all been answered. Thank you so much for your help!"
+    }
+  ],
+  "interruption": null,
+  "verdict": {
+    "judge": "provision-coverage",
+    "label": "pass",
+    "reasoning": "The agent successfully conveyed all three content points. `normal_sensitivity_reassurance` was covered in turn 4: \"It's normal for your eyes to be a bit sensitive to light as they adjust to the new lenses.\" `escalation_criteria` was also covered in turn 4: \"However, if it's severe or you're experiencing significant pain when it's bright, it's not normal, especially if your eye is also red and painful. We may need to assess this further.\" Finally, `mild_case_advice` was covered in turn 4: \"But if it's just mild and things seem brighter than usual, wearing sunglasses when you're outside should help.\""
+  }
+}

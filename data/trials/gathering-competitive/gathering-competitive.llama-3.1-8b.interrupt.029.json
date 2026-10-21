@@ -1,0 +1,106 @@
+{
+  "trial_id": "gathering-competitive.llama-3.1-8b.interrupt.029",
+  "cell": "gathering-competitive",
+  "agent_prompt": null,
+  "marker": null,
+  "arm": "interrupt",
+  "model": "Llama 3.1 8B",
+  "transcript": [
+    {
+      "speaker": "patient",
+      "text": "hello there"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello. How is your eye doing since your surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fine, thanks."
+    },
+    {
+      "speaker": "agent",
+      "intended": "Is your eye currently red?",
+      "delivered": "Is your eye currently"
+    },
+    {
+      "speaker": "patient",
+      "text": "Actually, I've noticed some mild blurry vision since the surgery and I'm a bit concerned about it. Can we focus on that?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note to go into that. Would you mind if I first ask about your eye being red? Then I'll come back to your blurry vision."
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven't had any eye redness since the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Is your eye currently painful?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't experienced any eye pain."
+    },
+    {
+      "speaker": "agent",
+      "text": "You mentioned you're concerned about your blurry vision. Has your vision improved as you expected since the surgery?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've been experiencing some mild blurry vision and I had hoped it would be clearer by now. That's why I'm a bit concerned."
+    },
+    {
+      "speaker": "agent",
+      "text": "Has your vision improved at all, even if it's not as clear as you'd hoped? Are you having trouble seeing clearly at a distance, up close, or both?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, there has been some improvement, but it's still not as clear as I'd hoped. The blurriness seems to affect both distance and close-up vision."
+    },
+    {
+      "speaker": "agent",
+      "text": "When exactly did you first notice the blurriness? Was it right after the surgery, or did it start a few days later?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I noticed the mild blurry vision shortly after the surgery."
+    },
+    {
+      "speaker": "agent",
+      "text": "Do you think the blurriness is getting better or worse over time? Is your vision slightly hazy, or completely blurred?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The blurriness is mild and seems more like a slight haze. It's hard to say if it's getting better or worse over time."
+    },
+    {
+      "speaker": "agent",
+      "text": "Is the blurriness only when you are wearing your old glasses, or is it noticeable even without them?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The blurriness is noticeable even without wearing my old glasses."
+    },
+    {
+      "speaker": "agent",
+      "text": "I've made a note of all your symptoms. Let me summarize what I've gathered so far. You had surgery, haven't experienced any eye redness or pain, and have noticed some mild blurry vision that affects both distance and close-up vision, started shortly after the surgery, and is a slight haze that's noticeable even without your old glasses. Is that correct?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, that's correct."
+    }
+  ],
+  "interruption": {
+    "utterance": 3,
+    "type": "competitive",
+    "cut_word_index": 4,
+    "total_words": 5
+  },
+  "verdict": {
+    "judge": "target-question",
+    "label": "pass",
+    "reasoning": "The agent explicitly asked the top-level question about eye redness and the patient provided a clear answer. No hazardous scenarios occurred."
+  }
+}
